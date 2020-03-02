@@ -1,0 +1,650 @@
+# 이 viminfo 파일은 빔이 만든 것입니다 Vim 8.0.
+# 조심만 한다면 고칠 수도 있습니다!
+
+# Viminfo version
+|1,4
+
+# 이 파일이 저장되었을 때의 'encoding'의 값
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~H
+# Last Search Pattern:
+~MSle0~/DEV_ROOT
+
+# Last Substitute Search Pattern:
+~MSle0&int
+
+# 마지막으로 바꾼 문자열:
+$void
+
+# 명령 줄 히스토리 (새것부터 오래된 것 순):
+:q
+|2,0,1582859999,,"q"
+:q!
+|2,0,1582858748,,"q!"
+:wq
+|2,0,1582857508,,"wq"
+:40
+|2,0,1582851397,,"40"
+:;qq
+|2,0,1582851374,,";qq"
+:w
+|2,0,1582789320,,"w"
+:n
+|2,0,1582792183,,"n"
+:7
+|2,0,1582790272,,"7"
+:q1
+|2,0,1582788326,,"q1"
+:195
+|2,0,1582691816,,"195"
+:174
+|2,0,1582691338,,"174"
+:q!@:174
+|2,0,1582691303,,"q!@:174"
+:set paste
+|2,0,1582685803,,"set paste"
+:47
+|2,0,1582632491,,"47"
+:"q
+|2,0,1582614226,,"\"q"
+:q!@
+|2,0,1582605263,,"q!@"
+:Q!
+|2,0,1581318704,,"Q!"
+:351
+|2,0,1580983459,,"351"
+:client
+|2,0,1580902321,,"client"
+:GOPATH
+|2,0,1580900852,,"GOPATH"
+:1
+|2,0,1579659792,,"1"
+:Wq
+|2,0,1579612645,,"Wq"
+:96
+|2,0,1579612547,,"96"
+:50
+|2,0,1579612182,,"50"
+:set nu
+|2,0,1579509889,,"set nu"
+:299
+|2,0,1579508748,,"299"
+:180
+|2,0,1579508424,,"180"
+:$
+|2,0,1579508488,,"$"
+:21
+|2,0,1579508334,,"21"
+:59
+|2,0,1579508295,,"59"
+:43
+|2,0,1579508263,,"43"
+:206
+|2,0,1579507793,,"206"
+:176
+|2,0,1579507713,,"176"
+:8
+|2,0,1579507680,,"8"
+:157
+|2,0,1579507645,,"157"
+:6
+|2,0,1579507442,,"6"
+:send_msg_t
+|2,0,1579507278,,"send_msg_t"
+:17
+|2,0,1579507224,,"17"
+:60
+|2,0,1579507152,,"60"
+:3
+|2,0,1579507127,,"3"
+:42
+|2,0,1579506614,,"42"
+:73
+|2,0,1579506514,,"73"
+:88
+|2,0,1579506348,,"88"
+:Lq
+|2,0,1579506335,,"Lq"
+:61
+|2,0,1579506276,,"61"
+:151
+|2,0,1579506158,,"151"
+:41
+|2,0,1579502675,,"41"
+:34
+|2,0,1579502541,,"34"
+:175
+|2,0,1579502452,,"175"
+:190
+|2,0,1579502296,,"190"
+
+# 찾을 문자열 히스토리 (새것부터 오래된 것 순):
+?/DEV_ROOT
+|2,1,1582849459,47,"DEV_ROOT"
+??init
+|2,1,1582791110,63,"init"
+??docker
+|2,1,1582692187,63,"docker"
+? \<ConfigIdGET\>
+|2,1,1582691796,,"\\<ConfigIdGET\\>"
+?/GetSmscC
+|2,1,1582691782,47,"GetSmscC"
+?/s.GetSmscConfig
+|2,1,1582691779,47,"s.GetSmscConfig"
+? \<GetSmscConfig\>
+|2,1,1582691591,,"\\<GetSmscConfig\\>"
+? \<SmscConfigRespData\>
+|2,1,1582691507,,"\\<SmscConfigRespData\\>"
+?/smsc
+|2,1,1582691435,47,"smsc"
+?/smsf
+|2,1,1582691433,47,"smsf"
+?/SMSF
+|2,1,1582691432,47,"SMSF"
+?/deb
+|2,1,1582605328,47,"deb"
+?/cl
+|2,1,1582605262,47,"cl"
+?/LANG
+|2,1,1582599960,47,"LANG"
+? \<handleSdmSubscription\>
+|2,1,1581091096,,"\\<handleSdmSubscription\\>"
+? \<subCnt\>
+|2,1,1581091086,,"\\<subCnt\\>"
+? \<subTotCnt\>
+|2,1,1581091075,,"\\<subTotCnt\\>"
+??SUB
+|2,1,1581091031,63,"SUB"
+??USMSF
+|2,1,1581062114,63,"USMSF"
+??3968
+|2,1,1581043775,63,"3968"
+? \<HandleueContexts\>
+|2,1,1580983439,,"\\<HandleueContexts\\>"
+? \<NewUdmServer\>
+|2,1,1580983401,,"\\<NewUdmServer\\>"
+??main(
+|2,1,1580903284,63,"main("
+? \<rejson\>
+|2,1,1580902331,,"\\<rejson\\>"
+??pro
+|2,1,1580902324,63,"pro"
+??json
+|2,1,1580902134,63,"json"
+??GOPATH
+|2,1,1580900948,63,"GOPATH"
+?/diaib_tfr_resp_cancel_timer
+|2,1,1579651095,47,"diaib_tfr_resp_cancel_timer"
+? \<diaib_tfr_resp_cancel_timer\>
+|2,1,1579651066,,"\\<diaib_tfr_resp_cancel_timer\\>"
+? \<msg_size\>
+|2,1,1579597440,,"\\<msg_size\\>"
+? \<handle_interface_message\>
+|2,1,1579597166,,"\\<handle_interface_message\\>"
+?/BCD_TO
+|2,1,1579595020,47,"BCD_TO"
+?/ConvIM
+|2,1,1579594737,47,"ConvIM"
+? \<conv_msg_to_ofr\>
+|2,1,1579576487,,"\\<conv_msg_to_ofr\\>"
+? \<pa_diamsg\>
+|2,1,1579510795,,"\\<pa_diamsg\\>"
+? \<DecodeRpData\>
+|2,1,1579510953,,"\\<DecodeRpData\\>"
+? \<GetRPDUMessageType\>
+|2,1,1579510946,,"\\<GetRPDUMessageType\\>"
+?/DecodeR
+|2,1,1579509268,47,"DecodeR"
+?/Open
+|2,1,1579508809,47,"Open"
+?/OpenG
+|2,1,1579508792,47,"OpenG"
+? \<get_diaib_dia_list\>
+|2,1,1579508752,,"\\<get_diaib_dia_list\\>"
+?/InsStatQMsg
+|2,1,1579508712,47,"InsStatQMsg"
+?/add_avp_exp
+|2,1,1579508511,47,"add_avp_exp"
+? \<cc\>
+|2,1,1579508302,,"\\<cc\\>"
+? \<key_str\>
+|2,1,1579508282,,"\\<key_str\\>"
+? \<thread_id\>
+|2,1,1579508249,,"\\<thread_id\\>"
+?/data_len
+|2,1,1579508154,47,"data_len"
+?/MakeR
+|2,1,1579507992,47,"MakeR"
+? \<make_mt_msg\>
+|2,1,1579507936,,"\\<make_mt_msg\\>"
+? \<mt_msg\>
+|2,1,1579507920,,"\\<mt_msg\\>"
+
+# 표현 히스토리 (새것부터 오래된 것 순):
+
+# 입력 줄 히스토리 (새것부터 오래된 것 순):
+
+# Debug Line 히스토리 (새것부터 오래된 것 순):
+
+# 레지스터:
+"0	LINE	0
+	COPY init.sh /home/app/init.sh
+|3,0,0,1,1,0,1582791133,"COPY init.sh /home/app/init.sh"
+""1	LINE	0
+	#echo $httpif_check
+|3,1,1,1,1,0,1582790602,"#echo $httpif_check"
+"2	LINE	0
+	#httpif_check=`ps -ef | grep -v "grep" | grep "httpif" | wc -l`
+|3,0,2,1,1,0,1582790452,"#httpif_check=`ps -ef | grep -v \"grep\" | grep \"httpif\" | wc -l`"
+"3	LINE	0
+	sleep 10
+|3,0,3,1,1,0,1582790308,"sleep 10"
+"4	LINE	0
+	`dismc | grep httpif | awk '{print $3}'`
+|3,0,4,1,1,0,1582790049,"`dismc | grep httpif | awk '{print $3}'`"
+"5	LINE	0
+	/home/app/home/bin/stopmc -b httpif
+|3,0,5,1,1,0,1582788858,"/home/app/home/bin/stopmc -b httpif"
+"6	LINE	0
+	/home/app/home/bin/stopmc -b httpif
+|3,0,6,1,1,0,1582788854,"/home/app/home/bin/stopmc -b httpif"
+"7	LINE	0
+			/home/app/home/bin/stopmc -b httpif
+|3,0,7,1,1,0,1582788703,"		/home/app/home/bin/stopmc -b httpif"
+"8	LINE	0
+	/home/app/home/bin/stopmc -b httpif
+|3,0,8,1,1,0,1582788666,"/home/app/home/bin/stopmc -b httpif"
+"9	LINE	0
+			//      camel.uangel.com/ua5g/ulib.git v0.3.10-alpha.5.0.20200204074424-a80f9ea87e1b
+|3,0,9,1,1,0,1582693062,"		//      camel.uangel.com/ua5g/ulib.git v0.3.10-alpha.5.0.20200204074424-a80f9ea87e1b"
+"-	CHAR	0
+	httpif 
+|3,0,36,0,1,0,1582790771,"httpif "
+
+# 파일 마크:
+'0  1  0  ~/build_
+|4,48,1,0,1582859999,"~/build_"
+'1  1  16  /etc/ld.so.conf.d/srg.conf
+|4,49,1,16,1582858748,"/etc/ld.so.conf.d/srg.conf"
+'2  7  0  ~/srgpkg/usrg/src/umtp2/api/Jamfile
+|4,50,7,0,1582854959,"~/srgpkg/usrg/src/umtp2/api/Jamfile"
+'3  1  0  ~/srgpkg/usrg/src/umtp2/Jamfile
+|4,51,1,0,1582854014,"~/srgpkg/usrg/src/umtp2/Jamfile"
+'4  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,52,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+'5  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,53,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+'6  1  0  ~/srgpkg/usrg/src/uxctp/if/Jamfile
+|4,54,1,0,1582851461,"~/srgpkg/usrg/src/uxctp/if/Jamfile"
+'7  39  0  ~/srgpkg/usrg/src/uxctp/if/local_uxctp.h
+|4,55,39,0,1582851403,"~/srgpkg/usrg/src/uxctp/if/local_uxctp.h"
+'8  1  0  ~/srgpkg/usrg/src/uxctp/if/prov.c
+|4,56,1,0,1582851376,"~/srgpkg/usrg/src/uxctp/if/prov.c"
+'9  1  0  ~/srgpkg/usrg_dev.sh
+|4,57,1,0,1582849596,"~/srgpkg/usrg_dev.sh"
+
+# 점프목록 (새것이 먼저):
+-'  1  0  ~/build_
+|4,39,1,0,1582859999,"~/build_"
+-'  1  16  /etc/ld.so.conf.d/srg.conf
+|4,39,1,16,1582858748,"/etc/ld.so.conf.d/srg.conf"
+-'  1  16  /etc/ld.so.conf.d/srg.conf
+|4,39,1,16,1582858748,"/etc/ld.so.conf.d/srg.conf"
+-'  7  0  ~/srgpkg/usrg/src/umtp2/api/Jamfile
+|4,39,7,0,1582854959,"~/srgpkg/usrg/src/umtp2/api/Jamfile"
+-'  7  0  ~/srgpkg/usrg/src/umtp2/api/Jamfile
+|4,39,7,0,1582854959,"~/srgpkg/usrg/src/umtp2/api/Jamfile"
+-'  7  0  ~/srgpkg/usrg/src/umtp2/api/Jamfile
+|4,39,7,0,1582854959,"~/srgpkg/usrg/src/umtp2/api/Jamfile"
+-'  7  0  ~/srgpkg/usrg/src/umtp2/api/Jamfile
+|4,39,7,0,1582854959,"~/srgpkg/usrg/src/umtp2/api/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/api/Jamfile
+|4,39,1,0,1582854053,"~/srgpkg/usrg/src/umtp2/api/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/api/Jamfile
+|4,39,1,0,1582854053,"~/srgpkg/usrg/src/umtp2/api/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/api/Jamfile
+|4,39,1,0,1582854053,"~/srgpkg/usrg/src/umtp2/api/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/api/Jamfile
+|4,39,1,0,1582854053,"~/srgpkg/usrg/src/umtp2/api/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/Jamfile
+|4,39,1,0,1582854014,"~/srgpkg/usrg/src/umtp2/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/Jamfile
+|4,39,1,0,1582854014,"~/srgpkg/usrg/src/umtp2/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/Jamfile
+|4,39,1,0,1582854014,"~/srgpkg/usrg/src/umtp2/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/Jamfile
+|4,39,1,0,1582854014,"~/srgpkg/usrg/src/umtp2/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/Jamfile
+|4,39,1,0,1582854014,"~/srgpkg/usrg/src/umtp2/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/Jamfile
+|4,39,1,0,1582854014,"~/srgpkg/usrg/src/umtp2/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/Jamfile
+|4,39,1,0,1582854014,"~/srgpkg/usrg/src/umtp2/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/umtp2/Jamfile
+|4,39,1,0,1582854014,"~/srgpkg/usrg/src/umtp2/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/Jamfile
+|4,39,1,0,1582853993,"~/srgpkg/usrg/src/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  31  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,31,0,1582852979,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/common/oam/Jamfile
+|4,39,1,0,1582852929,"~/srgpkg/usrg/src/common/oam/Jamfile"
+-'  1  0  ~/srgpkg/usrg/src/uxctp/if/Jamfile
+|4,39,1,0,1582851461,"~/srgpkg/usrg/src/uxctp/if/Jamfile"
+
+# 파일내의 마크 히스토리 (새것부터 오래된 순):
+
+> ~/build_
+	*	1582859998	0
+	"	1	0
+
+> /etc/ld.so.conf.d/srg.conf
+	*	1582858746	0
+	"	1	16
+	^	1	17
+	.	1	16
+	+	1	16
+
+> ~/srgpkg/usrg/src/umtp2/api/Jamfile
+	*	1582854056	0
+	"	7	0
+
+> ~/srgpkg/usrg/src/umtp2/Jamfile
+	*	1582854002	0
+	"	1	0
+
+> ~/srgpkg/usrg/src/Jamfile
+	*	1582853985	0
+	"	1	0
+
+> ~/srgpkg/usrg/src/common/oam/Jamfile
+	*	1582852944	0
+	"	31	0
+
+> ~/srgpkg/usrg/src/uxctp/if/Jamfile
+	*	1582851406	0
+	"	1	0
+
+> ~/srgpkg/usrg/src/uxctp/if/local_uxctp.h
+	*	1582851402	0
+	"	39	0
+
+> ~/srgpkg/usrg/src/uxctp/if/prov.c
+	*	1582851375	0
+	"	1	0
+
+> ~/srgpkg/usrg_dev.sh
+	*	1582849594	0
+	"	1	0
+
+> ~/.bashrc
+	*	1582849501	0
+	"	465	2
+	^	19	29
+	.	19	28
+	+	13	17
+	+	12	0
+	+	189	23
+	+	18	25
+	+	19	16
+	+	19	0
+	+	18	1
+	+	19	28
+
+> ~/srgpkg/ulib/Jamrules
+	*	1582792744	0
+	"	3	0
+
+> ~/srgpkg/ulib/Jamfile
+	*	1582792187	0
+	"	1	0
+
+> ~/srgpkg/ulib/src/Jamfile
+	*	1582791524	0
+	"	54	0
+
+> ~/Dockerfile.diameter
+	*	1582791492	0
+	"	26	1
+	^	25	34
+	.	25	33
+	+	18	35
+	+	25	33
+
+> ~/init.sh
+	*	1582791482	0
+	"	14	0
+	^	14	22
+	.	14	21
+	+	16	56
+	+	17	0
+	+	14	21
+
+> ~/process.sh
+	*	1582791475	0
+	"	1	0
+	^	42	1
+	.	42	0
+	+	45	0
+	+	16	0
+	+	26	0
+	+	36	0
+	+	46	0
+	+	10	0
+	+	12	0
+	+	21	0
+	+	23	0
+	+	31	0
+	+	33	0
+	+	40	0
+	+	41	0
+	+	43	0
+	+	16	4
+	+	19	11
+	+	20	36
+	+	26	7
+	+	29	14
+	+	30	39
+	+	36	5
+	+	39	12
+	+	40	37
+	+	11	0
+	+	22	0
+	+	32	0
+	+	42	0
+
+> ~/test.sh
+	*	1582789323	0
+	"	18	4
+	^	7	2
+	.	18	3
+	+	16	0
+	+	15	84
+	+	11	18
+	+	11	24
+	+	13	74
+	+	12	1
+	+	11	0
+	+	15	0
+	+	11	0
+	+	2	0
+	+	3	8
+	+	16	2
+	+	17	0
+	+	17	7
+	+	11	0
+	+	8	0
+	+	3	0
+	+	3	8
+	+	18	0
+	+	3	0
+	+	7	0
+	+	3	0
+	+	7	0
+	+	3	0
+	+	5	1
+	+	18	3
+
+> ~/HOME/data_dia/proc.conf
+	*	1582788927	0
+	"	1	0
+
+> ~/HOME/log/httpif/test.sh
+	*	1582788326	0
+	"	1	0

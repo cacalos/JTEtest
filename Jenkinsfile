@@ -11,7 +11,7 @@ node {
          /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-         app = docker.build("camel.uangel.com:5000/usmsf_jks")
+         app = docker.build("usmsf_jks")
      }
 
      stage('Test image') {

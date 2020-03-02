@@ -1,0 +1,93 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+MAX_ENGINE_QID	smsf.h	39;"	d
+MTYPE_SIGIN_MESSAGE_TYPE	smsf.h	33;"	d
+MTYPE_SIGOUT_MESSAGE_TYPE	smsf.h	34;"	d
+SIGIB_IN_QID	smsf.h	37;"	d
+SIGIB_OUT_QID	smsf.h	38;"	d
+SIG_IN_TYPE	smsf.h	30;"	d
+SIG_OUT_TYPE	smsf.h	31;"	d
+SMSF_QID	smsf.h	36;"	d
+__SNSF_H__	smsf.h	2;"	d
+_smsfif_final	smsf_init.c	/^void _smsfif_final(uxc_plugin_t *plugin)$/;"	f
+_smsfif_heartbit	smsf_init.c	/^int _smsfif_heartbit(uxc_plugin_t *plugin, ux_tmtype_t tmevt)$/;"	f
+_smsfif_on_accept	smsf_init.c	/^static int _smsfif_on_accept(upa_tcp_t *tcp, ux_channel_t *channel, ux_accptor_t *accptor,$/;"	f	file:
+_smsfif_on_close	smsf_init.c	/^static int _smsfif_on_close(upa_tcp_t *tcp, ux_channel_t *channel, ux_cnector_t *cnector, upa_peerkey_t *peerkey)$/;"	f	file:
+_smsfif_on_open	smsf_init.c	/^static int _smsfif_on_open(upa_tcp_t *tcp, ux_channel_t *channel, ux_cnector_t *cnector, upa_peerkey_t *peerkey)$/;"	f	file:
+_smsfif_reconf	smsf_init.c	/^int _smsfif_reconf(uxc_plugin_t *plugin)$/;"	f
+amfId	smsf.h	/^	char amfId[128];$/;"	m	struct:smsf_recv_s
+amfId	smsf.h	/^	char amfId[128];$/;"	m	struct:smsf_send_s
+amfIdLen	smsf.h	/^	int amfIdLen;$/;"	m	struct:smsf_recv_s
+amfIdLen	smsf.h	/^	int amfIdLen;$/;"	m	struct:smsf_send_s
+atomic_inc	smsf.h	23;"	d
+atomic_inc	smsf.h	26;"	d
+base	smsf.h	/^	uxc_plugin_t        base[1];$/;"	m	struct:smsf_s
+body_len	smsf.h	/^	unsigned int body_len;$/;"	m	struct:smsf_header_s
+causeCode	smsf.h	/^	int causeCode;$/;"	m	struct:smsf_send_s
+causeCode	smsf.h	/^	int causeCode;$/;"	m	struct:smsf_sendmt_s
+cfile	smsf.h	/^	char                cfile[512];$/;"	m	struct:smsf_s
+contentData	smsf.h	/^	char contentData[248];$/;"	m	struct:smsf_recv_s
+contentData	smsf.h	/^	char contentData[248];$/;"	m	struct:smsf_send_s
+contentData	smsf.h	/^	char contentData[248];$/;"	m	struct:smsf_sendmt_s
+contentDataLen	smsf.h	/^	int contentDataLen;$/;"	m	struct:smsf_recv_s
+contentDataLen	smsf.h	/^	int contentDataLen;$/;"	m	struct:smsf_send_s
+contentDataLen	smsf.h	/^	int contentDataLen;$/;"	m	struct:smsf_sendmt_s
+convert_sigib_msg	smsf_handle.c	/^int convert_sigib_msg(smsf_msg_t *msg, smsf_recv_t *rcv_msg)$/;"	f
+convert_to_smsfif_msg	smsf_msg.c	/^int convert_to_smsfif_msg(smsf_msg_t *smsf_msg, smsf_send_t *smsf_sendmsg, int *len)$/;"	f
+convert_to_smsfif_msg_mt	smsf_msg.c	/^int convert_to_smsfif_msg_mt(smsf_msg_t *smsf_msg, smsf_send_t *smsf_sendmsg, int *len)$/;"	f
+data	smsf.h	/^    char 				data[4096];$/;"	m	struct:smsf_tcp_msg_s
+gpsi	smsf.h	/^	char gpsi[128];$/;"	m	struct:smsf_recv_s
+gpsi	smsf.h	/^	char gpsi[128];$/;"	m	struct:smsf_send_s
+gpsiLen	smsf.h	/^	int gpsiLen;$/;"	m	struct:smsf_recv_s
+gpsiLen	smsf.h	/^	int gpsiLen;$/;"	m	struct:smsf_send_s
+handle_recv_sig_msg	smsf_handle.c	/^int handle_recv_sig_msg(uxc_action_t *action, uxc_worker_t *worker, uxc_msg_t *uxcmsg)$/;"	f
+handle_sigin_resp_message	smsf_msg.c	/^int handle_sigin_resp_message(uxc_worker_t *worker, uxc_msg_t *msg)$/;"	f
+handle_sigout_message	smsf_msg.c	/^int handle_sigout_message(uxc_worker_t *worker, uxc_msg_t *msg)$/;"	f
+handle_smsf_msg	smsf_handle.c	/^int handle_smsf_msg(uxc_action_t *action, uxc_worker_t *worker, uxc_msg_t *uxcmsg, upa_peerkey_t *peerkey)$/;"	f
+header	smsf.h	/^    smsf_header_t   		header;$/;"	m	struct:smsf_tcp_msg_s
+ifQid	smsf.h	/^	int                 ifQid[MAX_ENGINE_QID];$/;"	m	struct:smsf_s
+mmsLen	smsf.h	/^	char mmsLen;$/;"	m	struct:smsf_recv_s
+mmsLen	smsf.h	/^	char mmsLen;$/;"	m	struct:smsf_send_s
+mmsflag	smsf.h	/^	char mmsflag;$/;"	m	struct:smsf_recv_s
+mmsflag	smsf.h	/^	char mmsflag;$/;"	m	struct:smsf_send_s
+mmsflag	smsf.h	/^	char mmsflag;$/;"	m	struct:smsf_sendmt_s
+mutex	smsf.h	/^	ux_mutex_t          mutex[2]; $/;"	m	struct:smsf_s
+padbif	smsf.h	/^	upa_dbif_t          *padbif;       \/\/ dbif pa object$/;"	m	struct:smsf_s
+patcp	smsf.h	/^	upa_tcp_t			*patcp;$/;"	m	struct:smsf_s
+recv_msg_decodef	smsf_handle.c	/^int recv_msg_decodef(smsf_tcp_msg_t *tcp_msg, smsf_recv_t *rcv_msg)$/;"	f
+send_msg_print	smsf_handle.c	/^void send_msg_print(smsf_msg_t * msg)$/;"	f
+send_to_if	smsf_handle.c	/^int send_to_if(uxc_worker_t *worker, smsf_msg_t *msg)$/;"	f
+smsf_header_s	smsf.h	/^struct smsf_header_s {$/;"	s
+smsf_header_t	smsf.h	/^typedef struct smsf_header_s smsf_header_t;$/;"	t	typeref:struct:smsf_header_s
+smsf_instance	smsf_init.c	/^smsf_t* smsf_instance( void)$/;"	f
+smsf_recv_s	smsf.h	/^struct smsf_recv_s {$/;"	s
+smsf_recv_t	smsf.h	/^typedef struct smsf_recv_s smsf_recv_t;$/;"	t	typeref:struct:smsf_recv_s
+smsf_s	smsf.h	/^struct smsf_s {$/;"	s
+smsf_send_s	smsf.h	/^struct smsf_send_s {$/;"	s
+smsf_send_t	smsf.h	/^typedef struct smsf_send_s smsf_send_t;$/;"	t	typeref:struct:smsf_send_s
+smsf_sendmt_s	smsf.h	/^struct smsf_sendmt_s {$/;"	s
+smsf_sendmt_t	smsf.h	/^typedef struct smsf_sendmt_s smsf_sendmt_t;$/;"	t	typeref:struct:smsf_sendmt_s
+smsf_t	smsf.h	/^typedef struct smsf_s smsf_t;$/;"	t	typeref:struct:smsf_s
+smsf_tcp_msg_s	smsf.h	/^struct smsf_tcp_msg_s {$/;"	s
+smsf_tcp_msg_t	smsf.h	/^typedef struct smsf_tcp_msg_s smsf_tcp_msg_t;$/;"	t	typeref:struct:smsf_tcp_msg_s
+smsfif_create	smsf_init.c	/^uxc_plugin_t *smsfif_create(void *xcutor, const char *cfile)$/;"	f
+smsfif_init	smsf_init.c	/^int smsfif_init(char *cfile)$/;"	f
+supi	smsf.h	/^	char supi[128];$/;"	m	struct:smsf_recv_s
+supi	smsf.h	/^	char supi[128];$/;"	m	struct:smsf_send_s
+supi	smsf.h	/^	char supi[128];$/;"	m	struct:smsf_sendmt_s
+supi_len	smsf.h	/^	int supi_len;$/;"	m	struct:smsf_recv_s
+supi_len	smsf.h	/^	int supi_len;$/;"	m	struct:smsf_send_s
+supi_len	smsf.h	/^	int supi_len;$/;"	m	struct:smsf_sendmt_s
+total_len	smsf.h	/^	int	total_len;$/;"	m	struct:smsf_recv_s
+total_len	smsf.h	/^	int	total_len;$/;"	m	struct:smsf_send_s
+total_len	smsf.h	/^	int	total_len;$/;"	m	struct:smsf_sendmt_s
+type	smsf.h	/^	char type; \/\/0:mo , 1:mt$/;"	m	struct:smsf_recv_s
+type	smsf.h	/^	char type; \/\/0:mo , 1:mt$/;"	m	struct:smsf_send_s
+type	smsf.h	/^	char type; \/\/0:mo , 1:mt$/;"	m	struct:smsf_sendmt_s
+worker_reload	smsf_init.c	/^int worker_reload(uxc_plugin_t *plugin, void * worker)$/;"	f
+worker_start	smsf_init.c	/^int worker_start(uxc_plugin_t *plugin)$/;"	f
+xcutor	smsf.h	/^	uxc_xcutor_t        *xcutor;        \/\/ uxcutor object$/;"	m	struct:smsf_s

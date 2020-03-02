@@ -1,0 +1,25 @@
+SubDir TOP lib tpdu ;
+SubDirHdrs $(TOP)/inc $(TOP)/inc/MMDB $(UALIB_SRC_HOME)/include ;
+SOURCES = BitUtil TPDU tpdu2_i convType checkTpdu printTpdu ;
+
+
+TARGET = libTPDU ;
+SHLTARGET = $(TARGET)$(SUFSHARED) ;
+
+# .c -> .o compile option
+ObjectCcFlags $(SOURCES)$(SUFOBJ) : $(LOCAL_DEFINES) $(SYS_CCFLAGS) $(SYS_SHAREDCCFLAGS) ;
+
+Library $(TARGET) : $(SOURCES).c ;
+SharedLibraryMain $(SHLTARGET) : $(TARGET)$(SUFLIB) ;
+
+InstallLib $(SMSCHOME)/lib : $(TARGET)$(SUFLIB) ;
+Copy $(TARGET)$(SUFLIB) : $(SMSCHOME)/lib ;
+
+LOCAL_DEFINES = -DUSE_CPPLIB=1 ;
+LOCAL_DEFINES += -D_MODULE_VERSION='\"$(PACKAGE_VERSION)\"' -D_MODULE_PKG='\"$(PACKAGE_NAME)\"' ;
+
+
+# copy files to lib directory
+InstallBin $(UASYS_HOME)/lib : $(TARGET)$(SUFSHARED) ;
+CopySysFile $(TARGET)$(SUFSHARED) : $(TOP)/lib ;
+

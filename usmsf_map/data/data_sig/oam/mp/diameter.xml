@@ -1,0 +1,903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class_list>
+  <class name="DIAMETER_OVERLOADCONF" id="40.1" enabled="true" alarm="false" stat="false" min_stat="false" min15_stat="false" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="overloadName"/>
+      <field id="1" type="integer" name="value"/>
+    </measure>
+    <alarm_list>
+      <alarm/>
+    </alarm_list>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="MAX"/>
+    </statistics>
+    <object_list>
+      <object id="1.1" name="maxSession"/>
+      <object id="1.2" name="maxPeerSession"/>
+      <object id="1.3" name="maxActTransaction"/>
+      <object id="1.4" name="maxPeerActTransaction"/>
+      <object id="1.5" name="maxTps"/>
+      <object id="1.6" name="maxPeerTps"/>
+      <object id="1.7" name="maxMps"/>
+      <object id="1.8" name="maxPeerMps"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_CMDSTAT" id="40.2" enabled="true" alarm="true" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="appId"/>
+      <field id="1" type="string" name="cmdCode"/>
+      <field id="2" type="integer" name="rcvBytes"/>
+      <field id="3" type="integer" name="rcvRequest"/>
+      <field id="4" type="integer" name="rcvAnswer"/>
+      <field id="5" type="integer" name="rcvRetrans"/>
+      <field id="6" type="integer" name="rcvTimeout"/>
+      <field id="7" type="integer" name="rcv1xxx"/>
+      <field id="8" type="integer" name="rcv2xxx"/>
+      <field id="9" type="integer" name="rcv3xxx"/>
+      <field id="10" type="integer" name="rcv4xxx"/>
+      <field id="11" type="integer" name="rcv5xxx"/>
+      <field id="12" type="integer" name="rcvRest"/>
+      <field id="13" type="integer" name="sndBytes"/>
+      <field id="14" type="integer" name="sndRequest"/>
+      <field id="15" type="integer" name="sndAnswer"/>
+      <field id="16" type="integer" name="sndRetrans"/>
+      <field id="17" type="integer" name="sndTimeout"/>
+      <field id="18" type="integer" name="snd1xxx"/>
+      <field id="19" type="integer" name="snd2xxx"/>
+      <field id="20" type="integer" name="snd3xxx"/>
+      <field id="21" type="integer" name="snd4xxx"/>
+      <field id="22" type="integer" name="snd5xxx"/>
+      <field id="23" type="integer" name="sndRest"/>
+      <field id="24" type="integer" name="decodeError"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="4002010" name="DIAMETER_3xxx_RCVERROR" field_id="9" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+      <alarm id="1" code="4002010" name="DIAMETER_4xxx_RCVERROR" field_id="10" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+      <alarm id="2" code="4002010" name="DIAMETER_5xxx_RCVERROR" field_id="11" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+      <alarm id="3" code="4002010" name="DIAMETER_3xxx_SNDERROR" field_id="20" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+      <alarm id="4" code="4002010" name="DIAMETER_4xxx_SNDERROR" field_id="21" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+      <alarm id="5" code="4002010" name="DIAMETER_5xxx_SNDERROR" field_id="22" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="SUM"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="SUM"/>
+      <item field_id="7" type="SUM"/>
+      <item field_id="8" type="SUM"/>
+      <item field_id="9" type="SUM"/>
+      <item field_id="10" type="SUM"/>
+      <item field_id="11" type="SUM"/>
+      <item field_id="12" type="SUM"/>
+      <item field_id="13" type="SUM"/>
+      <item field_id="14" type="SUM"/>
+      <item field_id="15" type="SUM"/>
+      <item field_id="16" type="SUM"/>
+      <item field_id="17" type="SUM"/>
+      <item field_id="18" type="SUM"/>
+      <item field_id="19" type="SUM"/>
+      <item field_id="20" type="SUM"/>
+      <item field_id="21" type="SUM"/>
+      <item field_id="22" type="SUM"/>
+      <item field_id="23" type="SUM"/>
+      <item field_id="24" type="SUM"/>
+    </statistics>
+    <object_list>
+      <object_range name="DIAMETER_CMDSTAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="40"/>
+	  <object id="0.0" name="ALL" total="true"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_CMDERRSTAT" id="40.3" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="appId"/>
+      <field id="1" type="string" name="cmdCode"/>
+      <field id="2" type="string" name="resultCode"/>
+      <field id="3" type="integer" name="rcvCount"/>
+      <field id="4" type="integer" name="sndCount"/>
+    </measure>
+    <statistics enabled="true" period="5M" using_user_stat_function="true">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="STR"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+    </statistics>
+    <object_list>
+      <object id="1.1" name="DIAMETER_CMDERRSTAT"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_PEERSTAT" id="40.4" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="peerId"/>
+      <field id="1" type="string" name="peerName"/>
+      <field id="2" type="integer" name="rcvBytes"/>
+      <field id="3" type="integer" name="rcvRequest"/>
+      <field id="4" type="integer" name="rcvAnswer"/>
+      <field id="5" type="integer" name="rcvRetrans"/>
+      <field id="6" type="integer" name="rcvTimeout"/>
+      <field id="7" type="integer" name="rcv1xxx"/>
+      <field id="8" type="integer" name="rcv2xxx"/>
+      <field id="9" type="integer" name="rcv3xxx"/>
+      <field id="10" type="integer" name="rcv4xxx"/>
+      <field id="11" type="integer" name="rcv5xxx"/>
+      <field id="12" type="integer" name="rcvRest"/>
+      <field id="13" type="integer" name="sndBytes"/>
+      <field id="14" type="integer" name="sndRequest"/>
+      <field id="15" type="integer" name="sndAnswer"/>
+      <field id="16" type="integer" name="sndRetrans"/>
+      <field id="17" type="integer" name="sndTimeout"/>
+      <field id="18" type="integer" name="snd1xxx"/>
+      <field id="19" type="integer" name="snd2xxx"/>
+      <field id="20" type="integer" name="snd3xxx"/>
+      <field id="21" type="integer" name="snd4xxx"/>
+      <field id="22" type="integer" name="snd5xxx"/>
+      <field id="23" type="integer" name="sndRest"/>
+      <field id="24" type="integer" name="decodeError"/>
+      <field id="25" type="calculation" name="totalMessage" expression="0:3+0:4+0:14+0:15"/>
+      <field id="26" type="calculation" name="totalTrans" expression="0:3+0:14"/>
+      <field id="27" type="calculation" name="incomingTps" expression="(0:3)/#0"/>
+      <field id="28" type="calculation" name="outgoingTps" expression="(0:14)/#0"/>
+      <field id="29" type="calculation" name="incomingMps" expression="(0:3+0:4)/#0"/>
+      <field id="30" type="calculation" name="outgoingMps" expression="(0:14+0:15)/#0"/>
+      <field id="31" type="calculation" name="incommingBps" expression="(0:2)/#0"/>
+      <field id="32" type="calculation" name="outgoingBps" expression="(0:13)/#0"/>
+      <field id="33" type="calculation" name="tps" expression="(0:3+0:14)/#0" rt_graph="true"/>
+      <field id="34" type="calculation" name="mps" expression="(0:3+0:4+0:14+0:15)/#0" rt_graph="true"/>
+      <field id="35" type="calculation" name="bps" expression="(0:2+0:13)/#0" rt_graph="true"/>
+      <field id="36" type="calculation" name="tpsRate" expression="((0:2+0:13)/#0)*100/(0:38)" rt_graph="true"/>
+      <field id="37" type="calculation" name="mpsRate" expression="((0:2+0:13)/#0)*100/(0:39)" rt_graph="true"/>
+      <field id="38" type="float" name="maxPeerTps">
+        <recombination source_object_id="40.1.1.6" source_field_id="1"/>
+      </field>
+      <field id="39" type="float" name="maxPeerMps">
+        <recombination source_object_id="40.1.1.8" source_field_id="1"/>
+      </field>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="4004010" name="DIAMETER_PEER_3xxx_RCVERROR" field_id="9" enabled="true" masked="false" standby_disabled="true" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+      <alarm id="1" code="4004010" name="DIAMETER_PEER_4xxx_RCVERROR" field_id="10" enabled="true" masked="false" standby_disabled="true" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+      <alarm id="2" code="4004010" name="DIAMETER_PEER_5xxx_RCVERROR" field_id="11" enabled="true" masked="false" standby_disabled="true" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+      <alarm id="3" code="4004010" name="DIAMETER_PEER_3xxx_SNDERROR" field_id="20" enabled="true" masked="false" standby_disabled="true" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+      <alarm id="4" code="4004010" name="DIAMETER_PEER_4xxx_SNDERROR" field_id="21" enabled="true" masked="false" standby_disabled="true" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+      <alarm id="5" code="4004010" name="DIAMETER_PEER_5xxx_SNDERROR" field_id="22" enabled="true" masked="false" standby_disabled="true" non_busy_hour="false" duplicate_alarm_msg="true">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="SUM"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="SUM"/>
+      <item field_id="7" type="SUM"/>
+      <item field_id="8" type="SUM"/>
+      <item field_id="9" type="SUM"/>
+      <item field_id="10" type="SUM"/>
+      <item field_id="11" type="SUM"/>
+      <item field_id="12" type="SUM"/>
+      <item field_id="13" type="SUM"/>
+      <item field_id="14" type="SUM"/>
+      <item field_id="15" type="SUM"/>
+      <item field_id="16" type="SUM"/>
+      <item field_id="17" type="SUM"/>
+      <item field_id="18" type="SUM"/>
+      <item field_id="19" type="SUM"/>
+      <item field_id="20" type="SUM"/>
+      <item field_id="21" type="SUM"/>
+      <item field_id="22" type="SUM"/>
+      <item field_id="23" type="SUM"/>
+      <item field_id="24" type="SUM"/>
+      <item field_id="27" type="CALC" expression="(0:3)/#1"/>
+      <item field_id="28" type="CALC" expression="(0:14)/#1"/>
+      <item field_id="29" type="CALC" expression="(0:3+0:4)/#1"/>
+      <item field_id="30" type="CALC" expression="(0:14+0:15)/#1"/>
+      <item field_id="31" type="CALC" expression="(0:2)/#1"/>
+      <item field_id="32" type="CALC" expression="(0:13)/#1"/>
+      <item field_id="33" type="CALC" expression="(0:3+0:14)/#1"/>
+      <item field_id="34" type="CALC" expression="(0:3+0:4+0:14+0:15)/#1"/>
+      <item field_id="35" type="CALC" expression="(0:2+0:13)/#1"/>
+    </statistics>
+    <object_list>
+      <object_range name="DIAMETER_PEERSTAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="64"/>
+	  <object id="0.0" name="ALL" total="true"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_PEERKPISTAT" id="40.5" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="peerId"/>
+      <field id="1" type="string" name="peerName"/>
+      <field id="2" type="integer" name="rcvPeakBytes"/>
+      <field id="3" type="integer" name="rcvTotalBytes"/>
+      <field id="4" type="integer" name="rcvPeakRequest"/>
+      <field id="5" type="integer" name="rcvTotalRequest"/>
+      <field id="6" type="integer" name="rcvPeakAnswer"/>
+      <field id="7" type="integer" name="rcvTotalAnswer"/>
+      <field id="8" type="integer" name="rcvPeakRetrans"/>
+      <field id="9" type="integer" name="rcvTotalRetrans"/>
+      <field id="10" type="integer" name="rcvPeakTimeout"/>
+      <field id="11" type="integer" name="rcvTotalTimeout"/>
+      <field id="12" type="integer" name="rcvPeakTranscs"/>
+      <field id="13" type="integer" name="rcvTotalTranscs"/>
+      <field id="14" type="float" name="rcvTpsHighest"/>
+      <field id="15" type="float" name="rcvMpsHighest"/>
+      <field id="16" type="float" name="rcvBpsHighest"/>
+      <field id="17" type="integer" name="rcvRttHighest"/>
+      <field id="18" type="integer" name="rcvRttLowest"/>
+      <field id="19" type="integer" name="rcvRttAverage"/>
+      <field id="20" type="integer" name="rcvPeakActiveTranscs"/>
+      <field id="21" type="integer" name="sndPeakBytes"/>
+      <field id="22" type="integer" name="sndTotalBytes"/>
+      <field id="23" type="integer" name="sndPeakRequest"/>
+      <field id="24" type="integer" name="sndTotalRequest"/>
+      <field id="25" type="integer" name="sndPeakAnswer"/>
+      <field id="26" type="integer" name="sndTotalAnswer"/>
+      <field id="27" type="integer" name="sndPeakRetrans"/>
+      <field id="28" type="integer" name="sndTotalRetrans"/>
+      <field id="29" type="integer" name="sndPeakTimeout"/>
+      <field id="30" type="integer" name="sndTotalTimeout"/>
+      <field id="31" type="integer" name="sndPeakTranscs"/>
+      <field id="32" type="integer" name="sndTotalTranscs"/>
+      <field id="33" type="float" name="sndTpsHighest"/>
+      <field id="34" type="float" name="sndMpsHighest"/>
+      <field id="35" type="float" name="sndBpsHighest"/>
+      <field id="36" type="integer" name="sndRttHighest"/>
+      <field id="37" type="integer" name="sndRttLowest"/>
+      <field id="38" type="integer" name="sndRttAverage"/>
+      <field id="39" type="integer" name="sndPeakActiveTranscs"/>
+      <field id="40" type="integer" name="currentSession"/>
+      <field id="41" type="integer" name="totalSession"/>
+      <field id="42" type="integer" name="peakSession"/>
+      <field id="43" type="integer" name="currentIpcanSession"/>
+      <field id="44" type="integer" name="ipcanSession"/>
+      <field id="45" type="integer" name="ipcanPeakSession"/>
+      <field id="46" type="integer" name="currentRtt"/>
+      <field id="47" type="integer" name="currentJitter"/>
+      <field id="48" type="integer" name="currentLost"/>
+      <field id="49" type="integer" name="currentRetrans"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="4005010" name="DIAMETER_PEERKPI" field_id="0" enabled="true" masked="false" standby_disabled="true" non_busy_hour="false">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M" using_user_stat_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="MAX"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="MAX"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="MAX"/>
+      <item field_id="7" type="SUM"/>
+      <item field_id="8" type="MAX"/>
+      <item field_id="9" type="SUM"/>
+      <item field_id="10" type="MAX"/>
+      <item field_id="11" type="SUM"/>
+      <item field_id="12" type="MAX"/>
+      <item field_id="13" type="SUM"/>
+      <item field_id="14" type="MAX"/>
+      <item field_id="15" type="MAX"/>
+      <item field_id="16" type="MAX"/>
+      <item field_id="17" type="MAX"/>
+      <item field_id="18" type="MIN"/>
+      <item field_id="19" type="AVG"/>
+      <item field_id="20" type="MAX"/>
+      <item field_id="21" type="MAX"/>
+      <item field_id="22" type="SUM"/>
+      <item field_id="23" type="MAX"/>
+      <item field_id="24" type="SUM"/>
+      <item field_id="25" type="MAX"/>
+      <item field_id="26" type="SUM"/>
+      <item field_id="27" type="MAX"/>
+      <item field_id="28" type="SUM"/>
+      <item field_id="29" type="MAX"/>
+      <item field_id="30" type="SUM"/>
+      <item field_id="31" type="MAX"/>
+      <item field_id="32" type="SUM"/>
+      <item field_id="33" type="MAX"/>
+      <item field_id="34" type="MAX"/>
+      <item field_id="35" type="MAX"/>
+      <item field_id="36" type="MAX"/>
+      <item field_id="37" type="MIN"/>
+      <item field_id="38" type="AVG"/>
+      <item field_id="39" type="MAX"/>
+      <item field_id="40" type="MAX"/>
+      <item field_id="41" type="SUM"/>
+      <item field_id="42" type="MAX"/>
+      <item field_id="43" type="MAX"/>
+      <item field_id="44" type="SUM"/>
+      <item field_id="45" type="SUM"/>
+      <item field_id="46" type="MAX"/>
+      <item field_id="47" type="MAX"/>
+      <item field_id="48" type="MAX"/>
+      <item field_id="49" type="MAX"/>
+    </statistics>
+    <object_list>
+      <object_range name="DIAMETER_PEERKPISTAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="64"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_PEERERRSTAT" id="40.6" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="peerId"/>
+      <field id="1" type="string" name="peerName"/>
+      <field id="2" type="string" name="resultCode"/>
+      <field id="3" type="integer" name="rcvCount"/>
+      <field id="4" type="integer" name="sndCount"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="4006010" name="DIAMETER_PEERERRSTAT" field_id="0" enabled="true" masked="false" standby_disabled="true" non_busy_hour="false">
+        <threshold unit="%">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M" using_user_stat_function="true">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="STR"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+    </statistics>
+    <object_list>
+	  <object id="1.1" name="DIAMETER_PEERERRSTAT"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_PEERCMDSTAT" id="40.7" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="peerId"/>
+      <field id="1" type="string" name="peerName"/>
+      <field id="2" type="string" name="appId"/>
+      <field id="3" type="string" name="cmdCode"/>
+      <field id="4" type="integer" name="rcvBytes"/>
+      <field id="5" type="integer" name="rcvRequest"/>
+      <field id="6" type="integer" name="rcvAnswer"/>
+      <field id="7" type="integer" name="rcvRetrans"/>
+      <field id="8" type="integer" name="rcvTimeout"/>
+      <field id="9" type="integer" name="rcv1xxx"/>
+      <field id="10" type="integer" name="rcv2xxx"/>
+      <field id="11" type="integer" name="rcv3xxx"/>
+      <field id="12" type="integer" name="rcv4xxx"/>
+      <field id="13" type="integer" name="rcv5xxx"/>
+      <field id="14" type="integer" name="rcvRest"/>
+      <field id="15" type="integer" name="sndBytes"/>
+      <field id="16" type="integer" name="sndRequest"/>
+      <field id="17" type="integer" name="sndAnswer"/>
+      <field id="18" type="integer" name="sndRetrans"/>
+      <field id="19" type="integer" name="sndTimeout"/>
+      <field id="20" type="integer" name="snd1xxx"/>
+      <field id="21" type="integer" name="snd2xxx"/>
+      <field id="22" type="integer" name="snd3xxx"/>
+      <field id="23" type="integer" name="snd4xxx"/>
+      <field id="24" type="integer" name="snd5xxx"/>
+      <field id="25" type="integer" name="sndRest"/>
+      <field id="26" type="integer" name="decodeError"/>
+    </measure>
+    <statistics enabled="true" period="5M" using_user_stat_function="true">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="STR"/>
+      <item field_id="3" type="STR"/>
+      <item field_id="4" type="SUM"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="SUM"/>
+      <item field_id="7" type="SUM"/>
+      <item field_id="8" type="SUM"/>
+      <item field_id="9" type="SUM"/>
+      <item field_id="10" type="SUM"/>
+      <item field_id="11" type="SUM"/>
+      <item field_id="12" type="SUM"/>
+      <item field_id="13" type="SUM"/>
+      <item field_id="14" type="SUM"/>
+      <item field_id="15" type="SUM"/>
+      <item field_id="16" type="SUM"/>
+      <item field_id="17" type="SUM"/>
+      <item field_id="18" type="SUM"/>
+      <item field_id="19" type="SUM"/>
+      <item field_id="20" type="SUM"/>
+      <item field_id="21" type="SUM"/>
+      <item field_id="22" type="SUM"/>
+      <item field_id="23" type="SUM"/>
+      <item field_id="24" type="SUM"/>
+      <item field_id="25" type="SUM"/>
+      <item field_id="26" type="SUM"/>
+    </statistics>
+    <object_list>
+      <object id="1.1" name="DIAMETER_PEERCMDSTAT"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_PEERCMDERRSTAT" id="40.8" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="peerId"/>
+      <field id="1" type="string" name="peerName"/>
+      <field id="2" type="string" name="appId"/>
+      <field id="3" type="string" name="cmdCode"/>
+      <field id="4" type="string" name="resultCode"/>
+      <field id="5" type="integer" name="rcvCount"/>
+      <field id="6" type="integer" name="sndCount"/>
+    </measure>
+    <statistics enabled="true" period="5M" using_user_stat_function="true">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="STR"/>
+      <item field_id="3" type="STR"/>
+      <item field_id="4" type="STR"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="SUM"/>
+    </statistics>
+    <object_list>
+      <object id="1.1" name="DIAMETER_PEERCMDERRSTAT"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_PEERRSPTIME" id="40.9" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="peerId"/>
+      <field id="1" type="string" name="peerName"/>
+      <field id="2" type="integer" name="totalRcvCount"/>
+      <field id="3" type="integer" name="rcvTime0ms"/>
+      <field id="4" type="integer" name="rcvTime40ms"/>
+      <field id="5" type="integer" name="rcvTime80ms"/>
+      <field id="6" type="integer" name="rcvTime120ms"/>
+      <field id="7" type="integer" name="rcvTime160ms"/>
+      <field id="8" type="integer" name="rcvTime200ms"/>
+      <field id="9" type="integer" name="rcvTime300ms"/>
+      <field id="10" type="integer" name="rcvTime500ms"/>
+      <field id="11" type="integer" name="rcvTime750ms"/>
+      <field id="12" type="integer" name="rcvTime1000ms"/>
+      <field id="13" type="integer" name="rcvTime2000ms"/>
+      <field id="14" type="integer" name="rcvTime3000ms"/>
+      <field id="15" type="integer" name="rcvTime5000ms"/>
+      <field id="16" type="integer" name="rcvTimeReserved1"/>
+      <field id="17" type="integer" name="rcvTimeReserved2"/>
+      <field id="18" type="integer" name="totalSndCount"/>
+      <field id="19" type="integer" name="sndTime0ms"/>
+      <field id="20" type="integer" name="sndTime40ms"/>
+      <field id="21" type="integer" name="sndTime80ms"/>
+      <field id="22" type="integer" name="sndTime120ms"/>
+      <field id="23" type="integer" name="sndTime160ms"/>
+      <field id="24" type="integer" name="sndTime200ms"/>
+      <field id="25" type="integer" name="sndTime300ms"/>
+      <field id="26" type="integer" name="sndTime500ms"/>
+      <field id="27" type="integer" name="sndTime750ms"/>
+      <field id="28" type="integer" name="sndTime1000ms"/>
+      <field id="29" type="integer" name="sndTime2000ms"/>
+      <field id="30" type="integer" name="sndTime3000ms"/>
+      <field id="31" type="integer" name="sndTime5000ms"/>
+      <field id="32" type="integer" name="sndTimeReserved1"/>
+      <field id="33" type="integer" name="sndTimeReserved2"/>
+    </measure>
+    <alarm_list>
+      <alarm/>
+    </alarm_list>
+    <statistics enabled="true" period="5M" using_user_stat_function="true">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="SUM"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="SUM"/>
+      <item field_id="7" type="SUM"/>
+      <item field_id="8" type="SUM"/>
+      <item field_id="9" type="SUM"/>
+      <item field_id="10" type="SUM"/>
+      <item field_id="11" type="SUM"/>
+      <item field_id="12" type="SUM"/>
+      <item field_id="13" type="SUM"/>
+      <item field_id="14" type="SUM"/>
+      <item field_id="15" type="SUM"/>
+      <item field_id="16" type="SUM"/>
+      <item field_id="17" type="SUM"/>
+      <item field_id="18" type="SUM"/>
+      <item field_id="19" type="SUM"/>
+      <item field_id="20" type="SUM"/>
+      <item field_id="21" type="SUM"/>
+      <item field_id="22" type="SUM"/>
+      <item field_id="23" type="SUM"/>
+      <item field_id="24" type="SUM"/>
+      <item field_id="25" type="SUM"/>
+      <item field_id="26" type="SUM"/>
+      <item field_id="27" type="SUM"/>
+      <item field_id="28" type="SUM"/>
+      <item field_id="29" type="SUM"/>
+      <item field_id="30" type="SUM"/>
+      <item field_id="31" type="SUM"/>
+      <item field_id="32" type="SUM"/>
+      <item field_id="33" type="SUM"/>
+    </statistics>
+    <object_list>
+	  <object id="1.1" name="DIAMETER_PEERRSPTIME"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_PEERMSCCRESULT" id="41.1" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="peerId"/>
+      <field id="1" type="string" name="peerName"/>
+      <field id="2" type="string" name="resultCode"/>
+      <field id="3" type="integer" name="rcvCount"/>
+      <field id="4" type="integer" name="sndCount"/>
+    </measure>
+    <alarm_list>
+      <alarm/>
+    </alarm_list>
+    <statistics enabled="true" period="5M" using_user_stat_function="true">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="STR"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+    </statistics>
+    <object_list>
+	  <object id="1.1" name="DIAMETER_PEERMSCCRESULT"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_PEERETCSTAT" id="41.2" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="peerId"/>
+      <field id="1" type="string" name="peerName"/>
+      <field id="2" type="integer" name="loopDetect"/>
+      <field id="3" type="integer" name="loopAvoidance"/>
+      <field id="4" type="integer" name="outOfSpace"/>
+      <field id="5" type="integer" name="sessActive"/>
+      <field id="6" type="integer" name="sessCount"/>
+      <field id="7" type="integer" name="sessInitFail"/>
+      <field id="8" type="integer" name="sessNotFound"/>
+      <field id="9" type="integer" name="reserved1"/>
+      <field id="10" type="integer" name="reserved2"/>
+      <field id="11" type="integer" name="reserved3"/>
+      <field id="12" type="integer" name="outOfService"/>
+      <field id="13" type="integer" name="notExistHandler"/>
+      <field id="14" type="integer" name="msgValidationFail"/>
+      <field id="15" type="integer" name="routeInternalFail"/>
+      <field id="16" type="integer" name="ipcanActive"/>
+      <field id="17" type="integer" name="ipcanCount"/>
+      <field id="18" type="integer" name="ipcanInitFAil"/>
+      <field id="19" type="integer" name="ipcanNotFound"/>
+    </measure>
+    <alarm_list>
+      <alarm/>
+    </alarm_list>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="SUM"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="SUM"/>
+      <item field_id="7" type="SUM"/>
+      <item field_id="11" type="SUM"/>
+      <item field_id="12" type="SUM"/>
+      <item field_id="13" type="SUM"/>
+      <item field_id="14" type="SUM"/>
+      <item field_id="15" type="SUM"/>
+      <item field_id="16" type="SUM"/>
+      <item field_id="17" type="SUM"/>
+      <item field_id="18" type="SUM"/>
+      <item field_id="19" type="SUM"/>
+    </statistics>
+    <object_list>
+      <object_range name="DIAMETER_PEERETCSTAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="64"/>
+      <object id="0.0" name="ALL" total="true"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_TOTALKPISTAT" id="45.1" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="true">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="integer" name="rcvPeakBytes"/>
+      <field id="1" type="integer" name="rcvTotalBytes"/>
+      <field id="2" type="integer" name="rcvPeakRequest"/>
+      <field id="3" type="integer" name="rcvTotalRequest"/>
+      <field id="4" type="integer" name="rcvPeakAnswer"/>
+      <field id="5" type="integer" name="rcvTotalAnswer"/>
+      <field id="6" type="integer" name="rcvPeakRetrans"/>
+      <field id="7" type="integer" name="rcvTotalRetrans"/>
+      <field id="8" type="integer" name="rcvPeakTimeout"/>
+      <field id="9" type="integer" name="rcvTotalTimeout"/>
+      <field id="10" type="integer" name="rcvPeakTranscs"/>
+      <field id="11" type="integer" name="rcvTotalTranscs"/>
+      <field id="12" type="float" name="rcvTpsHighest"/>
+      <field id="13" type="float" name="rcvMpsHighest"/>
+      <field id="14" type="float" name="rcvBpsHighest"/>
+      <field id="15" type="integer" name="rcvRttHighest"/>
+      <field id="16" type="integer" name="rcvRttLowest"/>
+      <field id="17" type="integer" name="rcvRttAverage" rt_graph="true"/>
+      <field id="18" type="integer" name="rcvPeakActiveTranscs"/>
+      <field id="19" type="integer" name="sndPeakBytes"/>
+      <field id="20" type="integer" name="sndTotalBytes"/>
+      <field id="21" type="integer" name="sndPeakRequest"/>
+      <field id="22" type="integer" name="sndTotalRequest"/>
+      <field id="23" type="integer" name="sndPeakAnswer"/>
+      <field id="24" type="integer" name="sndTotalAnswer"/>
+      <field id="25" type="integer" name="sndPeakRetrans"/>
+      <field id="26" type="integer" name="sndTotalRetrans"/>
+      <field id="27" type="integer" name="sndPeakTimeout"/>
+      <field id="28" type="integer" name="sndTotalTimeout"/>
+      <field id="29" type="integer" name="sndPeakTranscs"/>
+      <field id="30" type="integer" name="sndTotalTranscs"/>
+      <field id="31" type="float" name="sndTpsHighest"/>
+      <field id="32" type="float" name="sndMpsHighest"/>
+      <field id="33" type="float" name="sndBpsHighest"/>
+      <field id="34" type="integer" name="sndRttHighest"/>
+      <field id="35" type="integer" name="sndRttLowest"/>
+      <field id="36" type="integer" name="sndRttAverage" rt_graph="true"/>
+      <field id="37" type="integer" name="sndPeakActiveTranscs"/>
+      <field id="38" type="integer" name="currentSession"/>
+      <field id="39" type="integer" name="totalSession"/>
+      <field id="40" type="integer" name="peakSession"/>
+      <field id="41" type="integer" name="currentIpcanSession"/>
+      <field id="42" type="integer" name="ipcanSession"/>
+      <field id="43" type="integer" name="ipcanPeakSession"/>
+      <field id="44" type="integer" name="currentRtt"/>
+      <field id="45" type="integer" name="currentJitter"/>
+      <field id="46" type="integer" name="currentLost"/>
+      <field id="47" type="integer" name="currentRetrans"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="4501010" name="DIAMETER_PEERKPI" field_id="0" enabled="true" masked="false" standby_disabled="true" non_busy_hour="false">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="MAX"/>
+      <item field_id="1" type="SUM"/>
+      <item field_id="2" type="MAX"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="MAX"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="MAX"/>
+      <item field_id="7" type="SUM"/>
+      <item field_id="8" type="MAX"/>
+      <item field_id="9" type="SUM"/>
+      <item field_id="10" type="MAX"/>
+      <item field_id="11" type="SUM"/>
+      <item field_id="12" type="MAX"/>
+      <item field_id="13" type="MAX"/>
+      <item field_id="14" type="MAX"/>
+      <item field_id="15" type="MAX"/>
+      <item field_id="16" type="MIN"/>
+      <item field_id="17" type="AVG"/>
+      <item field_id="18" type="MAX"/>
+      <item field_id="19" type="MAX"/>
+      <item field_id="20" type="SUM"/>
+      <item field_id="21" type="MAX"/>
+      <item field_id="22" type="SUM"/>
+      <item field_id="23" type="MAX"/>
+      <item field_id="24" type="SUM"/>
+      <item field_id="25" type="MAX"/>
+      <item field_id="26" type="SUM"/>
+      <item field_id="27" type="MAX"/>
+      <item field_id="28" type="SUM"/>
+      <item field_id="29" type="MAX"/>
+      <item field_id="30" type="SUM"/>
+      <item field_id="31" type="MAX"/>
+      <item field_id="32" type="MAX"/>
+      <item field_id="33" type="MAX"/>
+      <item field_id="34" type="MAX"/>
+      <item field_id="35" type="MIN"/>
+      <item field_id="36" type="AVG"/>
+      <item field_id="37" type="MAX"/>
+      <item field_id="38" type="MAX"/>
+      <item field_id="39" type="SUM"/>
+      <item field_id="40" type="MAX"/>
+      <item field_id="41" type="MAX"/>
+      <item field_id="42" type="SUM"/>
+      <item field_id="43" type="SUM"/>
+      <item field_id="44" type="MAX"/>
+      <item field_id="45" type="MAX"/>
+      <item field_id="46" type="MAX"/>
+      <item field_id="47" type="MAX"/>
+    </statistics>
+    <object_list>
+      <object_range name="DIAMETER_TOTALKPISTAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="1"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_TOTALETCSTAT" id="45.2" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="true">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="integer" name="rcvInvalid"/>
+      <field id="1" type="integer" name="licenseExceed" rt_graph="true"/>
+      <field id="2" type="integer" name="reserved2"/>
+      <field id="3" type="integer" name="reserved3"/>
+      <field id="4" type="integer" name="reserved4"/>
+      <field id="5" type="integer" name="reserved5"/>
+      <field id="6" type="integer" name="reserved6"/>
+      <field id="7" type="integer" name="reserved7"/>
+      <field id="8" type="integer" name="reserved8"/>
+      <field id="9" type="integer" name="reserved9"/>
+      <field id="10" type="integer" name="rcvRerouteAnswer"/>
+      <field id="11" type="integer" name="sndRerouteRequest"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="4503010" name="DIAMETER_TOTALETCSTAT" field_id="0" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="INT">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="MAX"/>
+	  <item field_id="1" type="MAX"/>
+      <item field_id="10" type="MAX"/>
+      <item field_id="11" type="MAX"/>
+    </statistics>
+    <object_list>
+      <object_range name="DIAMETER_TOTALETCSTAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="1"/>
+    </object_list>
+  </class>
+  <class name="DIAMETER_CHNL" id="46.1" enabled="true" alarm="true" stat="false" min_stat="false" min15_stat="false" real_time="true">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="peerId"/>
+      <field id="1" type="string" name="peerName"/>
+      <field id="2" type="integer" name="status"/>
+      <field id="3" type="integer" name="chgInfo"/>
+      <field id="4" type="integer" name="oostime"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="4601010" name="UDRA_PEER_CHANNEL" field_id="2" enabled="true" masked="false" standby_disabled="true"  non_busy_hour="false">
+        <threshold unit="INT">
+          <minor value="2" times="1"/>
+          <major value="2" times="1"/>
+          <critical value="3" times="1"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="false" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="NONE"/>
+      <item field_id="3" type="NONE"/>
+      <item field_id="4" type="NONE"/>
+    </statistics>
+    <object_list>
+      <object_range name="DIAMETER_CHNL" id1_begin="1" id1_end="1" id2_begin="1" id2_end="64"/>
+    </object_list>
+  </class>
+  <!--class name="DIAMETER_INNERCHNL" id="46.2" enabled="true" alarm="true" stat="false" min_stat="false" real_time="false">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="string" name="ChnlName"/>
+      <field id="1" type="string" name="address"/>
+      <field id="2" type="integer" name="port"/>
+      <field id="3" type="integer" name="state"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="4602010" name="UDRA_INNER_CHANNEL" field_id="3" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="BL">
+          <minor value="0" times="1"/>
+          <major value="0" times="1"/>
+          <critical value="1" times="1"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="false" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="STR"/>
+      <item field_id="2" type="NONE"/>
+      <item field_id="3" type="NONE"/>
+    </statistics>
+    <object_list>
+      <object id="1.1" name="TAGENT.TAGENT"/>
+      <object id="1.2" name="SS7IWF.SS7IWF"/>
+      <object id="1.3" name="RADIF.RADIF"/>
+      <object id="1.4" name="HTTPIWF.HTTPIWF"/>
+    </object_list>
+  </class-->
+  <!--class name="DIAMETER_APPIDSTAT" id="47.1" enabled="true" alarm="false" stat="false" min_stat="false" real_time="true">
+    <measure interval="5" daily_msr_time="15:36:12" extra_conf="40.2">
+      <field id="0" type="string" name="appId"/>
+      <field id="1" type="integer" name="rcvBytes"/>
+      <field id="2" type="integer" name="rcvRequest"/>
+      <field id="3" type="integer" name="rcvAnswer"/>
+      <field id="4" type="integer" name="rcvRetrans"/>
+      <field id="5" type="integer" name="rcvTimeout"/>
+      <field id="6" type="integer" name="rcv1xxx"/>
+      <field id="7" type="integer" name="rcv2xxx"/>
+      <field id="8" type="integer" name="rcv3xxx"/>
+      <field id="9" type="integer" name="rcv4xxx"/>
+      <field id="10" type="integer" name="rcv5xxx"/>
+      <field id="11" type="integer" name="rcvRest"/>
+      <field id="12" type="integer" name="sndBytes"/>
+      <field id="13" type="integer" name="sndRequest"/>
+      <field id="14" type="integer" name="sndAnswer"/>
+      <field id="15" type="integer" name="sndRetrans"/>
+      <field id="16" type="integer" name="sndTimeout"/>
+      <field id="17" type="integer" name="snd1xxx"/>
+      <field id="18" type="integer" name="snd2xxx"/>
+      <field id="19" type="integer" name="snd3xxx"/>
+      <field id="20" type="integer" name="snd4xxx"/>
+      <field id="21" type="integer" name="snd5xxx"/>
+      <field id="22" type="integer" name="sndRest"/>
+      <field id="23" type="integer" name="decodeError"/>
+	</measure>
+	<alarm_list/>
+    <statistics enabled="false" period="5M" using_function="false"/>
+    <object_list>
+      <object_range name="DIAMETER_APPIDSTAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="40"/>
+	</object_list>
+  </class-->
+</class_list>

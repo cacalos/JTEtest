@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class_list>
+  <class name="ESME_STAT" id="23.1" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="30">
+      <field id="0" type="string" name="ESME_ID"/>
+      <field id="1" type="integer" name="SUBMIT_RECV_SUCCESS"/>
+      <field id="2" type="integer" name="SUBMIT_RECV_FAIL"/>
+      <field id="3" type="integer" name="SUBMIT_RECV_ACK"/>
+      <field id="4" type="integer" name="SUBMIT_RECV_NACK"/>
+      <field id="5" type="integer" name="SUBMIT_RECV_TIMEOUT"/>
+      <field id="6" type="integer" name="DELIVER_SEND_SUCCESS"/>
+      <field id="7" type="integer" name="DELIVER_SEND_FAIL"/>
+      <field id="8" type="integer" name="DELIVER_SEND_ACK"/>
+      <field id="9" type="integer" name="DELIVER_SEND_NACK"/>
+      <field id="10" type="integer" name="DELIVER_SEND_TIMEOUT"/>
+    </measure>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="SUM"/>
+      <item field_id="2" type="SUM"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="SUM"/>
+      <item field_id="7" type="SUM"/>
+      <item field_id="8" type="SUM"/>
+      <item field_id="9" type="SUM"/>
+      <item field_id="10" type="SUM"/>
+    </statistics>
+    <uastat_measure enabled="true" group_name="LOGSTAT" name="ESME_STAT" used_index="true"/>
+    <object_list>
+      <object_range name="ESME_STAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="80"/>
+    </object_list>
+  </class>
+  <class name="MTCIWF_STAT" id="23.3" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="30">
+      <field id="0" type="string" name="ISDN"/>
+      <field id="1" type="integer" name="DTR_RECV_SUCC"/>
+      <field id="2" type="integer" name="DTR_RECV_FAIL"/>
+      <field id="3" type="integer" name="DRR_SEND_SUCCESS"/>
+      <field id="4" type="integer" name="DRR_SEND_FAIL"/>
+      <field id="5" type="integer" name="DRR_SEND_ACK"/>
+      <field id="6" type="integer" name="DRR_SEND_NACK"/>
+      <field id="7" type="integer" name="DRR_SEND_TIMEOUT"/>
+      <field id="8" type="integer" name="OFR_SEND_SUCCESS"/>
+      <field id="9" type="integer" name="OFR_SEND_FAIL"/>
+      <field id="10" type="integer" name="OFR_SEND_ACK"/>
+      <field id="11" type="integer" name="OFR_SEND_NACK"/>
+      <field id="12" type="integer" name="OFR_SEND_TIMEOUT"/>
+    </measure>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="SUM"/>
+      <item field_id="2" type="SUM"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="SUM"/>
+      <item field_id="7" type="SUM"/>
+      <item field_id="8" type="SUM"/>
+      <item field_id="9" type="SUM"/>
+      <item field_id="10" type="SUM"/>
+      <item field_id="11" type="SUM"/>
+      <item field_id="12" type="SUM"/>
+    </statistics>
+    <uastat_measure enabled="true" group_name="LOGSTAT" name="MTCIWF_STAT" used_index="true"/>
+    <object_list>
+      <object_range name="MTCIWF_STAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="128"/>
+    </object_list>
+  </class>
+  <class name="OFCS_STAT" id="23.4" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="30">
+      <field id="0" type="string" name="OFCS_NAME"/>
+      <field id="1" type="integer" name="ACR_SEND_SUCCESS"/>
+      <field id="2" type="integer" name="ACR_SEND_FAIL"/>
+      <field id="3" type="integer" name="ACR_SEND_ACK"/>
+      <field id="4" type="integer" name="ACR_SEND_NACK"/>
+      <field id="5" type="integer" name="ACR_SEND_TIMEOUT"/>
+    </measure>
+    <alarm_list/>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="SUM"/>
+      <item field_id="2" type="SUM"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+      <item field_id="5" type="SUM"/>
+    </statistics>
+    <uastat_measure enabled="true" group_name="LOGSTAT" name="OFCS_STAT" used_index="true"/>
+    <object_list>
+      <object_range name="OFCS_STAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="128"/>
+      <!--object id="0.0" name="ALL" total="true"/-->
+    </object_list>
+  </class>
+  <class name="MME_STAT" id="23.9" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="30">
+      <field id="0" type="string" name="ISDN"/>
+      <field id="1" type="integer" name="OFR_RECV_SUCC"/>
+      <field id="2" type="integer" name="OFR_RECV_FAIL"/>
+      <field id="3" type="integer" name="TFR_SEND_SUCC"/>
+      <field id="4" type="integer" name="TFR_SEND_FAIL"/>
+      <field id="5" type="integer" name="TFR_SEND_ACK"/>
+      <field id="6" type="integer" name="TFR_SEND_NACK"/>
+      <field id="7" type="integer" name="TFR_SEND_TIMEOUT"/>
+      <field id="8" type="integer" name="ALERT_SC_RECV_SUCC"/>
+      <field id="9" type="integer" name="ALERT_SC_RECV_FAIL"/>
+    </measure>
+    <alarm_list/>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="SUM"/>
+      <item field_id="2" type="SUM"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="SUM"/>
+      <item field_id="7" type="SUM"/>
+      <item field_id="8" type="SUM"/>
+      <item field_id="9" type="SUM"/>
+    </statistics>
+    <uastat_measure enabled="true" group_name="LOGSTAT" name="MME_STAT" used_index="true"/>
+    <object_list>
+      <object_range name="MME_STAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="128"/>
+    </object_list>
+  </class>
+  <class name="HSS_STAT" id="24.1" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="30">
+      <field id="0" type="string" name="ISDN"/>
+      <field id="1" type="integer" name="SRR_SEND_SUCCESS"/>
+      <field id="2" type="integer" name="SRR_SEND_FAIL"/>
+      <field id="3" type="integer" name="SRR_SEND_ACK"/>
+      <field id="4" type="integer" name="SRR_SEND_NACK"/>
+      <field id="5" type="integer" name="SRR_SEND_TIMEOUT"/>
+      <field id="6" type="integer" name="REPORT_SM_SEND_SUCCESS"/>
+      <field id="7" type="integer" name="REPORT_SM_SEND_FAIL"/>
+      <field id="8" type="integer" name="REPORT_SM_SEND_ACK"/>
+      <field id="9" type="integer" name="REPORT_SM_SEND_NACK"/>
+      <field id="10" type="integer" name="REPORT_SM_SEND_TIMEOUT"/>
+      <field id="11" type="integer" name="ALERT_SC_RECV_SUCCESS"/>
+      <field id="12" type="integer" name="ALERT_SC_RECV_FAIL"/>
+    </measure>
+    <alarm_list/>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="SUM"/>
+      <item field_id="2" type="SUM"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+      <item field_id="5" type="SUM"/>
+      <item field_id="6" type="SUM"/>
+      <item field_id="7" type="SUM"/>
+      <item field_id="8" type="SUM"/>
+      <item field_id="9" type="SUM"/>
+      <item field_id="10" type="SUM"/>
+      <item field_id="11" type="SUM"/>
+      <item field_id="12" type="SUM"/>
+    </statistics>
+    <uastat_measure enabled="true" group_name="LOGSTAT" name="HSS_STAT" used_index="true"/>
+    <object_list>
+      <object_range name="HSS_STAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="128"/>
+    </object_list>
+  </class>
+  <class name="BEP_STAT" id="24.2" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="30">
+      <field id="0" type="string" name="BEP_IP"/>
+      <field id="1" type="integer" name="RECV_INV"/>
+      <field id="2" type="integer" name="SEND_RESP"/>
+      <field id="3" type="integer" name="SEND_INV"/>
+      <field id="4" type="integer" name="RECV_RESP"/>
+    </measure>
+    <alarm_list/>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="SUM"/>
+      <item field_id="2" type="SUM"/>
+      <item field_id="3" type="SUM"/>
+      <item field_id="4" type="SUM"/>
+    </statistics>
+    <uastat_measure enabled="true" group_name="LOGSTAT" name="BEP_STAT" used_index="true"/>
+    <object_list>
+      <object_range name="BEP_STAT" id1_begin="1" id1_end="1" id2_begin="1" id2_end="128"/>
+    </object_list>
+  </class>
+
+</class_list>

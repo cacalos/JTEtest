@@ -1,0 +1,117 @@
+
+1. Interface 별 연동 노드
+    Cx : CSCF <-> HSS
+    Dx : CSCF <-> SLF
+    Sh : AS <-> HSS 
+    Dh : AS <-> SLF
+	Rx : AF <-> PCRF
+	Gx : PCEF <-> PCRF
+	Sp : SPR <-> PCRF
+	Ud : UDR <-> PCRF
+	Gy : OCS <-> PCEF
+	S9 : H-PCRF <-> V-PCRF
+	Gxx : PCRF <-> BBERF
+	Sd : PCRF <-> TDF
+	Sy : PCRF <-> OCS
+
+2. Interface 별 관련 규격
+
+http://www.developingsolutions.com/products/dstest-specification-map/
+--------------------------------------------------------------------------------------------------
+Interface	| Architecture Spec		| Protocol Speci						Comments
+--------------------------------------------------------------------------------------------------
+C			| TS 23.040;TS 23.204	| MAP									|
+Cx			| TS 23.228				| TS 29.228;TS 29.229;Diameter			| 9.3
+D/D'		| 						| MAP									|
+Dh			| TS 29.328				| TS29.329;Diameter						| Equivalent to Sh
+DHCP		| 						| RFC 2131/2132/1542					|
+Dx			| TS 23.228				| TS 29.228;TS 29.229;Diameter 			|
+Dz			| TS 33.220				| TS 29.109								|
+E			| TS 23.040;TS 23.204	| MAP									|
+E2			| ES 283.035			| ES 283.035;Diameter					|
+E4			| ES 283.034			| ES 283.034;Diameter					|
+Ga			| TS 32.240				| TS 32.251;TS 32.295;GTP’				| CDR:D7.5;6.4.1;8.7
+Gc			| 						| MAP									|
+Gd			| TS 23.040;TS 23.204	| MAP									|
+Ge			| 						| TS 23.078;TCAP;SCCP;M3UA				|
+Gf			| 						| MAP									|
+Gi			| 						| TS 29.061								|
+Gn			| 						| TS 29.060								|
+Gq/Gq'		| TS 29.209				| Diameter								|
+Gp			| 						| TS 29.060								|
+Gr/Gr'		| 						| MAP									|
+Gs			| TS 23.060				| BSSAP+;SCCP;M3UA						|
+Gx			| TS 23.203				| TS 29.212;Diameter					| D8.3;7.15;8.4; 8.5;9.3;10.12
+Gxx			| TS 23.203				| TS 29.212;Diameter					| D8.3;8.4;9.3
+Gy/Ro		| TS 32.240				| TS 32.299;DCCA;Diameter				| 8.9
+Pi*			| 						| X.S0057-A;Diameter					|
+Pi*3GPP2	| 						| X.S0057-A;TS 29.273;Diameter			|
+Rf			| TS 32.240				| TS 32.251;TS 32.299;Diameter			| 8.9
+Rq			| ES 283.026			| ES 283.026;Diameter					| 8.9
+Rx			| TS 23.203				| TS 29.214;Diameter					| D8.3.0;8.4.0;9.3 10.12
+S101		| TS 23.402				| TS 29.276;GTPv2						|
+S1-MME								| S1AP									|
+S1-U		| 						| GTPv1									| GTP-U
+S2a			| TS 23.402				| TS 23.852;GTPv2 						|
+S2b			| TS 23.402				| TS 23.834;GTPv2						|
+S2c			| TS 23.402				|										|
+S3			| 						| GTPv2									| GTPv2-C
+S4			| 						| GTPv1;GTPv2							| GTP-U/GTP-C
+S5			| 						| GTPv1;GTPv2							| GTP-U/GTP-C
+S8			| 						| GTPv1;GTPv2							| GTP-U/GTP-C
+S10			| 						| GTPv2									| GTPv2-C
+S11			| 						| GTPv2	 								| GTPv2-C
+S12			| 						| GTPv1									| GTP-U
+S6a/S6d		| 						| TS 29.272;Diameter					| D8.3;8.1;8.6;9.2; 9.3;10.5
+S6b			| TS 23.402 			| RFC 3748;RFC 4072,TS 29.273;Diameter;EAP| D9.5;10.5;11.3
+S9			| TS 23.203				| TS 29.212;TS 29.215;Diameter			| D8.3;8.4; 8.5;9.3
+S13/S13'	| 						| TS 29.272;Diameter					| D8.3;8.6
+Sd			| TS 23.203				| TS 29.212;Diameter					|
+SGi			| 						| TS 29.091								|	
+SGs			| TS 23.040;TS 23.272	| SGsAP;SM-CP;SCTP						|	
+Sh			| TS 29.328				| TS29.329;Diameter						|	
+SLg			| TS 23.271				| TS 29.172;Diameter					|
+SLh			| TS 23.271				| TS 29.173;Diameter					|
+SLs			| TS 23.271				| TS 29.171;SCTP						|
+Sp/Ud		| TS 23.203				| TS 23.335;TS 29.335					|
+STa			| TS 23.402				| RFC 4072;TS 29.273;Diameter;EAP		| D9.5;10.5;11.3
+Sv			| TS 23.216				| TS 29.280;GTPv2						|
+SWa			| TS 23.402				| RFC 4072;TS 29.273;Diameter;EAP	 	| D9.5;10.5;11.3
+SWm			| TS 23.402				| RFC 4072;TS 29.273;Diameter;EAP		| D9.5;10.5;11.3
+SWx			| TS 23.402				| TS 29.273;Diameter					| 8.4
+Sy			| TS 29.219				| TS 29.219;Diameter					| D11.1;11.0;0.5
+Ua			| TS 33.220				| TS 24.109								|	
+Ub			| TS 33.220				| TS 24.109								|	
+Wa(Diameter)| TS 23.234				| TS 29.234;EAP							|
+Wa(RADIUS)	| TS 23.234				| TS 29.234;EAP							|
+Wd			| TS 23.234				| TS 29.234;EAP							|
+Wf/Wz		| TS 23.234				| TS 29.234;Diameter					| Equivalent to Rf/Gz
+Wg			| TS 23.234				| TS 29.234;Diameter					|
+Wm			| TS 23.234				| TS 29.234								|	
+Wo/Wy		| TS 23.234				| TS 29.234;Diameter					| Equivalent to Ro/Gy
+Wx			| TS 23.234				| TS 29.234;Diameter					| 7.12
+Zh			| TS 33.220				| TS 29.109;Diameter					|
+Zn			| TS 33.220				| TS 29.109;Diameter					|
+BSSAP+		| 						| TS 29.018								| 7.3
+DCCA		| 						| RFC 4006;Diameter						|
+Diameter	| 						| RFC 6733;RFC 6737; RFC 5516; SCTP;TCP	|
+EAP-AKA		| RFC 3748				| RFC 4187;TS 33.402					|
+EAP-AKA'	| RFC 3748				| RFC 5448;TS 33.402					|
+EAP-SIM		| RFC 3748				| RFC 4186								|
+GTPv1		| 						| TS 29.060								|
+GTPv2		| 						| TS 29.274								|
+M3UA		| 						| RFC 4666								|
+MAP			| 						| TS 29.002;TCAP;SCCP;M3UA				| 7.13;8.12 (if R8 supported)
+Milenage	| 						| TS 35.206								| 8.0
+RADIUS(3GPP)| 						| TS 29.061								|	
+RADIUS		| 						| RFC 2865;RFC 2866;RFC 2867; RFC 2868;RFC 3579 |	
+SCCP		| 						| RFC 3868								|
+SCTP		| 						| RFC 4960								|
+SGsAP		| 						| TS 29.118								|
+SM-CP		| TS 23.040				| TS 24.011								|
+TCAP		| 						| RFC 2719								|
+TCP			| 						| RFC 793								|
+TestUSim	| 						| TS 34.108								| 8.0
+UDP			| 						| RFC 768								|
+--------------------------------------------------------------------------------------------------
+

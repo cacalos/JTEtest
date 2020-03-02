@@ -1,0 +1,13 @@
+# This is a TOML document. Boom.
+
+title = "rtsagt configuration"
+
+[config]
+web_addr = ":15757"
+sqlite_path = "/data/oam/rts/"
+
+[rts]
+class_list = [ "CONSOLE_MSG", "TRACE_MSG", "CURRENT_ALARM" ]
+
+[touch]
+class_list = [ "CURRENT_ALARM", "RTS_LIST", "ALARM_LIST" ]

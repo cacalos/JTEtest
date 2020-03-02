@@ -1,0 +1,11 @@
+SubDir TOP lib ;
+SubInclude TOP lib msg ;
+SubInclude TOP lib ss7 ;
+SubInclude TOP lib gca ;
+SubInclude TOP lib tcp ;
+#SubInclude TOP lib nqlib ;
+SubInclude TOP lib tpdu ;
+SubInclude TOP lib rpdu ;
+SubInclude TOP lib ossasn ;
+SubInclude TOP lib util ;
+SubInclude TOP lib sigtran ;

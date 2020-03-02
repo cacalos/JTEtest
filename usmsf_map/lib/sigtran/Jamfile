@@ -1,0 +1,29 @@
+SubDir TOP lib sigtran  ;
+SubDirHdrs $(TOP)/inc $(TOP)/inc/SS7 $(UALIB_SRC_HOME)/include 
+	$(ULIB_SRC_HOME)/include $(USRG_ROOT)/include ;
+SOURCES = util cid usigtran ;
+#SOURCES = util tcap cid usigtran ;
+
+LOCAL_DEFINES = -DUSIGTRAN ;
+
+
+TARGET = libsigtran_util ;
+SHLTARGET = $(TARGET)$(SUFSHARED) ;
+
+# .c -> .o compile option
+ObjectCcFlags $(SOURCES)$(SUFOBJ) : $(LOCAL_DEFINES) $(SYS_CCFLAGS) $(SYS_SHAREDCCFLAGS) ;
+
+Library $(TARGET) : $(SOURCES).c ;
+SharedLibraryMain $(SHLTARGET) : $(TARGET)$(SUFLIB) ;
+
+InstallLib $(SMSCHOME)/lib : $(TARGET)$(SUFLIB) ;
+Copy $(TARGET)$(SUFLIB) : $(SMSCHOME)/lib ;
+
+# copy files to lib directory
+InstallBin $(SMSC_HOME)/lib : $(TARGET)$(SUFSHARED) ;
+CopySysFile $(TARGET)$(SUFSHARED) : $(TOP)/lib ;
+
+InstallBin $(UASYS_HOME)/lib : $(TARGET)$(SUFSHARED) ;
+CopySysFile $(TARGET)$(SUFSHARED) : $(TOP)/lib ;
+
+

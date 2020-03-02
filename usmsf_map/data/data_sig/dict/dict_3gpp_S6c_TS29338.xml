@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "dictionary.dtd">
+
+<dictionary>
+
+	<!-- ************* DIAMETER S6c APPLICATION ************* -->
+	<application id="16777312" name="S6c" uri="http://www.3gpp.org/DynaReport/29273.htm">
+		<command name="Send-Routing-Info-for-SM" code="8388647" application-id="16777312" abbreviation="SR">
+			<requestrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Session-State" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+                    <avprule name="Destination-Host" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+                    <avprule name="Vendor-Specific-Application-Id" maximum="1"/>
+					<avprule name="Destination-Realm" maximum="1" minimum="1"/>
+					<avprule name="MSISDN" maximum="1"/>
+					<avprule name="User-Name" maximum="1" trace_id="userid"/>
+					<avprule name="SC-Address" maximum="1" minimum="1"/>
+					<avprule name="SM-RP-MTI" maximum="1" minimum="1"/>
+					<avprule name="SM-RP-SMEA" maximum="1" minimum="1"/>
+					<avprule name="SRR-Flags" maximum="1" minimum="1"/>
+					<avprule name="SM-Delivery-Not-Intended" maximum="1" minimum="1"/>
+					<avprule name="DRMP" maximum="1"/>
+					<avprule name="Supported-Features" />
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</requestrules>
+			<answerrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Session-State" maximum="1" />
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+				</required>
+   				<optional>
+					<avprule name="DRMP" maximum="1"/>
+                    <avprule name="Vendor-Specific-Application-Id" maximum="1"/>
+					<avprule name="Result-Code" maximum="1" minimum="1"/>
+					<avprule name="Experimental-Result" maximum="1" minimum="1"/>
+					<avprule name="User-Name" maximum="1"/>
+					<avprule name="Serving-Node" maximum="1"/>
+					<avprule name="Additional-Serving-Node" maximum="1"/>
+					<avprule name="LMSI" maximum="1" />
+					<avprule name="User-Identifier" maximum="1" minimum="1"/>
+					<avprule name="MWD-Status" maximum="1" minimum="1"/>
+					<avprule name="MME-Absent-User-Diagnostic-SM" maximum="1" minimum="1"/>
+					<avprule name="MSC-Absent-User-Diagnostic-SM" maximum="1" minimum="1"/>
+					<avprule name="SGSN-Absent-User-Diagnostic-SM" maximum="1" minimum="1"/>
+					<avprule name="AVP"/>
+					<avprule name="Failed-AVP"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+				</optional>
+			</answerrules>
+		</command>
+		<command name="Alert-Service-Centre-Request" code="8388648" application-id="16777312" proxiable="1">
+			<requestrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Session-State" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+					<avprule name="Destination-Realm" maximum="1" minimum="1"/>
+					<avprule name="SC-Address" maximum="1" minimum="1"/>
+					<avprule name="User-Identifier" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="DRMP" maximum="1"/>
+					<avprule name="Vendor-Specific-Application-Id" maximum="1"/>
+					<avprule name="Destination-Host" maximum="1"/>
+					<avprule name="SMSMI-Correlation-ID" maximum="1"/>
+					<avprule name="Maximum-UE-Availability-Time" maximum="1"/>
+					<avprule name="SMS-GMSC-Alert-Event" maximum="1"/>
+					<avprule name="Serving-Node" maximum="1"/>
+					<avprule name="Supported-Features"/>
+					<avprule name="Route-Record"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="AVP"/>
+				</optional>
+			</requestrules>
+			<answerrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Session-State" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="DRMP" maximum="1"/>
+					<avprule name="Vendor-Specific-Application-Id" maximum="1"/>
+					<avprule name="Result-Code" maximum="1"/>
+					<avprule name="Experimental-Result" maximum="1"/>
+					<avprule name="Supported-Features"/>
+					<avprule name="Failed-AVP"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</answerrules>
+		</command>
+		<command name="Report-SM-Delivery-Status" code="8388649" application-id="16777312" abbreviation="RD">
+			<requestrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Session-State" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+					<avprule name="Destination-Realm" maximum="1" minimum="1"/>
+					<avprule name="User-Identifier" maximum="1" minimum="1"/>
+					<avprule name="SC-Address" maximum="1" minimum="1"/>
+					<avprule name="SM-Delivery-Outcome" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+                    <avprule name="Vendor-Specific-Application-Id" maximum="1"/>
+                    <avprule name="Destination-Host" maximum="1" minimum="1"/>
+					<avprule name="Supported-Features" />
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</requestrules>
+			<answerrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Session-State" maximum="1" />
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+				</required>
+   				<optional>
+					<avprule name="DRMP" maximum="1"/>
+                    <avprule name="Vendor-Specific-Application-Id" maximum="1"/>
+					<avprule name="Result-Code" maximum="1" minimum="1"/>
+					<avprule name="Experimental-Result" maximum="1" minimum="1"/>
+					<avprule name="User-Identifier" maximum="1" minimum="1"/>
+					<avprule name="Supported-Features" />
+					<avprule name="AVP"/>
+					<avprule name="Failed-AVP"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+				</optional>
+			</answerrules>
+		</command>
+	</application>
+</dictionary>

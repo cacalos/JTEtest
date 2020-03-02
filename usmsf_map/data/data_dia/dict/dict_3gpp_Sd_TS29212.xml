@@ -1,0 +1,191 @@
+
+<dictionary>
+
+	<!-- ************* DIAMETER Sd APPLICATION ************* -->
+	<application id="16777303" name="Sd" uri="http://www.3gpp.org/DynaReport/29212.htm">
+		<command name="TDF-Session" code="8388637" application-id="16777303" abbreviation="TS">
+			<requestrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Vendor-Specific-Application-Id" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+					<avprule name="Destination-Realm" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Destination-Host" maximum="1"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="Subscription-Id" trace_id="yes"/>
+					<avprule name="Supported-Features"/>
+					<avprule name="Framed-IP-Address" maximum="1"/>
+					<avprule name="Framed-IPv6-Prefix" maximum="1"/>
+					<avprule name="IP-CAN-Type" maximum="1"/>
+					<avprule name="RAT-Type" maximum="1"/>
+					<avprule name="User-Equipment-Info" maximum="1"/>
+					<avprule name="AN-GW-Address" maximum="2"/>
+					<avprule name="3GPP-SGSN-Address" maximum="1"/>
+					<avprule name="3GPP-SGSN-IPv6-Address" maximum="1"/>
+					<avprule name="3GPP-SGSN-MCC-MNC" maximum="1"/>
+					<avprule name="RAI" maximum="1"/>
+					<avprule name="3GPP-User-Location-Info" maximum="1"/>
+					<avprule name="TWAN-Identifier" maximum="1"/>
+					<avprule name="3GPP-MS-TimeZone" maximum="1"/>
+					<avprule name="Called-Station-Id" maximum="1"/>
+					<avprule name="ADC-Rule-Install"/>
+					<avprule name="Revalidation-Time" maximum="1"/>
+					<avprule name="Usage-Monitoring-Information"/>
+					<avprule name="Event-Trigger"/>
+					<avprule name="Logical-Access-ID" maximum="1"/>
+					<avprule name="Physical-Access-ID" maximum="1"/>
+					<avprule name="3GPP2-BSID" maximum="1"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</requestrules>
+			<answerrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Vendor-Specific-Application-Id" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Result-Code" maximum="1"/>
+					<avprule name="Experimental-Result" maximum="1"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="Supported-Features"/>
+					<avprule name="ADC-Rule-Report"/>
+					<avprule name="Event-Report-Indication" maximum="1"/>
+					<avprule name="Error-Message" maximum="1"/>
+					<avprule name="Error-Reporting-Host" maximum="1"/>
+					<avprule name="Failed-AVP"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</answerrules>
+		</command>
+
+		<command name="Credit-Control" code="272" application-id="16777303" abbreviation="CC">
+			<requestrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Application-Id" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+					<avprule name="Destination-Realm" maximum="1" minimum="1"/>
+					<avprule name="CC-Request-Type" maximum="1" minimum="1"/>
+					<avprule name="CC-Request-Number" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Destination-Host" maximum="1"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="Framed-IP-Address" maximum="1"/>
+					<avprule name="Framed-IPv6-Prefix" maximum="1"/>
+					<avprule name="ADC-Rule-Report"/>
+					<avprule name="Application-Detection-Information"/>
+					<avprule name="Event-Trigger"/>
+					<avprule name="Event-Report-Indication" maximum="1"/>
+					<avprule name="Usage-Monitoring-Information"/>
+					<avprule name="Supported-Features"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</requestrules>
+			<answerrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Application-Id" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+					<avprule name="CC-Request-Type" maximum="1" minimum="1"/>
+					<avprule name="CC-Request-Number" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Result-Code" maximum="1"/>
+					<avprule name="Experimental-Result" maximum="1"/>
+					<avprule name="Framed-IPv6-Prefix" maximum="1"/>
+					<avprule name="Event-Trigger"/>
+					<avprule name="Event-Report-Indication" maximum="1"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="Redirect-Host"/>
+					<avprule name="Redirect-Host-Usage" maximum="1"/>
+					<avprule name="Redirect-Max-Cache-Time" maximum="1"/>
+					<avprule name="ADC-Rule-Remove"/>
+					<avprule name="ADC-Rule-Install"/>
+					<avprule name="Revalidation-Time" maximum="1"/>
+					<avprule name="Usage-Monitoring-Information"/>
+					<avprule name="Error-Message" maximum="1"/>
+					<avprule name="Error-Reporting-Host" maximum="1"/>
+					<avprule name="Supported-Features"/>
+					<avprule name="Failed-AVP"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</answerrules>
+		</command>
+
+		<command name="Re-Auth" code="258" application-id="16777303" abbreviation="RA">
+			<requestrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Application-Id" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+					<avprule name="Destination-Realm" maximum="1" minimum="1"/>
+					<avprule name="Destination-Host" maximum="1" minimum="1"/>
+					<avprule name="Re-Auth-Request-Type" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Session-Release-Cause" maximum="1"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="Event-Trigger"/>
+					<avprule name="Event-Report-Indication" maximum="1"/>
+					<avprule name="ADC-Rule-Remove"/>
+					<avprule name="ADC-Rule-Install"/>
+					<avprule name="Revalidation-Time" maximum="1"/>
+					<avprule name="Usage-Monitoring-Information"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</requestrules>
+			<answerrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Result-Code" maximum="1" />
+					<avprule name="Experimental-Result" maximum="1" />
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="ADC-Rule-Report"/>
+					<avprule name="Event-Report-Indication" maximum="1"/>
+					<avprule name="Error-Message" maximum="1"/>
+					<avprule name="Error-Reporting-Host" maximum="1"/>
+					<avprule name="Failed-AVP"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="AVP"/>
+				</optional>
+			</answerrules>
+		</command>
+
+	</application>
+
+</dictionary>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<oam_config>
+	<alarm enable_user_alarm_code="true" />
+	<msr_lib>
+		<lib>$(UASYS_HOME)/lib/libuastat.so</lib>
+		<lib>$(UASYS_HOME)/lib/libuastat_msr.so</lib>
+        <lib>$(UASYS_HOME)/lib/libuastat_smsc.so</lib>
+	</msr_lib>
+	<class_list project_path="mp" >
+		<class file="system_active_status.xml" />
+		<class file="system_resource.xml" />
+		<class file="system_network_traffic.xml" />
+		<class file="system_netif.xml" />
+		<class file="system_tcp_status.xml" />
+		<class file="directory_info.xml" />
+		<class file="process_status.xml" />
+		<class file="service.xml" />
+		<class file="esme_status.xml" />
+		<class file="diameter.xml" />
+		<class file="test_alarm.xml" />
+		<class file="alarm_code.xml" />
+	</class_list>
+
+	<msg_queue_clear>
+		<threshold max_usage="80" time1="360" msg_cnt1="100" time2="12" msg_cnt2="600" />
+	</msg_queue_clear>
+
+	<mysql host="mysqldb" user="root" password="root.123" dbname="smscoam" port="3306" retry="1" use_ssl="false" />
+	<ipv6 enabled="false" />
+</oam_config>

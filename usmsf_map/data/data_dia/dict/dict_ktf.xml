@@ -1,0 +1,14 @@
+<dictionary>
+	<avp name="IN-Service" code="10001" vendor_id="14380"
+							mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="NumberOfUser" code="10002" vendor_id="14380"
+							mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Integer32"/>
+	</avp>
+	<avp name="PatternOfCall" code="10003" vendor_id="14380"
+							mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Integer32"/>
+	</avp>
+</dictionary>

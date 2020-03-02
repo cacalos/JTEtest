@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE dictionary SYSTEM "dictionary.dtd"> -->
+
+<dictionary>
+	<!-- *********** DIAMETERE MOBILEIPV4 APPLICATION ***********-->
+	<application id="2" name="Mobile IPv4" uri="http://www.ietf.org/rfc/rfc4004.txt">
+
+		<command name="AA-Mobile-Node" code="260" application-id="2" proxiable="1">
+			<requestrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Application-Id" maximum="1" minimum="1"/>
+					<avprule name="User-Name" maximum="1" minimum="1"/>
+					<avprule name="Destination-Realm" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+					<avprule name="MIP-Reg-Request" maximum="1" minimum="1"/>
+					<avprule name="MIP-MN-AAA-Auth" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Acct-Multi-Session-Id" maximum="1"/>
+					<avprule name="Destination-Host" maximum="1"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="MIP-Mobile-Node-Address" maximum="1"/>
+					<avprule name="MIP-Home-Agent-Address" maximum="1"/>
+					<avprule name="MIP-Feature-Vector" maximum="1"/>
+					<avprule name="MIP-Originating-Foreign-AAA" maximum="1"/>
+					<avprule name="Authorization-Lifetime" maximum="1"/>
+					<avprule name="Auth-Session-State" maximum="1"/>
+					<avprule name="MIP-FA-Challenge" maximum="1"/>
+					<avprule name="MIP-Candidate-Home-Agent-Host" maximum="1"/>
+					<avprule name="MIP-Home-Agent-Host" maximum="1"/>
+					<avprule name="MIP-HA-to-FA-SPI" maximum="1"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</requestrules>
+			<answerrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Application-Id" maximum="1" minimum="1"/>
+					<avprule name="Result-Code" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Acct-Multi-Session-Id" maximum="1"/>
+					<avprule name="User-Name" maximum="1"/>
+					<avprule name="Authorization-Lifetime" maximum="1"/>
+					<avprule name="Auth-Session-State" maximum="1"/>
+					<avprule name="Error-Message" maximum="1"/>
+					<avprule name="Error-Reporting-Host" maximum="1"/>
+					<avprule name="Re-Auth-Request-Type" maximum="1"/>
+					<avprule name="MIP-Feature-Vector" maximum="1"/>
+					<avprule name="MIP-Reg-Reply" maximum="1"/>
+					<avprule name="MIP-MN-to-FA-MSA" maximum="1"/>
+					<avprule name="MIP-MN-to-HA-MSA" maximum="1"/>
+					<avprule name="MIP-FA-to-MN-MSA" maximum="1"/>
+					<avprule name="MIP-FA-to-HA-MSA" maximum="1"/>
+					<avprule name="MIP-HA-to-MN-MSA" maximum="1"/>
+					<avprule name="MIP-HA-to-FA-MSA" maximum="1"/>
+					<avprule name="MIP-MSA-Lifetime" maximum="1"/>
+					<avprule name="MIP-Home-Agent-Address" maximum="1"/>
+					<avprule name="MIP-Mobile-Node-Address" maximum="1"/>
+					<avprule name="MIP-Filter-Rule"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="AVP"/>
+				</optional>
+			</answerrules>
+		</command>
+
+		<command name="Home-Agent-MIP" code="262" application-id="2" proxiable="1">
+			<requestrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Application-Id" maximum="1" minimum="1"/>
+					<avprule name="Authorization-Lifetime" maximum="1" minimum="1"/>
+					<avprule name="Auth-Session-State" maximum="1" minimum="1"/>
+					<avprule name="MIP-Reg-Request" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+					<avprule name="User-Name" maximum="1" minimum="1"/>
+					<avprule name="Destination-Realm" maximum="1" minimum="1"/>
+					<avprule name="MIP-Feature-Vector" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Destination-Host" maximum="1"/>
+					<avprule name="MIP-MN-to-HA-MSA" maximum="1"/>
+					<avprule name="MIP-MN-to-FA-MSA" maximum="1"/>
+					<avprule name="MIP-HA-to-MN-MSA" maximum="1"/>
+					<avprule name="MIP-HA-to-FA-MSA" maximum="1"/>
+					<avprule name="MIP-MSA-Lifetime" maximum="1"/>
+					<avprule name="MIP-Originating-Foreign-AAA" maximum="1"/>
+					<avprule name="MIP-Mobile-Node-Address" maximum="1"/>
+					<avprule name="MIP-Home-Agent-Address" maximum="1"/>
+					<avprule name="MIP-Filter-Rule"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</requestrules>
+			<answerrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Application-Id" maximum="1" minimum="1"/>
+					<avprule name="Result-Code" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Acct-Multi-Session-Id" maximum="1"/>
+					<avprule name="User-Name" maximum="1"/>
+					<avprule name="Error-Reporting-Host" maximum="1"/>
+					<avprule name="Error-Message" maximum="1"/>
+					<avprule name="MIP-Reg-Reply" maximum="1"/>
+					<avprule name="MIP-Home-Agent-Address" maximum="1"/>
+					<avprule name="MIP-Mobile-Node-Address" maximum="1"/>
+					<avprule name="MIP-FA-to-HA-SPI" maximum="1"/>
+					<avprule name="MIP-FA-to-MN-SPI" maximum="1"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="AVP"/>
+				</optional>
+			</answerrules>
+		</command>
+
+  </application>
+</dictionary>

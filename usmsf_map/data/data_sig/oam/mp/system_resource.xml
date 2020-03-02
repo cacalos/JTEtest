@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class_list>
+  <class name="CPU_USAGE" id="10.1" enabled="true" alarm="true" stat="true" min_stat="true" min15_stat="true" real_time="true">
+    <measure interval="5" daily_msr_time="15:36:12">
+      <field id="0" type="float" name="usage" rts="true" rt_graph="true"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="1001010" name="CPU_USAGE" field_id="0" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="%">
+          <minor value="70" times="3"/>
+          <major value="80" times="3"/>
+          <critical value="90" times="3"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M" using_function="false">
+      <item field_id="0" type="AVG"/>
+      <item field_id="0" type="MAX"/>
+    </statistics>
+    <object_list>
+      <object id="1.1" name="CPU_USAGE">
+        <alarm_list>
+          <alarm id="0" code="1001010" name="CPU_USAGE" field_id="0" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false" duplicate_alarm_msg="false">
+            <threshold unit="%">
+              <minor value="70" times="3"/>
+              <major value="80" times="3"/>
+              <critical value="90" times="3"/>
+            </threshold>
+          </alarm>
+        </alarm_list>
+      </object>
+    </object_list>
+  </class>
+  <class name="MEMORY_USAGE" id="10.2" enabled="true" alarm="true" stat="true" min_stat="true" min15_stat="true" real_time="true">
+    <measure interval="30">
+      <field id="0" type="float" name="usage" rts="true" rt_graph="true"/>
+      <field id="1" type="integer" name="total" rts="true" rt_graph="true"/>
+      <field id="2" type="integer" name="used" rts="true" rt_graph="true"/>
+      <field id="3" type="integer" name="free"/>
+      <field id="4" type="integer" name="cached"/>
+      <field id="5" type="integer" name="buffers"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="1002010" name="MEMORY_USAGE" field_id="0" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="%">
+          <minor value="70" times="1"/>
+          <major value="80" times="1"/>
+          <critical value="90" times="1"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M">
+      <item field_id="0" type="AVG"/>
+      <item field_id="1" type="AVG"/>
+      <item field_id="2" type="AVG"/>
+      <item field_id="3" type="AVG"/>
+      <item field_id="4" type="AVG"/>
+      <item field_id="5" type="AVG"/>
+    </statistics>
+    <object_list>
+      <object id="1.1" name="MEMORY_USAGE"/>
+    </object_list>
+  </class>
+  <class name="DISK_USAGE" id="10.3" enabled="true" alarm="true" stat="true" min_stat="true" min15_stat="true" real_time="true">
+    <measure interval="30">
+      <field id="0" type="string" name="mounted"/>
+      <field id="1" type="float" name="usage" rts="true" rt_graph="true"/>
+      <field id="2" type="integer" name="total" rts="true" rt_graph="true"/>
+      <field id="3" type="integer" name="used" rts="true" rt_graph="true"/>
+      <field id="4" type="integer" name="available"/>
+      <field id="5" type="string" name="file_system"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="1003010" name="DISK_USAGE" field_id="1" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="%">
+          <minor value="70" times="1"/>
+          <major value="80" times="1"/>
+          <critical value="90" times="1"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="AVG"/>
+      <item field_id="2" type="AVG"/>
+      <item field_id="3" type="AVG"/>
+      <item field_id="4" type="AVG"/>
+    </statistics>
+    <object_list>
+      <object id="1.1" name="/">
+        <alarm_list>
+          <alarm id="0" code="1003010" name="DISK_USAGE" field_id="1" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false" duplicate_alarm_msg="false">
+            <threshold unit="%">
+              <minor value="70" times="1"/>
+              <major value="80" times="1"/>
+              <critical value="90" times="1"/>
+            </threshold>
+          </alarm>
+        </alarm_list>
+      </object>
+    </object_list>
+  </class>
+  <class name="DISK_IO" id="10.4" enabled="true" alarm="false" stat="true" min_stat="true" min15_stat="true" real_time="true">
+    <measure interval="30">
+      <field id="0" type="string" name="device"/>
+      <field id="1" type="float" name="usage" rts="true" rt_graph="true"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="1004010" name="DISK_IO" field_id="1" enabled="false" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="%">
+          <minor value="85" times="1"/>
+          <major value="90" times="1"/>
+          <critical value="95" times="1"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M">
+      <item field_id="0" type="STR"/>
+      <item field_id="1" type="AVG"/>
+      <item field_id="1" type="MAX"/>
+    </statistics>
+    <object_list>
+      <object_range name="disk" id1_begin="1" id1_end="1" id2_begin="1" id2_end="5"/>
+    </object_list>
+  </class>
+  <class name="KERNEL_STATUS" id="12.2" enabled="true" alarm="true" stat="true" min_stat="true" min15_stat="true" real_time="false">
+    <measure interval="30">
+      <field id="0" type="integer" name="PROC_COUNT"/>
+      <field id="1" type="integer" name="ZOMBIE_COUNT"/>
+      <field id="2" type="integer" name="TOTAL_FD"/>
+      <field id="3" type="integer" name="OPEN_FD"/>
+      <field id="4" type="integer" name="FREE_FD"/>
+      <field id="5" type="calculation" name="FD_USAGE" expression="0:3*100/0:2"/>
+    </measure>
+    <alarm_list>
+      <!--alarm id="0" code="1202010" name="ZOMBIE_COUNT" field_id="1" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="%">
+          <minor value="5" times="1"/>
+          <major value="10" times="1"/>
+          <critical value="20" times="1"/>
+        </threshold>
+      </alarm-->
+      <alarm id="1" code="1202020" name="FD_COUNT" field_id="3" enabled="false" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="%">
+          <minor value="4000" times="1"/>
+          <major value="5000" times="1"/>
+          <critical value="10000" times="1"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M">
+      <item field_id="0" type="NON"/>
+      <item field_id="1" type="MAX"/>
+      <item field_id="2" type="NON"/>
+      <item field_id="3" type="MAX"/>
+      <item field_id="4" type="NON"/>
+      <item field_id="5" type="CALC" expression="0:3*100/0:2"/>
+    </statistics>
+    <object_list>
+      <object id="1.1" name="KERNEL_STATUS"/>
+    </object_list>
+  </class>
+  <class name="SYSTEM_UPTIME" id="10.6" enabled="true" alarm="false" stat="false" min_stat="false" real_time="true">
+    <measure interval="60">
+      <field id="0" type="integer" name="UPTIME"/>
+    </measure>
+    <alarm_list/>
+    <statistics enabled="false" period="5M" using_function="false">
+      <item field_id="0" type="AVG"/>
+    </statistics>
+    <object_list>
+      <object id="1.1" name="SYSTEM_UPTIME"/>
+    </object_list>
+  </class>
+  <class name="NTP_STATUS" id="10.7" enabled="true" alarm="true" stat="false" min_stat="false" real_time="false">
+    <measure interval="10" daily_msr_time="15:36:12">
+      <field id="0" type="integer" name="status"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="1007010" name="NTP_STATUS" field_id="0" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="BL">
+          <minor value="0" times="2"/>
+          <major value="0" times="2"/>
+          <critical value="1" times="2"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="false" period="5M" using_function="false"/>
+    <uastat_measure enabled="true" group_name="LOGSTAT" name="NTP_STATUS" used_index="false"/>
+    <object_list>
+      <object id="1.1" name="NTP_STATUS"/>
+    </object_list>
+  </class>
+</class_list>

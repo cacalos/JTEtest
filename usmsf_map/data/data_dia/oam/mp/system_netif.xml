@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class_list>
+  <class name="NET_INTERFACE" id="18.1" enabled="true" alarm="true" stat="false" min_stat="false" real_time="false">
+    <measure interval="5">
+      <field id="0" type="string" name="NET_INTERFACE"/>
+      <field id="1" type="integer" name="STATUS"/>
+      <field id="2" type="integer" name="FLAG"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="1801010" name="NET_INTERFACE" field_id="1" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="BL">
+          <minor value="0" times="1"/>
+          <major value="0" times="1"/>
+          <critical value="1" times="1"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="false" period="5M">
+      <item field_id="0" type="STR"/>
+      <item field_id="3" type="SUM"/>
+    </statistics>
+    <object_list>
+      <object id="1.1" name="eth0"/>
+      <object id="1.2" name="eth1"/>
+    </object_list>
+  </class>
+</class_list>

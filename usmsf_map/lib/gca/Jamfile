@@ -1,0 +1,25 @@
+SubDir TOP lib gca ;
+SubDirHdrs $(TOP)/inc $(UALIB_SRC_HOME)/include $(UXLIB_SRC_HOME)/include $(UDIA_SRC_HOME)/ ;
+SubDirHdrs $(UXCUTOR_SRC_HOME)/include ;
+
+#SOURCES = iXGCA iXSem iXMoQ iXMtQ iXProxyQ iXTrace iXLog ;
+#SOURCES = iXGCA iXMoQ iXMtQ iXProxyQ iXTrace iXLog iXDiameterNode iXInQ ;
+SOURCES = iXGCA iXMoQ iXMtQ iXProxyQ iXstat iXTrace iXLog ;
+
+TARGET = libGCA ;
+SHLTARGET = $(TARGET)$(SUFSHARED) ;
+
+# .c -> .o compile option
+ObjectCcFlags $(SOURCES)$(SUFOBJ) : $(LOCAL_DEFINES) $(SYS_CCFLAGS) $(SYS_SHAREDCCFLAGS) ;
+
+Library $(TARGET) : $(SOURCES).c ;
+SharedLibraryMain $(SHLTARGET) : $(TARGET)$(SUFLIB) ;
+
+#LINKLIBS on $(SHLTARGET) = -L$(UASYS_HOME)/lib -lua_common -lsys_lib ;
+
+InstallLib $(UASYS_HOME)/lib : $(TARGET)$(SUFLIB) ;
+Copy $(TARGET)$(SUFLIB) : $(SMSCHOME)/lib ;
+
+# copy files to lib directory
+InstallBin $(UASYS_HOME)/lib : $(TARGET)$(SUFSHARED) ;
+CopySysFile $(TARGET)$(SUFSHARED) : $(TOP)/lib ;

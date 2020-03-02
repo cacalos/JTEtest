@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+
+  <xsd:simpleType name="numerictype">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="string"/>
+      <xsd:enumeration value="integer"/>
+      <xsd:enumeration value="decimal"/>
+      <xsd:enumeration value="float"/>
+      <xsd:enumeration value="calculation"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="unittype">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="BL"/>
+      <xsd:enumeration value="INT"/>
+      <xsd:enumeration value="%"/>
+      <xsd:enumeration value="-%"/>
+      <xsd:enumeration value="NON"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="calcType">
+  	<xsd:restriction base="xsd:string">
+			<!--xsd:pattern value="[(]*([0-9]+[:][0-9]+[(,),*,/,+,\-]*)+[)]*[(,),0-9,*,/,+,\-]*[:]*[(,),0-9]*"/-->
+			<xsd:pattern value="[(]*([0-9]+[:][0-9]+[(,),*,/,+,\-]*)+[)]*[(,),0-9,*,/,+,\-]*[:]*[(,),0-9]*[(]*([0-9]+[:][0-9]+[(,),*,/,+,\-]*)*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="measurePeriodType">
+  	<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9,S]*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="oidType">
+  	<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9,.]*"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="nonBusyHourType">
+  	<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-1]{24}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="statPeriodType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="1M"/>
+      <xsd:enumeration value="5M"/>
+      <xsd:enumeration value="1H"/>
+      <xsd:enumeration value="1D"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+
+  <xsd:simpleType name="statType">
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="SUM"/>
+      <xsd:enumeration value="AVG"/>
+      <xsd:enumeration value="MIN"/>
+      <xsd:enumeration value="MAX"/>
+      <xsd:enumeration value="STR"/>
+      <xsd:enumeration value="CALC"/>
+      <xsd:enumeration value="NON"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:simpleType name="timeType">
+  	<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9]{2}:[0-9]{2}:[0-9]{2}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+
+  <xsd:element name="class_list" type="class_listType" />
+
+  <xsd:complexType name="class_listType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="class" type="classType" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="classType">
+    <xsd:sequence>
+      <xsd:element name="measure" type="measureType" />
+      <xsd:element name="alarm_list" type="alarm_listType" />
+      <xsd:element minOccurs="0" name="statistics" type="statisticsType" />
+	    <xsd:element minOccurs="0" name="min_stat" type="min_statType" />
+	    <xsd:element name="object_list" type="object_listType" />
+    </xsd:sequence>
+    <xsd:attribute name="name" type="xsd:string" use="required" />
+    <xsd:attribute name="id" type="oidType" use="required" />
+    <xsd:attribute name="enabled" type="xsd:boolean" use="required" />
+    <xsd:attribute name="alarm" type="xsd:boolean" use="required" />
+    <xsd:attribute name="stat" type="xsd:boolean" use="required" />
+    <xsd:attribute name="min_stat" type="xsd:boolean" use="required" />
+    <xsd:attribute name="real_time" type="xsd:boolean" use="required" />
+  </xsd:complexType>
+
+  <xsd:complexType name="object_listType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="object" type="objectType" />
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="object_range" type="object_rangeType" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="object_rangeType">
+    <xsd:attribute name="name" type="xsd:string" use="required" />
+    <xsd:attribute name="id1_begin" type="xsd:int" use="required" />
+    <xsd:attribute name="id1_end" type="xsd:int" use="required" />
+    <xsd:attribute name="id2_begin" type="xsd:int" use="required" />
+    <xsd:attribute name="id2_end" type="xsd:int" use="required" />
+  </xsd:complexType>
+
+  <xsd:complexType name="objectType">
+    <xsd:attribute name="id" type="oidType" use="required" />
+    <xsd:attribute name="name" type="xsd:string" use="required" />
+  </xsd:complexType>
+
+  <xsd:complexType name="min_statType">
+    <xsd:attribute name="enabled" type="xsd:boolean" use="required" />
+  </xsd:complexType>
+
+  <xsd:complexType name="statisticsType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="item" type="itemType" />
+    </xsd:sequence>
+    <xsd:attribute name="enabled" type="xsd:boolean" use="required" />
+    <xsd:attribute name="period" type="statPeriodType" use="required" />
+    <xsd:attribute name="using_user_stat_function" type="xsd:boolean" />
+  </xsd:complexType>
+
+  <xsd:complexType name="itemType">
+    <xsd:attribute name="field_id" type="xsd:int" use="required" />
+    <xsd:attribute name="type" type="statType" use="required" />
+    <xsd:attribute name="expression" type="calcType" />
+  </xsd:complexType>
+
+  <xsd:complexType name="alarm_listType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" maxOccurs="unbounded" name="alarm" type="alarmType" />
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="alarmType">
+    <xsd:sequence>
+      <xsd:element minOccurs="0" name="threshold" type="thresholdType" />
+      <xsd:element minOccurs="0" name="non_busy_hour" type="non_busy_hourType" />
+    </xsd:sequence>
+    <xsd:attribute name="id" type="xsd:int" use="required" />
+    <xsd:attribute name="code" type="xsd:int" use="required" />
+    <xsd:attribute name="name" type="xsd:string" use="required" />
+    <xsd:attribute name="field_id" type="xsd:int" use="required" />
+    <xsd:attribute name="enabled" type="xsd:boolean" use="required" />
+    <xsd:attribute name="masked" type="xsd:boolean" use="required" />
+    <xsd:attribute name="standby_disabled" type="xsd:boolean" use="required" />
+    <xsd:attribute name="non_busy_hour" type="xsd:boolean" use="required" />
+    <xsd:attribute name="auto_release_time" type="xsd:int" />
+    <xsd:attribute name="release_time" type="xsd:int" />
+    <xsd:attribute name="duplicate_alarm_msg" type="xsd:boolean" />
+  </xsd:complexType>
+
+  <xsd:complexType name="non_busy_hourType">
+    <xsd:sequence>
+      <xsd:element name="minor" type="minorType" />
+      <xsd:element name="major" type="majorType" />
+      <xsd:element name="critical" type="criticalType" />
+    </xsd:sequence>
+    <xsd:attribute name="enabled" type="xsd:boolean" use="required" />
+    <xsd:attribute name="issued" type="xsd:boolean" use="required" />
+    <xsd:attribute name="hour" type="nonBusyHourType" use="required" />
+  </xsd:complexType>
+
+  <xsd:complexType name="criticalType">
+    <xsd:attribute name="value" type="xsd:int" use="required" />
+    <xsd:attribute name="times" type="xsd:int" use="required" />
+  </xsd:complexType>
+  <xsd:complexType name="majorType">
+    <xsd:attribute name="value" type="xsd:int" use="required" />
+    <xsd:attribute name="times" type="xsd:int" use="required" />
+  </xsd:complexType>
+  <xsd:complexType name="minorType">
+    <xsd:attribute name="value" type="xsd:int" use="required" />
+    <xsd:attribute name="times" type="xsd:int" use="required" />
+  </xsd:complexType>
+
+  <xsd:complexType name="thresholdType">
+    <xsd:sequence>
+      <xsd:element name="minor" type="minorType" />
+      <xsd:element name="major" type="majorType" />
+      <xsd:element name="critical" type="criticalType" />
+    </xsd:sequence>
+    <xsd:attribute name="unit" type="unittype" use="required" />
+  </xsd:complexType>
+
+  <xsd:complexType name="measureType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="field" type="fieldType" />
+    </xsd:sequence>
+    <xsd:attribute name="interval" type="measurePeriodType" use="required" />
+    <xsd:attribute name="daily_msr_time" type="timeType" />
+  </xsd:complexType>
+
+  <xsd:complexType name="fieldType">
+    <xsd:attribute name="id" type="xsd:int" use="required" />
+    <xsd:attribute name="type" type="numerictype" use="required" />
+    <xsd:attribute name="name" type="xsd:string" use="required" />
+    <xsd:attribute name="expression" type="calcType" />
+  </xsd:complexType>
+
+</xsd:schema>

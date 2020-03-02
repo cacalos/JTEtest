@@ -34,9 +34,9 @@ COPY --from=camel.uangel.com:5000/diameter-centos7.5 /home/app/UANGEL/UXCORE/udi
 COPY --from=camel.uangel.com:5000/diameter-centos7.5 /home/app/UANGEL/UXCORE/udia/bin/* ./HOME/bin/
 COPY --from=camel.uangel.com:5000/diameter-centos7.5 /home/app/UANGEL ./UANGEL
 
-#COPY usmsf_map /home/app/SMSF
+COPY usmsf_map /home/app/SMSF
 COPY lib/* /home/app/HOME/lib/
 COPY env/.* /home/app/
-#RUN ln -s /home/app/HOME home;ln -s /home/app/SMSF src
+RUN ln -s /home/app/HOME home;ln -s /home/app/SMSF src
 RUN ls /home/app
 									

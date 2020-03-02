@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "dictionary.dtd">
+
+<dictionary>
+
+	<!-- ************* DIAMETER SY APPLICATION ************* -->
+	<application id="16777302" name="Sy" uri="http://www.3gpp.org/DynaReport/29219.htm">
+		<command name="Spending-Limit" code="8388635" abbreviation="SL">
+			<requestrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Application-Id" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+					<avprule name="Destination-Realm" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Destination-Host" maximum="1"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="SL-Request-Type" maximum="1"/>
+					<avprule name="Subscription-Id" trace_id="yes"/>
+					<avprule name="Policy-Counter-Identifier"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</requestrules>
+			<answerrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Auth-Application-Id" maximum="1" minimum="1"/>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Result-Code" maximum="1"/>
+					<avprule name="Experimental-Result" maximum="1"/>
+					<avprule name="Policy-Counter-Status-Report"/>
+					<avprule name="Error-Message" maximum="1"/>
+					<avprule name="Error-Reporting-Host" maximum="1"/>
+					<avprule name="Failed-AVP"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="Redirect-Host"/>
+					<avprule name="Redirect-Host-Usage" maximum="1"/>
+					<avprule name="Redirect-Max-Cache-Time" maximum="1"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="AVP"/>
+				</optional>
+			</answerrules>
+		</command>
+
+		<command name="Spending-Status-Notification" code="8388636" abbreviation="SSN">
+			<requestrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+					<avprule name="Destination-Realm" maximum="1" minimum="1"/>
+					<avprule name="Auth-Application-Id" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Destination-Host" maximum="1"/>
+					<avprule name="Subscription-Id" trace_id="yes"/>  <!-- It needs confirm to DataBillingPlatform Team -->
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="Policy-Counter-Status-Report"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</requestrules>
+			<answerrules>
+				<fixed>
+					<avprule name="Session-Id" maximum="1" minimum="1"/>
+				</fixed>
+				<required>
+					<avprule name="Origin-Host" maximum="1" minimum="1"/>
+					<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+				</required>
+				<optional>
+					<avprule name="Result-Code" maximum="1"/>
+					<avprule name="Experimental-Result" maximum="1"/>
+					<avprule name="Origin-State-Id" maximum="1"/>
+					<avprule name="Error-Message" maximum="1"/>
+					<avprule name="Error-Reporting-Host" maximum="1"/>
+					<avprule name="Redirect-Host"/>
+					<avprule name="Redirect-Host-Usage" maximum="1"/>
+					<avprule name="Redirect-Max-Cache-Time" maximum="1"/>
+					<avprule name="Failed-AVP"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="AVP"/>
+				</optional>
+			</answerrules>
+		</command>
+	</application>
+</dictionary>

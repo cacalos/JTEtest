@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class_list>
+  <class name="PROC_STATUS" id="20.1" enabled="true" alarm="true" stat="true" min_stat="true" min15_stat="true" real_time="true">
+    <measure interval="5">
+      <field id="0" type="string" name="processName"/>
+      <field id="1" type="integer" name="status"/>
+      <field id="2" type="float" name="cpu"/>
+      <field id="3" type="float" name="memory"/>
+      <field id="4" type="integer" name="fd"/>
+      <field id="5" type="integer" name="killByUser"/>
+      <field id="6" type="integer" name="initCount"/>
+      <field id="7" type="integer" name="id"/>
+      <field id="8" type="integer" name="gid"/>
+      <field id="9" type="string" name="group"/>
+      <field id="10" type="integer" name="msgQId"/>
+      <field id="11" type="integer" name="msgQCnt"/>
+      <field id="12" type="integer" name="msgQUsedSize"/>
+      <field id="13" type="integer" name="msgQMaxSize"/>
+      <field id="14" type="float" name="msgQUsage"/>
+      <field id="15" type="integer" name="msgQRcvTime"/>
+      <field id="16" type="integer" name="msgQSndTime"/>
+    </measure>
+    <alarm_list>
+      <alarm id="0" code="2001010" name="PROC_STATUS" field_id="1" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="BL">
+          <minor value="0" times="1"/>
+          <major value="0" times="1"/>
+          <critical value="1" times="1"/>
+        </threshold>
+      </alarm>
+      <alarm id="1" code="2001011" name="PROC_MSGQ" field_id="14" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false">
+        <threshold unit="%">
+          <minor value="30" times="1"/>
+          <major value="50" times="1"/>
+          <critical value="70" times="1"/>
+        </threshold>
+      </alarm>
+    </alarm_list>
+    <statistics enabled="true" period="5M">
+      <item field_id="0" type="STR"/>
+      <item field_id="2" type="AVG"/>
+      <item field_id="2" type="MAX"/>
+      <item field_id="3" type="AVG"/>
+      <item field_id="4" type="AVG"/>
+    </statistics>
+    <object_list>
+    </object_list>
+  </class>
+</class_list>

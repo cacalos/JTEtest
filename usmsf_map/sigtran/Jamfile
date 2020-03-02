@@ -1,0 +1,6 @@
+SubDir TOP sigtran ;
+
+SubInclude TOP sigtran common ;
+SubInclude TOP sigtran mo ;
+SubInclude TOP sigtran mt ;
+

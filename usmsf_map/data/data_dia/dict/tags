@@ -1,0 +1,886 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+answerrules	dict_3gpp_CxDx_TS29229.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_GiSGi_TS29061.xml	/^		<answerrules>$/;"	t
+answerrules	dict_3gpp_Gmb_TS29061.xml	/^		<answerrules>$/;"	t
+answerrules	dict_3gpp_Gx_TS29212.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_Gxx_TS29212.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_Rf_TS32299.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_Ro_TS32299.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_Rx_TS29214.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_S6a_S6d_TS29272.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_S6b_TS29273.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_S6c_TS29338.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_S9_TS29215.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_Sd_TS29212.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_Sh_TS29329.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_Sy_TS29219.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_T4_TS29337.xml	/^			<answerrules>$/;"	t
+answerrules	dict_3gpp_sgd.xml	/^		<answerrules>$/;"	t
+answerrules	dict_common.xml	/^			<answerrules>$/;"	t
+answerrules	dict_ietf_base_RFC6733.xml	/^			<answerrules>$/;"	t
+answerrules	dict_ietf_base_acr_RFC6733.xml	/^			<answerrules>$/;"	t
+answerrules	dict_ietf_cc_RFC4006.xml	/^			<answerrules>$/;"	t
+answerrules	dict_ietf_eap_RFC4072.xml	/^			<answerrules>$/;"	t
+answerrules	dict_ietf_mip4_RFC4004.xml	/^			<answerrules>$/;"	t
+answerrules	dict_ietf_nas_RFC4005.xml	/^			<answerrules>$/;"	t
+answerrules	dict_tksel_customized.xml	/^			<answerrules>$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="3GPP-AAA-Server-Name" code="318" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="3GPP-WLAN-APN-Id" code="100" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="AAR-Flags" code="1539" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="AN-Trusted" code="1503" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="ANID" code="1504" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="APN-Authorized" code="307" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="APN-Barring-Type" code="309" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Access-Authorization-Flags" code="1511" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Access-Network-Info" code="1526" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Aggregated-Congestion-Info" code="4000" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Aggregated-RUCI-Report" code="4001" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Associated-Registered-Identities" code="647" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Authentication-Information-SIM" code="301" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Authentication-Method" code="300" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Authorization-Information-SIM" code="302" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Call-ID-SIP-Header" code="643" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Charging-Characteristics" code="314" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Charging-Data" code="304" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Charging-Nodes" code="315" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Communication-Failure-Information" code="4300" mandatory="must" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Conditional-Restriction" code="4007" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Congestion-Level-Definition" code="4002" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Congestion-Level-Range" code="4003" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Congestion-Level-Set-Id" code="4004" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Congestion-Level-Value" code="4005" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Congestion-Location-Id" code="4006" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Connectivity-Flags" code="1529" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Contact" code="641" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="DEA-Flags" code="1521" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="DER-Flags" code="1520" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="DER-S6b-Flags" code="1523" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="DSAI-Tag" code="711" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Emergency-Services" code="1538" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Expiry-Time" code="709" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="External-Identifier" code="3111" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="From-SIP-Header" code="644" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Full-Network-Name" code="1516" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="HESSID" code="1525" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="HSS-Cause" code="3109" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="IMEI-Check-In-VPLMN-Result" code="1540" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="IMSI-List" code="4009" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="IP-SM-GW-Realm" code="3112" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Identity-with-Emergency-Registration" code="651" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="LIA-Flags" code="653" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Load" code="99999" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Loose-Route-Indication" code="638" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="MIP-FA-RK" code="1506" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="MIP-FA-RK-SPI" code="1507" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="MSISDN" code="701" vendor_id="10415" mandatory="must" display="HEXSTR">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Max-Requested-Bandwidth" code="313" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Maximum-Number-Accesses" code="319" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Maximum-Wait-Time" code="1537" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Multiple-Registration-Indication" code="648" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Non-3GPP-IP-Access" code="1501" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Non-3GPP-IP-Access-APN" code="1502" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Non-3GPP-User-Data" code="1500" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Number-Of-UE-Per-Location-Configuration" code="4306" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Number-Of-UE-Per-Location-Report" code="4307" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Originating-Request" code="633" mandatory="must" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Origination-Time-Stamp" code="1536" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="PPR-Flags" code="1508" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Path" code="640" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Pending-Policy-Counter-Change-Time" code="2906" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Pending-Policy-Counter-Information" code="2905" vendor_id="10415" mandatory="must" protected="may">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Policy-Counter-Identifier" code="2901" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Policy-Counter-Status" code="2902" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Policy-Counter-Status-Report" code="2903" vendor_id="10415" mandatory="must" protected="may">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Primary-OCS-Charging-Function-Name" code="316" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Priviledged-Sender-Indication" code="652" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="RAR-Flags" code="1522" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="RCAF-Id" code="4010" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="RUCI-Action" code="4012" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Record-Route" code="646" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Reporting-Restriction" code="4011" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Restoration-Info" code="649" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Routing-Policy" code="312" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="SCSCF-Restoration-Info" code="639" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="SIR-Flags" code="3110" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="SL-Request-Type" code="2904" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="SM-Back-Off-Timer" code="1534" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="SSID" code="1524" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Secondary-OCS-Charging-Function-Name" code="317" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Send-Data-Indication" code="710" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Service-Data" code="3107" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Service-Parameters" code="3105" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Session-Priority" code="650" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Session-Request-Type" code="311" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Short-Network-Name" code="1517" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Subscription-Info" code="642" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Subsession-Decision-Info" code="2200" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Subsession-Enforcement-Info" code="2201" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="T4-Data" code="3108" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="T4-Parameters" code="3106" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="TA-Service-Key-List" code="85000" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="TWAG-CP-Address" code="1531" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="TWAG-UP-Address" code="1532" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="TWAN-Access-Info" code="1510" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="TWAN-Connection-Mode" code="1527" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="TWAN-Connectivity-Parameters" code="1528" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="TWAN-Default-APN-Context-Id" code="1512" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="TWAN-PCO" code="1530" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="TWAN-S2a-Failure-Cause" code="1533" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="To-SIP-Header" code="645" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Trace-Info" code="1505" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Transport-Access-Type" code="1519" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Trust-Relationship-Update" code="1515" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="UAR-Flags" code="637" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="User-Identity" code="700" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="WLAN-3GPP-IP-Access" code="306" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="WLAN-Access" code="305" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="WLAN-Direct-IP-Access" code="310" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="WLAN-Identifier" code="1509" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="WLAN-User-Data" code="303" vendor_id="10415" mandatory="must">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="WLCP-Key" code="1535" vendor_id="10415" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Wildcarded-IMPU" code="636" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="Wildcarded-Public-Identity" code="634" vendor_id="10415">$/;"	t
+avp	dict_3gpp_avps.xml	/^	<avp name="eNodeB-ID" code="4008" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="AAA-Failure-Indication" code="1518" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="AESE-Communication-Pattern" code="3113" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="AESE-Communication-Pattern-Config-Status" code="3120" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="AESE-Error-Report" code="3121" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Absent-Subscriber-Diagnostic-T4" code="3201" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Absent-User-Diagnostic-SM" code="3322" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Accuracy" code="3137" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Action-Type" code="3005" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Additional-Serving-Node" code="2406" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Application-Port-Identifier" code="3010" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Association-Type" code="3138" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="BSSGP-Cause" code="4309" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="CIR-Flags" code="3145" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="CMR-Flags" code="4317" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Cause-Type" code="4301" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Communication-Duration-Time" code="3116" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Communication-Pattern-Set" code="3114" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Connection-Action" code="4314" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Counter-Value" code="4319" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="DRA-Binding" code="2208" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="DRA-Deployment" code="2206" vendor_id="10415" mandatory="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Delivery-Outcome" code="3009" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Destination-SIP-URI" code="3327" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Device-Action" code="3001" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Device-Notification" code="3002" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Downlink-Rate-Limit" code="4312" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Event-Handling" code="3149" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Extended-PCO" code="4313" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Feature-Supported-In-Final-Target" code="3012" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="GMLC-Address" code="2405" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="GMM-Cause" code="4304" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="HSS-ID" code="3325" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="IMEI-Change" code="3141" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="IP-SM-GW-Name" code="3101" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="IP-SM-GW-Number" code="3100" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="IP-SM-GW-SM-Delivery-Outcome" code="3320" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="LCS-Capabilities-Sets" code="2404" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="LMSI" code="2400" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Load-Type" code="99998" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Load-Value" code="99997" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Location-Information-Configuration" code="3135" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="MME-Absent-User-Diagnostic-SM" code="3313" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="MME-Name" code="2402" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="MME-Realm" code="2408" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="MME-SM-Delivery-Outcome" code="3317" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="MONTE-Location-Type" code="3136" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="MSC-Absent-User-Diagnostic-SM" code="3314" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="MSC-Number" code="2403" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="MSC-SM-Delivery-Outcome" code="3318" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="MTC-Error-Diagnostic" code="3203" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="MWD-Status" code="3312" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Maximum-Detection-Time" code="3131" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Maximum-Latency" code="3133" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Maximum-Number-of-Reports" code="3128" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Maximum-Response-Time" code="3134" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Maximum-Retransmission-Time" code="3330" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Maximum-UE-Availability-Time" code="3329" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Monitoring-Duration" code="3130" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Monitoring-Event-Config-Status" code="3142" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Monitoring-Event-Configuration" code="3122" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Monitoring-Event-Report" code="3123" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Monitoring-Type" code="3127" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Multiple-BBERF-Action" code="2204" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="NIDD-Authorization-Request" code="3150" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="NIDD-Authorization-Response" code="3151" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Network-Area-Info-List" code="4201" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Node-Type" code="3153" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Non-IP-Data" code="4315" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Number-Of-UEs" code="4209" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="OC-Peer-Algo" code="99995" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="OFR-Flags" code="3328" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Old-Reference-Number" code="3011" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Originating-SIP-URI" code="3326" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="PCRF-Address" code="2207" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="PPR-Address" code="2407" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Payload" code="3004" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Periodic-Communication-Indicator" code="3115" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Periodic-Time" code="3117" vendor_id="10415" mandatory="may" protected="must" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Priority-Indication" code="3006" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="RANAP-Cause" code="4303" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="RDR-Flags" code="3323" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="RIA-Flags" code="2411" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="RRC-Cause-Counter" code="4318" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="RRC-Counter-Timestamp" code="4320" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Reachability-Information" code="3140" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Reachability-Type" code="3132" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Reference-ID-Validity-Time" code="3148" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Reference-Id" code="4202" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Reference-Number" code="3007" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Request-Status" code="3008" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Requested-Retransmission-Time" code="3331" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Roaming-Information" code="3139" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="S1AP-Cause" code="4302" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="S6t-HSS-Cause" code="3154" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SC-Address" code="3300" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SCEF-ID" code="3125" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SCEF-Reference-ID" code="3124" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SCEF-Reference-ID-for-Deletion" code="3126" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SCEF-Wait-Time" code="4316" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SCS-Identity" code="3104" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SGSN-Absent-User-Diagnostic-SM" code="3315" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SGSN-Name" code="2409" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SGSN-Realm" code="2410" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SGSN-SM-Delivery-Outcome" code="3319" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-Cause" code="4305" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-Delivery-Cause" code="3321" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-Delivery-Failure-Cause" code="3303" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-Delivery-Not-Intended" code="3311" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-Delivery-Outcome" code="3316" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-Delivery-Outcome-T4" code="3200" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-Delivery-Start-Time" code="3307" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-Delivery-Timer" code="3306" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-Diagnostic-Info" code="3305" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-Enumerated-Delivery-Failure-Cause" code="3304" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-RP-MTI" code="3308" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-RP-SMEA" code="3309" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SM-RP-UI" code="3301" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SMS-GMSC-Address" code="3332" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SMS-GMSC-Alert-Event" code="3333" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SMSMI-Correlation-ID" code="3324" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SRR-Flags" code="3310" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Scheduled-Communication-Time" code="3118" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Service-ID" code="3103" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Service-Report" code="3152" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Service-Result" code="3146" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Service-Result-Code" code="3147" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Serving-Node" code="2401" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Serving-PLMN-Rate-Control" code="4310" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="SourceID" code="99996" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Stationary-Indication" code="3119" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Subsession-Id" code="2202" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Subsession-Operation" code="2203" vendor_id="10415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Supported-Monitoring-Events" code="3144" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Supported-Services" code="3143" vendor_id="10415" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="TA-Service-Key" code="85001" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="TFR-Flags" code="3302" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Time-Window" code="4204" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Transfer-End-Time" code="4205" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Transfer-Policy" code="4207" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Transfer-Policy-Id" code="4208" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Transfer-Request-Type" code="4203" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Transfer-Start-Time" code="4206" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Trigger-Action" code="3202" vendor_id="10415" mandatory="may" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Trigger-Data" code="3003" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="UE-Count" code="4308" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="UE-Local-IPv6-Prefix" code="2205" vendor_id="10415" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="UE-Reachability-Configuration" code="3129" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="Uplink-Rate-Limit" code="4311" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_3gpp_avps.xml	/^    <avp name="User-Identifier" code="3102" vendor_id="10415" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_common.xml	/^		<avp name="Unknown-Avp" code="0" mandatory="must" may-encrypt="yes" display="HEXSTR">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ARAP-Challenge-Response" code="84" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ARAP-Features" code="71" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ARAP-Password" code="70" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ARAP-Security" code="73" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ARAP-Security-Data" code="74" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ARAP-Zone-Access" code="72" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Absolute-End-Fractional-Seconds" code="569" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Absolute-End-Time" code="568" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Absolute-Start-Fractional-Seconds" code="567" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Absolute-Start-Time" code="566" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Accounting-EAP-Auth-Method" code="465" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Accounting-Input-Octets" code="363" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Accounting-Input-Packets" code="365" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Accounting-Output-Octets" code="364" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Accounting-Output-Packets" code="366" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Accounting-Record-Number" code="485" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Accounting-Record-Type" code="480" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Accounting-Sub-Session-Id" code="287" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Acct-Application-Id" code="259" mandatory="must" protected="mustnot" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Acct-Authentic" code="45" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Acct-Delay-Time" code="41" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Acct-Interim-Interval" code="85" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Acct-Link-Count" code="51" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Acct-Multi-Session-Id" code="50" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Acct-Session-Id" code="44" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Acct-Session-Time" code="46" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Acct-Tunnel-Connection" code="68" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Acct-Tunnel-Packets-Lost" code="86" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Acounting-Auth-Method" code="406" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Alternate-Peer" code="275" mandatory="must" protected="mustnot" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Auth-Application-Id" code="258" mandatory="must" protected="mustnot" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Auth-Grace-Period" code="276" mandatory="must" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Auth-Request-Type" code="274" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Auth-Session-State" code="277" mandatory="must" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Authorization-Lifetime" code="291" mandatory="must" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Basic-Location-Policy-Rules" code="129" mandatory="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="C-VID-End" code="556" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="C-VID-Start" code="555" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Correlation-Id" code="411" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Input-Octets" code="412" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Money" code="413" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Output-Octets" code="414" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Request-Number" code="415" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Request-Type" code="416" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Service-Specific-Units" code="417" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Session-Failover" code="418" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Sub-Session-Id" code="419" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Time" code="420" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Total-Octets" code="421" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CC-Unit-Type" code="454" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CHAP-Algorithm" code="403" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CHAP-Auth" code="402" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CHAP-Challenge" code="60" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CHAP-Ident" code="404" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="CHAP-Response" code="405" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Callback-Id" code="20" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Callback-Number" code="19" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Called-Station-Id" code="30" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Calling-Station-Id" code="31" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Chargeable-User-Identity" code="89" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Check-Balance-Result" code="422" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Class" code="25">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Classifier" code="511" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Classifier-ID" code="512" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Configuration-Token" code="78" mandatory="must" protected="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Connect-Info" code="77" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Cost-Information" code="423" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Cost-Unit" code="424" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Credit-Control" code="426" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Credit-Control-Failure-Handling" code="427" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Currency-Code" code="425" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Day-Of-Month-Mask" code="564" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Day-Of-Week-Mask" code="563" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Destination-Host" code="293" mandatory="must" protected="mustnot" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Destination-Realm" code="283" mandatory="must" protected="mustnot" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Diffserv-Code-Point" code="535" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Direct-Debiting-Failure-Handling" code="428" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Direction" code="514" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Disconnect-Cause" code="273" mandatory="must" protected="mustnot" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="EAP-Key-Name" code="102" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="EAP-Master-Session-Key" code="464" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="EAP-Payload" code="462" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="EAP-Reissued-Payload" code="463" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ETH-Ether-Type" code="550" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ETH-Option" code="548" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ETH-Proto-Type" code="549" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ETH-SAP" code="551" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="EUI64-Address" code="527" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="EUI64-Address-Mask" code="528" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="EUI64-Address-Mask-Pattern" code="529" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Error-Message" code="281" mandatory="mustnot" protected="may" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Error-Reporting-Host" code="294" mandatory="must" protected="mustnot" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Event-Timestamp" code="55" mandatory="must" protected="may" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Excess-Treatment" code="577" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Experimental-Result" code="297" mandatory="must">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Exponent" code="429" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Extended-Location-Policy-Rules" code="130" mandatory="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Failed-AVP" code="279" mandatory="must">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Filter-Id" code="11" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Filter-Rule" code="509" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Filter-Rule-Precedence" code="510" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Final-Unit-Action" code="449" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Final-Unit-Indication" code="430" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Firmware-Revision" code="267" mandatory="mustnot" protected="mustnot" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Fragmentation-Flag" code="536" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-Appletalk-Link" code="37" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-Appletalk-Network" code="38" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-Appletalk-Zone" code="39" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-Compression" code="13" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-IP-Address" code="8" mandatory="must" protected="may" may-encrypt="yes" display="HEXSTR">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-IP-Netmask" code="9" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-IPX-Network" code="23" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-IPv6-Pool" code="100" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-IPv6-Prefix" code="97" mandatory="must" protected="may" may-encrypt="yes" display="HEXSTR">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-IPv6-Route" code="99" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-Interface-Id" code="96" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-MTU" code="12" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-Pool" code="88" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-Protocol" code="7" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-Route" code="22" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Framed-Routing" code="10" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="From-Spec" code="515" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="G-S-U-Pool-Identifier" code="453" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="G-S-U-Pool-Reference" code="457" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Granted-Service-Unit" code="431" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="High-User-Priority" code="559" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Host-IP-Address" code="257" mandatory="must" protected="mustnot" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ICMP-Code" code="547" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ICMP-Type" code="545" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="ICMP-Type-Number" code="546" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="IP-Address" code="518" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="IP-Address-End" code="521" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="IP-Address-Mask" code="522" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="IP-Address-Range" code="519" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="IP-Address-Start" code="520" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="IP-Bit-Mask-Width" code="523" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="IP-Option" code="537" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="IP-Option-Type" code="538" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="IP-Option-Value" code="539" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Idle-Timeout" code="28" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Inband-Security-Id" code="299" mandatory="must" protected="mustnot" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Location-Capable" code="132" mandatory="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Location-Data" code="128" mandatory="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Location-Information" code="127" mandatory="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Login-IP-Host" code="14" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Login-IPv6-Host" code="98" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Login-LAT-Group" code="36" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Login-LAT-Node" code="35" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Login-LAT-Port" code="63" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Login-LAT-Service" code="34" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Login-Service" code="15" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Login-TCP-Port" code="16" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Low-User-Priority" code="558" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MAC-Address" code="524" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MAC-Address-Mask" code="525" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MAC-Address-Mask-Pattern" code="526" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Algorithm-Type" code="345" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Auth-Input-Data-Length" code="338" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Authenticator" code="488" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Authenticator-Length" code="339" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Authenticator-Offset" code="340" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Candidate-Home-Agent-Host" code="336" mandatory="must" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Careof-Address" code="487" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-FA-Challenge" code="344" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-FA-to-HA-MSA" code="328" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-FA-to-HA-SPI" code="318" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-FA-to-MN-MSA" code="326" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-FA-to-MN-SPI" code="319" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Feature-Vector" code="337" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Filter-Rule" code="342" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-HA-to-FA-MSA" code="329" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-HA-to-FA-SPI" code="323" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-HA-to-MN-MSA" code="332" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Home-Agent-Address" code="334" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Home-Agent-Host" code="348" mandatory="must" may-encrypt="no">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Key-Material" code="335" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-MAC-Mobility-Data" code="489" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-MN-AAA-Auth" code="322" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-MN-AAA-SPI" code="341" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-MN-HA-MSA" code="492" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-MN-HA-SPI" code="491" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-MN-to-FA-MSA" code="325" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-MN-to-FA-SPI" code="315" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-MN-to-HA-MSA" code="331" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-MN-to-HA-SPI" code="316" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-MSA-Lifetime" code="367" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Mobile-Node-Address" code="333" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Originating-Foreign-AAA" code="347" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Reg-Reply" code="321" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Reg-Request" code="320" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Replay-Mode" code="346" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Session-Key" code="343" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP-Timestamp" code="490" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP6-Agent-Info" code="486" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP6-Auth-Mode" code="494" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP6-Feature-Vector" code="124" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="MIP6-Home-Link-Prefix" code="125" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Month-Of-Year-Mask" code="565" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Multi-Round-Time-Out" code="272" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Multiple-Services-Credit-Control" code="456" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Multiple-Services-Indicator" code="455" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="NAS-Filter-Rule" code="400" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="NAS-IP-Address" code="4" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="NAS-IPv6-Address" code="95" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="NAS-Identifier" code="32" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="NAS-Port" code="5" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="NAS-Port-Id" code="87" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="NAS-Port-Type" code="61" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="NAS-Service-Type" code="6" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Negated" code="517" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Operator-Name" code="126" mandatory="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Origin-AAA-Protocol" code="408" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Origin-Host" code="264" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Origin-Realm" code="296" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Origin-State-Id" code="278" mandatory="must" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Originating-Line-Info" code="94" mandatory="may" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Password-Retry" code="75" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Port" code="530" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Port-End" code="533" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Port-Limit" code="62" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Port-Range" code="531" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Port-Start" code="532" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Product-Name" code="269" mandatory="mustnot" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Prompt" code="76" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Protocol" code="513" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Proxy-Host" code="280" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Proxy-Info" code="284" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Proxy-State" code="33" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="QoS-Capability" code="578" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="QoS-Filter-Rule" code="407" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="QoS-Parameters" code="576" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="QoS-Profile-Id" code="573" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="QoS-Profile-Template" code="574" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="QoS-Resources" code="508" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="QoS-Semantics" code="575" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Rating-Group" code="432" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Re-Auth-Request-Type" code="285" mandatory="must" may-encrypt="no" protected="must">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Redirect-Address-Type" code="433" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Redirect-Host" code="292" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Redirect-Host-Usage" code="261" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Redirect-Max-Cache-Time" code="262" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Redirect-Server" code="434" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Redirect-Server-Address" code="435" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Reply-Message" code="18" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Requested-Action" code="436" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Requested-Location-Info" code="131" mandatory="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Requested-Service-Unit" code="437" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Restriction-Filter-Rule" code="438" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Result-Code" code="268" mandatory="must" may-encrypt="no" protected="mustnot" display="RSLTCODE">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Route-Record" code="282" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="S-VID-End" code="554" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="S-VID-Start" code="553" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Service-Context-Id" code="461" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Service-Identifier" code="439" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Service-Parameter-Info" code="440" mandatory="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Service-Parameter-Type" code="441" mandatory="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Service-Parameter-Value" code="442" mandatory="mustnot" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Service-Selection" code="493" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Session-Binding" code="270" mandatory="must" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Session-Id" code="263" mandatory="must" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Session-Server-Failover" code="271" mandatory="must" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Session-Timeout" code="27">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Source-Route" code="286" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="State" code="24" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Subscription-Id" code="443" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Subscription-Id-Data" code="444" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Subscription-Id-Type" code="450" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Supported-Vendor-Id" code="265" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="TCP-Flag-Type" code="544" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="TCP-Flags" code="543" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="TCP-Option" code="540" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="TCP-Option-Type" code="541" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="TCP-Option-Value" code="542" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tariff-Change-Usage" code="452" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tariff-Time-Change" code="451" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Termination-Cause" code="295" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Time-Of-Day-Condition" code="560" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Time-Of-Day-End" code="562" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Time-Of-Day-Start" code="561" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Timezone-Flag" code="570" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Timezone-Offset" code="571" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="To-Spec" code="516" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Treatment-Action" code="572" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tunnel-Assignment-Id" code="82" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tunnel-Client-Auth-Id" code="90" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tunnel-Client-Endpoint" code="66" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tunnel-Medium-Type" code="65" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tunnel-Password" code="69" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tunnel-Preference" code="83" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tunnel-Private-Group-Id" code="81" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tunnel-Server-Auth-Id" code="91" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tunnel-Server-Endpoint" code="67" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tunnel-Type" code="64" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Tunneling" code="401" mandatory="must" protected="may">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Unit-Value" code="445" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Use-Assigned-Address" code="534" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Used-Service-Unit" code="446" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="User-Equipment-Info" code="458" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="User-Equipment-Info-Type" code="459" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="User-Equipment-Info-Value" code="460" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="User-Name" code="1" mandatory="must">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="User-Password" code="2" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="User-Priority-Range" code="557" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="VLAN-ID-Range" code="552" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Validity-Time" code="448" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Value-Digits" code="447" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Vendor-Id" code="266" mandatory="must" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^	<avp name="Vendor-Specific-Application-Id" code="260" mandatory="mustnot" may-encrypt="no" protected="mustnot">$/;"	t
+avp	dict_ietf_avps.xml	/^    <avp name="Accounting-Realtime-Required" code="483" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^		<avp name="Last-Event-Date" code="25034" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<!-- <avp name="CRN" code="26006" vendor_id="0" mandatory="must" may-encrypt="yes"> -->$/;"	t
+avp	dict_telkomsel.xml	/^	<!-- <avp name="Call-Cost-Information" code="26004" vendor_id="0" mandatory="must" may-encrypt="yes"> -->$/;"	t
+avp	dict_telkomsel.xml	/^	<!-- <avp name="IMSI" code="26001" vendor_id="0" mandatory="must" may-encrypt="yes"> -->$/;"	t
+avp	dict_telkomsel.xml	/^	<!-- <avp name="Pre-Post-Indicator" code="26005" vendor_id="0" mandatory="must" may-encrypt="yes"> -->$/;"	t
+avp	dict_telkomsel.xml	/^	<!-- <avp name="SMS-Reference-Number" code="26007" vendor_id="0" mandatory="must" may-encrypt="yes"> -->$/;"	t
+avp	dict_telkomsel.xml	/^	<!-- <avp name="Service-Subtype" code="1053" vendor_id="2011" -->$/;"	t
+avp	dict_telkomsel.xml	/^	<!-- <avp name="VPN-String" code="26002" vendor_id="2011" mandatory="must" may-encrypt="yes"> -->$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Access-Code" code="25033" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Access-Type" code="25037" vendor_id="2011" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Allowance-Name" code="25036" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Allowance-Type" code="25002" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Announcement-Data" code="25024" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Announcement-Language" code="25026" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Announcement-Parameters" code="25027" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Announcement-Type" code="25028" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Announcement-Value" code="25029" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Announcement-Variable" code="25031" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Announcement-Variable-Information" code="25042" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Announcement-Variable-Type" code="25030" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Bonus-Query-Type" code="27009" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Brand-Id" code="25040" vendor_id="2011" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Bucket-Consumed" code="25039" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Bucket-Consumption-Indicator" code="26008" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Bucket-Name" code="25038" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="CRN" code="26006" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="CUG-Indicator" code="27102" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="CUG-Information" code="27111" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="CUG-MSISDN" code="27101" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="CUG-Name" code="27112" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Call-Cost-Information" code="26004" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Called-Party-ID" code="25020" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Called-Party-ID-Data" code="25021" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Called-Party-ID-Type" code="25022" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Cell-Information" code="25041" vendor_id="2011" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Cost-Control-Status" code="27005" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="GPRS-Indicator" code="25045" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="IMSI" code="26001" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Last-Transaction-Details" code="25032" mandatory="may" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Pre-Post-Indicator" code="26005" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Promo-ID" code="27001" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Remaining-Allowance" code="25001"  mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Remaining-Credit" code="26010" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Remaining-Limit" code="27003" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Requested-Duration" code="26009" vendor_id="2011" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Requested-Limit" code="26009" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Reserved-balance" code="27121" mandatory="must" protected="may">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="SMS-Reference-Number" code="26007" vendor_id="2011" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Subscriber-State" code="25043" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Subscriber-Zone-Type" code="27010" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Token-Expiration-Date" code="27008" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Token-Information" code="27006" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Token-Value" code="27007" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Type-Of-Cost-Control" code="27002" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="UOM-Code" code="25004" mandatory="must" protected="may" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="Used-Limit" code="27004" mandatory="must" may-encrypt="yes">$/;"	t
+avp	dict_telkomsel.xml	/^	<avp name="VPN-String" code="26002" mandatory="must" may-encrypt="yes">$/;"	t
+command	dict_3gpp_CxDx_TS29229.xml	/^		<command name="Location-Info" code="302" application-id="16777216" abbreviation="LI">$/;"	t
+command	dict_3gpp_CxDx_TS29229.xml	/^		<command name="Multimedia-Auth" code="303" application-id="16777216" abbreviation="MA">$/;"	t
+command	dict_3gpp_CxDx_TS29229.xml	/^		<command name="Push-Profile" code="305" application-id="16777216" abbreviation="PP">$/;"	t
+command	dict_3gpp_CxDx_TS29229.xml	/^		<command name="Registration-Termination" code="304" application-id="16777216" abbreviation="RT">$/;"	t
+command	dict_3gpp_CxDx_TS29229.xml	/^		<command name="Server-Assignment" code="301" application-id="16777216" abbreviation="SA">$/;"	t
+command	dict_3gpp_CxDx_TS29229.xml	/^		<command name="User-Authorization" code="300" application-id="16777216" abbreviation="UA">$/;"	t
+command	dict_3gpp_GiSGi_TS29061.xml	/^	<command name="AA" abbreviation="AA" code="265" applicatoin-id="1" proxiable="1">$/;"	t
+command	dict_3gpp_GiSGi_TS29061.xml	/^	<command name="Abort-Session" abbreviation="AA" code="274" application-id="0" proxiable="1">$/;"	t
+command	dict_3gpp_GiSGi_TS29061.xml	/^	<command name="Accounting" abbreviation="AC" code="271" applicatoin-id="3" proxiable="1">$/;"	t
+command	dict_3gpp_GiSGi_TS29061.xml	/^	<command name="Session-Termination" abbreviation="ST" code="275" applicatoin-id="0" proxiable="1">$/;"	t
+command	dict_3gpp_Gmb_TS29061.xml	/^	<command name="AA" abbreviation="AA" code="265" applicatoin-id="0">$/;"	t
+command	dict_3gpp_Gmb_TS29061.xml	/^	<command name="Abort-Session" abbreviation="AS" code="275" applicatoin-id="0">$/;"	t
+command	dict_3gpp_Gmb_TS29061.xml	/^	<command name="Re-Auth" abbreviation="RA" code="275" applicatoin-id="0">$/;"	t
+command	dict_3gpp_Gmb_TS29061.xml	/^	<command name="ST" abbreviation="ST" code="275" applicatoin-id="0">$/;"	t
+command	dict_3gpp_Gx_TS29212.xml	/^		<command name="Credit-Control" code="272" application-id="16777238" abbreviation="CC">$/;"	t
+command	dict_3gpp_Gx_TS29212.xml	/^		<command name="Re-Auth" code="258" application-id="16777238" abbreviation="RA">$/;"	t
+command	dict_3gpp_Gxx_TS29212.xml	/^		<command name="Credit-Control" code="272" application-id="16777266" abbreviation="CC">$/;"	t
+command	dict_3gpp_Gxx_TS29212.xml	/^		<command name="Re-Auth" code="258" application-id="16777266" abbreviation="RA">$/;"	t
+command	dict_3gpp_Rf_TS32299.xml	/^		<command name="Accounting" abbreviation="AC" code="271" application-id="3" proxiable="yes">$/;"	t
+command	dict_3gpp_Ro_TS32299.xml	/^		<command name="Accounting" abbreviation="AC" code="271" application-id="4" proxiable="yes">$/;"	t
+command	dict_3gpp_Ro_TS32299.xml	/^		<command name="Credit-Control" abbreviation="CC" code="272" application-id="4" proxiable="yes">$/;"	t
+command	dict_3gpp_Rx_TS29214.xml	/^		<command name="AA" code="265" application-id="16777236" abbreviation="AA">$/;"	t
+command	dict_3gpp_Rx_TS29214.xml	/^		<command name="Abort-Session" code="274" application-id="16777236" abbreviation="AS">$/;"	t
+command	dict_3gpp_Rx_TS29214.xml	/^		<command name="Re-Auth" code="258" application-id="16777236" abbreviation="RA">$/;"	t
+command	dict_3gpp_Rx_TS29214.xml	/^		<command name="Session-Termination" application-id="16777236" code="275" abbreviation="ST">$/;"	t
+command	dict_3gpp_S6a_S6d_TS29272.xml	/^		<command name="Auth-Info" code="318" application-id="16777251" abbreviation="AI">$/;"	t
+command	dict_3gpp_S6a_S6d_TS29272.xml	/^		<command name="Cancel-Location" code="317" application-id="16777251" abbreviation="CL">$/;"	t
+command	dict_3gpp_S6a_S6d_TS29272.xml	/^		<command name="Delete-Subscriber-Data" code="320" application-id="16777251" abbreviation="DSD">$/;"	t
+command	dict_3gpp_S6a_S6d_TS29272.xml	/^		<command name="Insert-Subscriber-Data" code="319" application-id="16777251" abbreviation="ISD">$/;"	t
+command	dict_3gpp_S6a_S6d_TS29272.xml	/^		<command name="ME-Identity-Check" code="324" application-id="16777251" abbreviation="MIC">$/;"	t
+command	dict_3gpp_S6a_S6d_TS29272.xml	/^		<command name="Notify" code="323" application-id="16777251" abbreviation="N">$/;"	t
+command	dict_3gpp_S6a_S6d_TS29272.xml	/^		<command name="Purge-UE" code="321" application-id="16777251" abbreviation="PUE">$/;"	t
+command	dict_3gpp_S6a_S6d_TS29272.xml	/^		<command name="Reset" code="322" application-id="16777251" abbreviation="R">$/;"	t
+command	dict_3gpp_S6a_S6d_TS29272.xml	/^		<command name="Update-Location" code="316" abbreviation="UL" application-id="16777251">$/;"	t
+command	dict_3gpp_S6b_TS29273.xml	/^		<command name="AA" code="265" application-id="16777272" abbreviation="AA">$/;"	t
+command	dict_3gpp_S6b_TS29273.xml	/^		<command name="Abort-Session" code="274" application-id="16777272" abbreviation="AS">$/;"	t
+command	dict_3gpp_S6b_TS29273.xml	/^		<command name="Diameter-EAP" code="268" application-id="16777272" abbreviation="DE">$/;"	t
+command	dict_3gpp_S6b_TS29273.xml	/^		<command name="Re-Auth" code="258" application-id="16777272" abbreviation="RA">$/;"	t
+command	dict_3gpp_S6b_TS29273.xml	/^		<command name="Session-Termination" code="275" application-id="16777272" abbreviation="ST">$/;"	t
+command	dict_3gpp_S6c_TS29338.xml	/^		<command name="Report-SM-Delivery-Status" code="8388649" application-id="16777312" abbreviation="RD">$/;"	t
+command	dict_3gpp_S6c_TS29338.xml	/^		<command name="Send-Routing-Info-for-SM" code="8388647" application-id="16777312" abbreviation="SR">$/;"	t
+command	dict_3gpp_S9_TS29215.xml	/^		<command name="Credit-Control" code="272" abbreviation="CC" application-id="16777267">$/;"	t
+command	dict_3gpp_S9_TS29215.xml	/^		<command name="Re-Auth" abbreviation="RA" code="258" application-id="16777267" proxiable="1">$/;"	t
+command	dict_3gpp_Sd_TS29212.xml	/^		<command name="Credit-Control" code="272" application-id="16777303" abbreviation="CC">$/;"	t
+command	dict_3gpp_Sd_TS29212.xml	/^		<command name="Re-Auth" code="258" application-id="16777303" abbreviation="RA">$/;"	t
+command	dict_3gpp_Sd_TS29212.xml	/^		<command name="TDF-Session" code="8388637" application-id="16777303" abbreviation="TS">$/;"	t
+command	dict_3gpp_Sh_TS29329.xml	/^		<command name="Profile-Update" code="307" abbreviation="PU" application-id="16777217">$/;"	t
+command	dict_3gpp_Sh_TS29329.xml	/^		<command name="Push-Notification" code="309" abbreviation="PN" application-id="16777217">$/;"	t
+command	dict_3gpp_Sh_TS29329.xml	/^		<command name="Subscribe-Notifications" code="308" abbreviation="SN" application-id="16777217">$/;"	t
+command	dict_3gpp_Sh_TS29329.xml	/^		<command name="User-Data" code="306" abbreviation="UD" application-id="16777217" >$/;"	t
+command	dict_3gpp_Sy_TS29219.xml	/^		<command name="Spending-Limit" code="8388635" abbreviation="SL">$/;"	t
+command	dict_3gpp_Sy_TS29219.xml	/^		<command name="Spending-Status-Notification" code="8388636" abbreviation="SSN">$/;"	t
+command	dict_3gpp_T4_TS29337.xml	/^		<command name="Delivery-Report" code="8388644" abbreviation="DR" application-id="16777311" proxiable="yes">$/;"	t
+command	dict_3gpp_T4_TS29337.xml	/^		<command name="Device-Trigger-Request" code="8388643" abbreviation="DT" application-id="16777311" proxiable="yes">$/;"	t
+command	dict_3gpp_sgd.xml	/^	<command name="MO-Forward-Short-Message" abbreviation="OFR" code="8388645" application-id="0">$/;"	t
+command	dict_3gpp_sgd.xml	/^	<command name="MT-Forward-Short-Message" abbreviation="TFR" code="8388646" application-id="0">$/;"	t
+command	dict_common.xml	/^		<command name="Unknown-Command" abbreviation="UC" code="0" proxiable="0">$/;"	t
+command	dict_ietf_base_RFC6733.xml	/^		<command name="Abort-Session" code="274" abbreviation="AS" proxiable="true">$/;"	t
+command	dict_ietf_base_RFC6733.xml	/^		<command name="Capabilities-Exchange" code="257" abbreviation="CE" proxiable="false">$/;"	t
+command	dict_ietf_base_RFC6733.xml	/^		<command name="Device-Watchdog" code="280" abbreviation="DW" proxiable="false">$/;"	t
+command	dict_ietf_base_RFC6733.xml	/^		<command name="Disconnect-Peer" code="282" abbreviation="DP" proxiable="false">$/;"	t
+command	dict_ietf_base_RFC6733.xml	/^		<command name="Re-Auth" code="258" abbreviation="RA">$/;"	t
+command	dict_ietf_base_RFC6733.xml	/^		<command name="Session-Termination" code="275" abbreviation="ST" proxiable="true">$/;"	t
+command	dict_ietf_base_acr_RFC6733.xml	/^		<command name="Accounting" code="271" application-id="3" abbreviation="AC"  proxiable="true">$/;"	t
+command	dict_ietf_cc_RFC4006.xml	/^		<command name="Credit-Control" abbreviation="CC" code="272" application-id="4" proxiable="1">$/;"	t
+command	dict_ietf_eap_RFC4072.xml	/^		<command name="Diameter-EAP" code="268" application-id="5" proxiable="1">$/;"	t
+command	dict_ietf_mip4_RFC4004.xml	/^		<command name="AA-Mobile-Node" code="260" application-id="2" proxiable="1">$/;"	t
+command	dict_ietf_mip4_RFC4004.xml	/^		<command name="Home-Agent-MIP" code="262" application-id="2" proxiable="1">$/;"	t
+command	dict_ietf_nas_RFC4005.xml	/^		<command name="AA" code="265" application-id="1" abbreviation="AA">$/;"	t
+command	dict_tksel_customized.xml	/^		<command name="HH-Control" code="33333" application-id="33333" abbreviation="HHC">$/;"	t
+dictionary	dict_3gpp_CxDx_TS29229.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_GiSGi_TS29061.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_Gmb_TS29061.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_Gx_TS29212.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_Gxx_TS29212.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_Rf_TS32299.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_Ro_TS32299.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_Rx_TS29214.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_S6a_S6d_TS29272.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_S6b_TS29273.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_S6c_TS29338.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_S9_TS29215.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_Sd_TS29212.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_Sh_TS29329.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_Sy_TS29219.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_T4_TS29337.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_avps.xml	/^<dictionary>$/;"	t
+dictionary	dict_3gpp_sgd.xml	/^<dictionary>$/;"	t
+dictionary	dict_common.xml	/^<dictionary>$/;"	t
+dictionary	dict_etsi_avps.xml	/^<dictionary>$/;"	t
+dictionary	dict_ietf_avps.xml	/^<dictionary>$/;"	t
+dictionary	dict_ietf_base_RFC6733.xml	/^<dictionary>$/;"	t
+dictionary	dict_ietf_base_acr_RFC6733.xml	/^<dictionary>$/;"	t
+dictionary	dict_ietf_cc_RFC4006.xml	/^<dictionary>$/;"	t
+dictionary	dict_ietf_eap_RFC4072.xml	/^<dictionary>$/;"	t
+dictionary	dict_ietf_mip4_RFC4004.xml	/^<dictionary>$/;"	t
+dictionary	dict_ietf_nas_RFC4005.xml	/^<dictionary>$/;"	t
+dictionary	dict_ktf.xml	/^<dictionary>$/;"	t
+dictionary	dict_telkomsel.xml	/^<dictionary>$/;"	t
+dictionary	dict_tksel_customized.xml	/^<dictionary>$/;"	t
+display	dict_common.xml	/^	<display>$/;"	t
+enumerated	dict_3gpp_avps.xml	/^			<enumerated>$/;"	t
+enumerated	dict_3gpp_avps.xml	/^		<enumerated>$/;"	t
+enumerated	dict_3gpp_avps.xml	/^        <enumerated>$/;"	t
+enumerated	dict_etsi_avps.xml	/^		<enumerated>$/;"	t
+enumerated	dict_ietf_avps.xml	/^		<enumerated>$/;"	t
+enumerated	dict_ietf_avps.xml	/^	<enumerated>$/;"	t
+enumerated	dict_telkomsel.xml	/^		 <enumerated>$/;"	t
+enumerated	dict_telkomsel.xml	/^		<enumerated>$/;"	t
+fixed	dict_3gpp_CxDx_TS29229.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_Gx_TS29212.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_Gxx_TS29212.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_Rf_TS32299.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_Ro_TS32299.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_Rx_TS29214.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_S6a_S6d_TS29272.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_S6b_TS29273.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_S6c_TS29338.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_S9_TS29215.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_Sd_TS29212.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_Sh_TS29329.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_Sy_TS29219.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_T4_TS29337.xml	/^				<fixed>$/;"	t
+fixed	dict_3gpp_sgd.xml	/^			<fixed>$/;"	t
+fixed	dict_ietf_base_RFC6733.xml	/^				<fixed>$/;"	t
+fixed	dict_ietf_base_acr_RFC6733.xml	/^				<fixed>$/;"	t
+fixed	dict_ietf_cc_RFC4006.xml	/^				<fixed>$/;"	t
+fixed	dict_ietf_eap_RFC4072.xml	/^				<fixed>$/;"	t
+fixed	dict_ietf_mip4_RFC4004.xml	/^				<fixed>$/;"	t
+fixed	dict_ietf_nas_RFC4005.xml	/^				<fixed>$/;"	t
+fixed	dict_tksel_customized.xml	/^				<fixed>$/;"	t
+grouped	dict_3gpp_avps.xml	/^		<grouped>$/;"	t
+grouped	dict_3gpp_avps.xml	/^	    <grouped>$/;"	t
+grouped	dict_3gpp_avps.xml	/^        <grouped>$/;"	t
+grouped	dict_etsi_avps.xml	/^		<grouped>$/;"	t
+grouped	dict_ietf_avps.xml	/^		<grouped>$/;"	t
+grouped	dict_telkomsel.xml	/^		<grouped>$/;"	t
+mystery	dict_ietf_avps.xml	/^			<enum name="EMCON" code="14"\/> <!-- EMCON [<mystery contact>] -->$/;"	t
+optional	dict_3gpp_CxDx_TS29229.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_Gx_TS29212.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_Gxx_TS29212.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_Rf_TS32299.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_Ro_TS32299.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_Rx_TS29214.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_S6a_S6d_TS29272.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_S6b_TS29273.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_S6b_TS29273.xml	/^   				<optional>$/;"	t
+optional	dict_3gpp_S6c_TS29338.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_S6c_TS29338.xml	/^   				<optional>$/;"	t
+optional	dict_3gpp_S9_TS29215.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_Sd_TS29212.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_Sh_TS29329.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_Sy_TS29219.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_T4_TS29337.xml	/^				<optional>$/;"	t
+optional	dict_3gpp_avps.xml	/^			<optional>$/;"	t
+optional	dict_3gpp_avps.xml	/^            <optional>$/;"	t
+optional	dict_3gpp_sgd.xml	/^			<optional>$/;"	t
+optional	dict_common.xml	/^				<optional>$/;"	t
+optional	dict_etsi_avps.xml	/^			<optional>$/;"	t
+optional	dict_ietf_avps.xml	/^			<optional>$/;"	t
+optional	dict_ietf_base_RFC6733.xml	/^				<optional>$/;"	t
+optional	dict_ietf_base_acr_RFC6733.xml	/^				<optional>$/;"	t
+optional	dict_ietf_cc_RFC4006.xml	/^				<optional>$/;"	t
+optional	dict_ietf_eap_RFC4072.xml	/^				<optional>$/;"	t
+optional	dict_ietf_eap_RFC4072.xml	/^   				<optional>$/;"	t
+optional	dict_ietf_mip4_RFC4004.xml	/^				<optional>$/;"	t
+optional	dict_ietf_nas_RFC4005.xml	/^				<optional>$/;"	t
+optional	dict_telkomsel.xml	/^			<optional>$/;"	t
+optional	dict_tksel_customized.xml	/^				<optional>$/;"	t
+parser	dict_common.xml	/^	<parser>$/;"	t
+requestrules	dict_3gpp_CxDx_TS29229.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_GiSGi_TS29061.xml	/^		<requestrules>$/;"	t
+requestrules	dict_3gpp_Gmb_TS29061.xml	/^		<requestrules>$/;"	t
+requestrules	dict_3gpp_Gx_TS29212.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_Gxx_TS29212.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_Rf_TS32299.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_Ro_TS32299.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_Rx_TS29214.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_S6a_S6d_TS29272.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_S6b_TS29273.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_S6c_TS29338.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_S9_TS29215.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_Sd_TS29212.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_Sh_TS29329.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_Sy_TS29219.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_T4_TS29337.xml	/^			<requestrules>$/;"	t
+requestrules	dict_3gpp_sgd.xml	/^		<requestrules>$/;"	t
+requestrules	dict_common.xml	/^			<requestrules>$/;"	t
+requestrules	dict_ietf_base_RFC6733.xml	/^			<requestrules>$/;"	t
+requestrules	dict_ietf_base_acr_RFC6733.xml	/^			<requestrules>$/;"	t
+requestrules	dict_ietf_cc_RFC4006.xml	/^			<requestrules>$/;"	t
+requestrules	dict_ietf_eap_RFC4072.xml	/^			<requestrules>$/;"	t
+requestrules	dict_ietf_mip4_RFC4004.xml	/^			<requestrules>$/;"	t
+requestrules	dict_ietf_nas_RFC4005.xml	/^			<requestrules>$/;"	t
+requestrules	dict_tksel_customized.xml	/^			<requestrules>$/;"	t
+required	dict_3gpp_CxDx_TS29229.xml	/^				<required>$/;"	t
+required	dict_3gpp_Gx_TS29212.xml	/^				<required>$/;"	t
+required	dict_3gpp_Gxx_TS29212.xml	/^				<required>$/;"	t
+required	dict_3gpp_Rf_TS32299.xml	/^				<required>$/;"	t
+required	dict_3gpp_Ro_TS32299.xml	/^				<required>$/;"	t
+required	dict_3gpp_Rx_TS29214.xml	/^				<required>$/;"	t
+required	dict_3gpp_S6a_S6d_TS29272.xml	/^				<required>$/;"	t
+required	dict_3gpp_S6b_TS29273.xml	/^				<required>$/;"	t
+required	dict_3gpp_S6c_TS29338.xml	/^				<required>$/;"	t
+required	dict_3gpp_S9_TS29215.xml	/^				<required>$/;"	t
+required	dict_3gpp_Sd_TS29212.xml	/^				<required>$/;"	t
+required	dict_3gpp_Sh_TS29329.xml	/^				<required>$/;"	t
+required	dict_3gpp_Sy_TS29219.xml	/^				<required>$/;"	t
+required	dict_3gpp_T4_TS29337.xml	/^				<required>$/;"	t
+required	dict_3gpp_avps.xml	/^			<required>$/;"	t
+required	dict_3gpp_avps.xml	/^            <required>$/;"	t
+required	dict_3gpp_sgd.xml	/^			<required>$/;"	t
+required	dict_etsi_avps.xml	/^			<required>$/;"	t
+required	dict_ietf_avps.xml	/^			<required>$/;"	t
+required	dict_ietf_base_RFC6733.xml	/^				<required>$/;"	t
+required	dict_ietf_base_acr_RFC6733.xml	/^				<required>$/;"	t
+required	dict_ietf_cc_RFC4006.xml	/^				<required>$/;"	t
+required	dict_ietf_eap_RFC4072.xml	/^				<required>$/;"	t
+required	dict_ietf_mip4_RFC4004.xml	/^				<required>$/;"	t
+required	dict_ietf_nas_RFC4005.xml	/^				<required>$/;"	t
+required	dict_telkomsel.xml	/^			<required>$/;"	t
+required	dict_tksel_customized.xml	/^				<required>$/;"	t

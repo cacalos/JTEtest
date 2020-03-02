@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "dictionary.dtd">
+
+<dictionary>
+	<!-- ************************* Vendors **************************** -->
+	<vendor id="0" name="IETF" />
+	<vendor id="11" name="Hewlett Packard" />
+	<vendor id="61" name="Merit Networks" />
+	<vendor id="42" name="Sun Microsystems, Inc." />
+	<vendor id="429" name="US Robotics Corp." />
+	<vendor id="5535" name="3GPP2" />
+	<vendor id="10415" name="3GPP" />
+	<vendor id="193" name="Ericsson" />
+	<vendor id="13019" name="ETSI" />
+	<vendor id="12645" name="Vodafone" />
+	<vendor id="14380" name="KT" />
+	<vendor id="11858" name="UANGEL" />
+	<!-- *********************** End Vendors ************************** -->
+
+	<!-- ************************ typedef's ************************ -->
+	<typedef name="OctetString"/>
+	<typedef name="Integer32"/>
+	<typedef name="Integer64"/>
+	<typedef name="Unsigned32"/>
+	<typedef name="Unsigned64"/>
+	<typedef name="Float32"/>
+	<typedef name="Float64"/>
+
+	<typedef name="Address" parent="OctetString"/>
+	<typedef name="Time" parent="OctetString"/>
+	<typedef name="UTF8String" parent="OctetString"/>
+	<typedef name="DiameterIdentity" parent="OctetString"/>
+	<typedef name="DiameterURI" parent="UTF8String"/>
+	<typedef name="Enumerated" parent="Unsigned32"/>
+	<typedef name="IPFilterRule" parent="OctetString"/>
+	<typedef name="QOSFilterRule" parent="OctetString"/>
+	<!-- *********************** End Typedef ********************** -->
+
+	<!-- extension error define -->
+	<!--error code="7000" name="Example Error"/-->
+
+	<!-- dictionary message parsing option --> 
+	<parser>
+		<!-- DIAMETER message version - optional(default:1) -->
+		<!--version>1</version-->
+		<!-- Whether or not to check DIAMETER Message Header Flag bits validity. (default : no) -->
+		<!--no_check_header_flag>no</no_check_header_flag-->
+		<!-- Whether to check Unknown command receiving. (default : no) -->
+		<!--check_unknown_cmd>no</check_unknown_cmd-->
+		<!-- Whether to check Unknown AVP receiving. (default : no) -->
+		<!--check_unknown_avp>no</check_unknown_avp-->
+		<!-- Whether to check that Mandatory AVP data length is 0. (default : no) -->
+		<!--check_mandatory_avp_length>no</check_mandatory_avp_length-->
+		<!-- Whether to raise error for empty group. (default : no) -->
+		<!--check_empty_group>no</check_empty_group-->
+		<!-- Wheter to check avplist validity by avp rule. (default : no) -->
+		<!--check_avprule>no</check_avprule-->
+		<!-- Whether to check that required AVP data length is 0. (default : no) -->
+		<!--check_required_length>no</check_required_length-->
+	</parser>
+
+	<!-- dictionary message display option --> 
+	<display>
+		<!-- tab size for avp depth (default : 0 [TAB »ç¿ë]) -->
+		<!--tabsize>0</tabsize-->
+		<!-- byte number of a line of octet data (default : 16) -->
+		<!--octnbline>16</octnbline-->
+		<!-- octet displa flags (0x01: number disable, 0x02: ascii disable, 0x04: newline char)  (default : 0x03) -->
+		<!--octflags>0x03</octflags-->
+		<!-- time value display format. (default : %Y-%m-%dT%H:%H:%S) -->
+		<!--timeformat><![CDATA[%Y-%m-%dT%H:%H:%S]]></timeformat-->
+	</display>
+
+	<base uri="http://www.ietf.org/rfc/rfc3588.txt">
+		<avp name="Unknown-Avp" code="0" mandatory="must" may-encrypt="yes" display="HEXSTR">
+			<type name="OctetString"/>
+		</avp>
+		<command name="Unknown-Command" abbreviation="UC" code="0" proxiable="0">
+			<requestrules>
+				<optional>
+					<avprule name="Session-Id"/>
+					<avprule name="Origin-Host"/>
+					<avprule name="Origin-Realm"/>
+					<avprule name="Destination-Realm"/>
+					<avprule name="Destination-Host"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="Route-Record"/>
+					<avprule name="AVP"/>
+				</optional>
+			</requestrules>
+			<answerrules>
+				<optional>
+					<avprule name="Session-Id"/>
+					<avprule name="Result-Code"/>
+					<avprule name="Origin-Host"/>
+					<avprule name="Origin-Realm"/>
+					<avprule name="Error-Message"/>
+					<avprule name="Failed-AVP"/>
+					<avprule name="Proxy-Info"/>
+					<avprule name="AVP"/>
+				</optional>
+			</answerrules>
+		</command>
+	</base>
+</dictionary>
+

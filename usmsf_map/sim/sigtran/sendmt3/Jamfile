@@ -1,0 +1,31 @@
+SubDir TOP sim sigtran sendmt3 ;
+SubDirHdrs $(TOP)/inc $(TOP)/inc/MMDB $(TOP)/inc/SIGTRAN $(MMDB_SRC_HOME)/include 
+    $(UALIB_SRC_HOME)/include $(UANGIN_SRC_HOME)/include $(USRG_SRC_HOME)/include
+	/data1/oss_5.3.0/include ; 
+SubDirHdrs $(UDIA_SRC_HOME)/include ;
+
+
+SOURCES = sendmt3 okConfig testHexaString ;
+
+
+TARGET  = sendmt3 ;
+Main $(TARGET) : $(SOURCES).c ;
+
+OSS_LIB_DIR = /data1/oss_5.3.0/lib ;
+OSS_LIBS = -lasn1code ;
+
+LINKLIBS on $(TARGET) = -L$(UASYS_HOME)/lib -lUTIL -lGCA -lOSSASN -lsigtran_util -lSS7 -lsys_lib -lua_common -lTPDU -lpthread -L$(USRG_ROOT)/lib -lutcap -lulib -L$(OSS_LIB_DIR) $(OSS_LIBS) -ldl -liconv -lm ;
+
+LOCAL_DEFINES = -D_MODULE_NAME='\"$(TARGET1)\"' -DTCAP_WHITE -D_NEW_LOG_ -DUSIGTRAN ;
+# PKG_VER_MANAGEMENT
+PACKAGE_VERSION        = YTL_SMSG_1.8.0 ; 
+PACKAGE_NAME           = TOTAL_PKG ; 
+LOCAL_DEFINES += -D_MODULE_VERSION='\"$(PACKAGE_VERSION)\"' -D_MODULE_PKG='\"$(PACKAGE_NAME)\"' ;
+
+# .c -> .o compile option
+ObjectCcFlags $(SOURCES)$(SUFOBJ) : $(LOCAL_DEFINES) $(SYS_CCFLAGS) ;
+
+InstallBin $(SMSC_HOME)/sim_bin : $(TARGET) ;
+CopySysFile $(TARGET) : $(TOP)/sim_bin ;
+
+

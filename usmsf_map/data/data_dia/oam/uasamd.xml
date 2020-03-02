@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<uasamd_config>
+	<measure write_file="false" path="$(UASYS_HOME)/log/uasamd/msr" />
+	<meta write_file="true" path="$(UASYS_HOME)/log/dbdata/meta" />
+	<statistics write_file="true" path="$(UASYS_HOME)/log/dbdata/stat" />
+	<paired_console_msg enabled="false" />
+</uasamd_config>

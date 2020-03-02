@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<logmd_conf>
+  <log_stat enabled="true" />
+  <log_list>
+    <!-- notification -type(0: alarm, 1:event_append, 2:event_update) -->
+    <!-- log id="0" name="HW_FAULT" enabled="TRUE" interval="5" pattern_first_search="TRUE" path="/var/log/messages">
+      <notification type="1" noti_read_error="FALSE" read_error_retry_count="3"/>
+      <pattern_list>
+        <pattern pattern_id="0" enabled="TRUE" level="CRITICAL" pattern_string="Hot-plug drive removed" noti_msg="Disk Failure"/>
+        <pattern pattern_id="1" enabled="TRUE" level="NORMAL" pattern_string="Hot-plug drive inserted" noti_msg="Disk Normal"/>
+        <pattern pattern_id="2" enabled="TRUE" level="CRITICAL" pattern_string="Physical drive failed" noti_msg="Physical drive failure"/>
+      </pattern_list>
+      <include_string_list>
+      </include_string_list>
+      <exclude_string_list>
+      </exclude_string_list>
+    </log>
+    <log id="1" name="ENCLOSURE_FAULT" enabled="TRUE" interval="5" pattern_first_search="TRUE" path="/var/log/messages">
+      <notification type="1" noti_read_error="FALSE" read_error_retry_count="3"/>
+      <pattern_list>
+        <pattern pattern_id="0" enabled="TRUE" level="CRITICAL" pattern_string="Fan Removed" noti_msg="Fan Failure"/>
+        <pattern pattern_id="1" enabled="TRUE" level="NORMAL" pattern_string="Fan Inserted" noti_msg="Fan Normal"/>
+        <pattern pattern_id="2" enabled="TRUE" level="CRITICAL" pattern_string="PS Subsystem N + N Redundancy - FAILED" noti_msg="Power Supply Failure"/>
+        <pattern pattern_id="3" enabled="TRUE" level="NORMAL" pattern_string="PS Subsystem N + N Redundancy - REPAIRED" noti_msg="Power Supply Normal"/>
+      </pattern_list>
+      <include_string_list>
+        <include_string>OA:</include_string>
+      </include_string_list>
+      <exclude_string_list>
+      </exclude_string_list>
+    </log>
+    <log id="2" name="NAS_HW_FAULT" enabled="TRUE" interval="5" pattern_first_search="TRUE" path="/var/log/messages">
+      <notification type="1" noti_read_error="FALSE" read_error_retry_count="1"/>
+      <pattern_list>
+        <pattern pattern_id="0" enabled="TRUE" level="MAJOR" pattern_string="HA fail" noti_msg="High Availability"/>
+        <pattern pattern_id="1" enabled="TRUE" level="MINOR" pattern_string="HA warning" noti_msg="High Availability"/>
+        <pattern pattern_id="2" enabled="TRUE" level="NORMAL" pattern_string="HA recovery" noti_msg="High Availability"/>
+        <pattern pattern_id="3" enabled="TRUE" level="MAJOR" pattern_string="CPU" noti_msg="CPU"/>
+        <pattern pattern_id="4" enabled="TRUE" level="MAJOR" pattern_string="Memory" noti_msg="Memory"/>
+        <pattern pattern_id="5" enabled="TRUE" level="MAJOR" pattern_string="Board" noti_msg="Main Board"/>
+        <pattern pattern_id="6" enabled="TRUE" level="MAJOR" pattern_string="Power" noti_msg="Power supply"/>
+        <pattern pattern_id="7" enabled="TRUE" level="MAJOR" pattern_string="NFS" noti_msg="Network File System"/>
+        <pattern pattern_id="8" enabled="TRUE" level="MAJOR" pattern_string="NIC" noti_msg="Network Interface Card"/>
+        <pattern pattern_id="9" enabled="TRUE" level="MAJOR" pattern_string="OS" noti_msg="Operating System"/>
+      </pattern_list>
+      <include_string_list>
+        <include_string>gluesys</include_string>
+      </include_string_list>
+    </log-->
+  </log_list>
+</logmd_conf>

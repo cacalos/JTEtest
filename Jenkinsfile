@@ -5,7 +5,8 @@ node {
     		docker.image("usmsf_jks").inside {
      			echo "Start checkout"
      			git credentialsId: 'camel', url: "ssh://cacalos@camel.uangel.com/data3/git/ua5g/usmsf_map.git"
-     			sh 'ln -s /home/app/HOME home;ln -s /home/app/SMSF src'
+     			sh 'mv /home/app/usmsf_map /home/app/SMSF;ln -s /home/app/HOME home;ln -s /home/app/SMSF src'
+     			sh 'cd /home/app/SMSF;jam clean;jam install;'
     		}
   		}
 	}

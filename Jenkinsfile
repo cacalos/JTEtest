@@ -11,7 +11,7 @@ node {
          /* This builds the actual image; synonymous to
          * docker build on the command line */
 
-         app = docker.build("joyddung/usmsf")
+         app = docker.build("joyddung/usmsf_test")
      }
 
      stage('Test image') {

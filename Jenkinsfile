@@ -8,6 +8,7 @@ node {
 				/*
      			git credentialsId: 'camel', url: "ssh://cacalos@camel.uangel.com/data3/git/ua5g/usmsf_map.git"
 				*/
+     			sh 'pwd '
      			sh 'ls '
      			sh 'cd /home/app/SMSF;jam clean;jam install;'
     		}

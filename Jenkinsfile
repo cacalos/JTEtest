@@ -1,5 +1,12 @@
 node {
 
+     stage('Test SMSF ') {
+		withDockerContainer('camel.uangel.com:5000/usmsf_jks') {
+     		echo "Test SMSF"
+     		sh 'pwd '
+		}
+	}
+
      stage('Compile SMSF ') {
         docker.withRegistry('https://camel.uangel.com:5000') {
         //docker.withServer('https://camel.uangel.com') {

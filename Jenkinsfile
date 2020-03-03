@@ -2,7 +2,7 @@ node {
 
      stage('Compile SMSF ') {
         //docker.withRegistry('https://camel.uangel.com:5000') {
-        docker.withServer('camel.uangel.com') {
+        docker.withServer('https://camel.uangel.com') {
     		docker.image("usmsf_jks").inside {
     		//docker.image("usmsf_jks").withRun {
      			echo "Start checkout"

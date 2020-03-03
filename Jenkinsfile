@@ -1,4 +1,4 @@
-node {
+node ('non-docker-agent') {
 
      stage('Compile SMSF ') {
         docker.withRegistry('https://camel.uangel.com:5000') {

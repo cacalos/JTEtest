@@ -8,7 +8,7 @@ RUN chown -R app:app /home/app
 USER app
 WORKDIR /home/app
 RUN mkdir HOME;mkdir HOME/lib;mkdir HOME/bin
-COPY --from=camel.uangel.com:5000/sigtran /home/app/srg ./srg
+COPY --from=camel.uangel.com:5000/sigtran-centos7.5 /home/app/srg ./srg
 RUN echo "source /home/app/srg/usrg_dev.sh" >> /home/app/.bashrc
 
 ENV ULIB_DEV_ROOT /home/app/srgpkg/ulib

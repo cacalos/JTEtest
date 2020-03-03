@@ -1,4 +1,4 @@
-From jenkins/centos7.5:latest
+From camel.uangel.com:5000/centos7.5:latest
 MAINTAINER Cho samhyun <cacalos@uangel.com>
 
 USER root

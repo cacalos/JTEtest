@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<logctrl_conf>
-  <log_level off="0x0" warning="0x4f" info="0x5f" debug="0xff" />
-  <log_list> 
-    <log name="omsib"  description="OAM" />
-    <log name="uasamd" description="OAM" />
-  </log_list>
-</logctrl_conf>

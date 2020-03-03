@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mmc_user>
-  <user_list>
-    <user name="admin" password="$1$zg3FUZAk$oFeAsa/y4qC1M9VkQdDvC1" level="SUPER" ctime="2011-07-14 16:39:34" ptime="2012-02-06 16:02:17" ltime="2018-12-20 14:03:30"/>
-    <user name="schedd" password="$1$rijO89H.$GLsy.mPo7/4ZhV/5h4ZsT1" level="SUPER" reserved="true" ctime="2017-04-17 19:28:43" ptime="1970-01-01 09:00:00" ltime="2017-04-19 14:34:13"/>
-  </user_list>
-</mmc_user>

@@ -1,8 +1,0 @@
-SubDir TOP ;
-
-SubInclude TOP lib ;
-SubInclude TOP msgproxy ;
-SubInclude TOP sigtran ;
-SubInclude TOP stat ;
-SubInclude TOP util ;
-

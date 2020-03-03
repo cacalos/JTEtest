@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<udrad_conf>
-    <overload name="maxTps" value="60000"/>
-    <overload name="maxPeerTps" value="10000"/>
-    <overload name="maxMps" value="120000"/>
-    <overload name="maxPeerMps" value="20000"/>
-</udrad_conf>

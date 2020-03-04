@@ -16,10 +16,10 @@ node {
      			sh 'pwd '
      			sh 'ls '
 				git credentialsId: 'camel', url: "ssh://cacalos@camel.uangel.com/data3/git/ua5g/usmsf_map.git"
+     			sh 'ln -s /var/lib/jenkins/workspace/docker_multibranch_master /home/app/src'
+     			sh 'ln -s /var/lib/jenkins/workspace/docker_multibranch_master /home/app/SMSF'
      			sh 'ls /home/app'
-     			sh 'cp -rf usmsf_map /home/app/SMSF'
-     			sh 'ls /home/app'
-     			sh 'ls /home/app/SMSF'
+     			sh 'ls /home/app/src'
      			//sh 'cd /home/app/SMSF;jam clean;jam install;'
     		}
   		}

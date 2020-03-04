@@ -13,11 +13,13 @@ node {
         docker.withRegistry('https://camel.uangel.com:5000') {
     		docker.image("usmsf_jks").inside('-u 0:0 ') {
      			echo "Start checkout"
+     			sh 'pwd '
 				sh 'mkdir SMSF'
+     			sh 'ls -lt '
+     			sh 'whoami '
 				dir('SMSF') {
 					git credentialsId: 'camel', url: "ssh://cacalos@camel.uangel.com/data3/git/ua5g/usmsf_map.git"
 				}
-     			sh 'pwd '
      			sh 'ls'
      			sh 'ls /home/app'
      			//sh 'cd /home/app/SMSF;jam clean;jam install;'

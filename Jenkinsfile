@@ -19,9 +19,9 @@ node {
 				git credentialsId: 'camel', url: "ssh://cacalos@camel.uangel.com/data3/git/ua5g/usmsf_map.git"
      			sh 'ln -s "${WORKSPACE}" /home/app/src'
      			sh 'ln -s "${WORKSPACE}" /home/app/SMSF'
-     			sh 'ls /home/app'
-     			sh 'ls /home/app/src'
-     			//sh 'cd /home/app/SMSF;jam clean;jam install;'
+     			sh 'ls -lt  /home/app'
+     			sh 'ls -lt /home/app/src'
+     			sh 'cd /home/app/src;jam clean;jam install;'
     		}
   		}
 	}

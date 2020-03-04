@@ -1,6 +1,6 @@
 node {
 
-	def path = "${HUDSON_HOME}_" + "${JOB_BASE_NAME}_master"
+	def path = "${JENKINS_HOME}/workspace/" + "${fullDisplayName}_${JOB_BASE_NAME}"
 	/*
      stage('Test SMSF ') {
 		withDockerContainer('camel.uangel.com:5000/usmsf_jks') {

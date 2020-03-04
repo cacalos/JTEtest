@@ -1,6 +1,6 @@
 node {
 
-	def path = "$HUDSON_HOME_" + "$BASE_NAME_master"
+	def path = "${HUDSON_HOME}_" + "${BASE_NAME}_master"
 	/*
      stage('Test SMSF ') {
 		withDockerContainer('camel.uangel.com:5000/usmsf_jks') {

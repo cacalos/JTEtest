@@ -20,7 +20,7 @@ node {
      			sh 'ln -s /var/lib/jenkins/workspace/docker_multibranch_master /home/app/SMSF'
      			sh 'ls /home/app'
      			sh 'ls /home/app/src'
-     			//sh 'cd /home/app/SMSF;jam clean;jam install;'
+     			sh 'cd /home/app/SMSF;jam clean;jam install;'
     		}
   		}
 	}

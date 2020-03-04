@@ -21,6 +21,8 @@ node {
      			sh 'pwd '
      			sh 'ls -lt '
 				sh 'mkdir SMSF'
+     			sh 'ls -lt ./SMSF/*'
+     			sh 'ls -lt ./SMSF/.*'
      			sh 'whoami '
 				dir('SMSF') {
 					git credentialsId: 'camel', url: "ssh://cacalos@camel.uangel.com/data3/git/ua5g/usmsf_map.git"

@@ -1,0 +1,25 @@
+<stsd_conf>
+    <target_list>
+        <target type="sts" delay_time="1" interval="5" delete_file="true" path="$(UASYS_HOME)/log/dbdata/stat" >
+            <backup enabled="false" path="$(UASYS_HOME)/log/dbdata_backup/stat" />
+        </target>
+        <target type="ualog" delay_time="1" interval="10" delete_file="true" path="$(UASYS_HOME)/log/dbdata/connectlog" >
+            <backup enabled="false" path="$(UASYS_HOME)/log/dbdata_backup/connectlog" />
+        </target>
+        <target type="log" delay_time="1" interval="10" delete_file="true" path="$(UASYS_HOME)/log/dbdata/mmclog" >
+            <backup enabled="false" path="$(UASYS_HOME)/log/dbdata_backup/mmclog" />
+        </target>
+        <target type="ualog" delay_time="1" interval="10" delete_file="true" path="$(UASYS_HOME)/log/dbdata/consolelog" >
+            <backup enabled="false" path="$(UASYS_HOME)/log/dbdata_backup/consolelog" />
+        </target>
+        <target type="ualog" delay_time="1" interval="10" delete_file="true" path="$(UASYS_HOME)/log/dbdata/toollog" >
+            <backup enabled="false" path="$(UASYS_HOME)/log/dbdata_backup/toollog" />
+        </target>
+        <target type="mmc" delay_time="1" interval="10" delete_file="true" path="$(UASYS_HOME)/log/dbdata/mmc" >
+            <backup enabled="false" path="$(UASYS_HOME)/log/dbdata_backup/mmc" />
+        </target>
+        <!--target type="rts" standby_disabled="true" delay_time="1" interval="2" delete_file="true" path="$(UASYS_HOME)/log/rts" >
+            <backup enabled="true" path="$(UASYS_HOME)/log/rts_backup" />
+        </target-->
+    </target_list>
+</stsd_conf>

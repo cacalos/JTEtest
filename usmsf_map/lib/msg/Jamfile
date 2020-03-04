@@ -1,0 +1,26 @@
+SubDir TOP lib msg ;
+SubDirHdrs $(TOP)/inc $(TOP)/inc/MMDB $(UALIB_SRC_HOME)/include $(USIP_ROOT_ENV)/include $(UDIA_SRC_HOME)/include $(UXLIB_SRC_HOME)/include $(MMDB_SRC_HOME)/include ;
+
+SOURCES = iXProcessMsg ;
+
+TARGET = libMSG ;
+SHLTARGET = $(TARGET)$(SUFSHARED) ;
+
+# .c -> .o compile option
+ObjectCcFlags $(SOURCES)$(SUFOBJ) : $(LOCAL_DEFINES) $(SYS_CCFLAGS) $(SYS_SHAREDCCFLAGS) ;
+
+# create library(.a) file
+Library $(TARGET) : $(SOURCES).c ;
+
+## create shared library(.so .sl) file
+SharedLibraryMain $(SHLTARGET) : $(TARGET)$(SUFLIB) ;
+
+#LINKLIBS on $(SHLTARGET) = -L$(UASYS_HOME)/lib -lCONV_UD ;
+
+InstallLib $(SMSCHOME)/lib : $(TARGET)$(SUFLIB) ;
+Copy $(TARGET)$(SUFLIB) : $(SMSCHOME)/lib ;
+
+
+# copy files to lib directory
+InstallBin $(UASYS_HOME)/lib : $(TARGET)$(SUFSHARED) ;
+CopySysFile $(TARGET)$(SUFSHARED) : $(TOP)/lib ;

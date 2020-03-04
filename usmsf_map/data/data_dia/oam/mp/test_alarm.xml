@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class_list>
+	<class name="TEST_ALARM" id="90.1" enabled="true" alarm="true" stat="false" min_stat="false" hour_stat="false" day_stat="false" real_time="false" >
+		<measure interval="5" >
+			<field id="0" type="integer" name="level" />
+			<field id="1" type="string" name="alarm message" />
+		</measure>
+
+		<alarm_list>
+			<alarm id="0" code="9001010" name="TEST_ALARM" field_id="0" enabled="true" masked="false" standby_disabled="false" non_busy_hour="false" >
+				<threshold unit="%">
+					<minor value="1" times="1" />
+					<major value="2" times="1" />
+					<critical value="3" times="1" />
+				</threshold>
+			</alarm>
+		</alarm_list>
+
+		<min_stat enabled="false" />
+
+		<object_list>
+			<!--object_range name="disk" id1_begin="1" id1_end="10" id2_begin="1" id2_end="100"/-->
+		</object_list>
+	</class>
+</class_list>

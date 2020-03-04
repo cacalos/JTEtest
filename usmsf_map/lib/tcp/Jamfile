@@ -1,0 +1,22 @@
+SubDir TOP lib tcp ;
+SubDirHdrs $(TOP)/inc $(UALIB_SRC_HOME)/include ;
+SOURCES = tcp ;
+
+
+TARGET = libTCP ;
+
+
+SHLTARGET = $(TARGET)$(SUFSHARED) ;
+Library $(TARGET) : $(SOURCES).c ;
+SharedLibraryMain $(SHLTARGET) : $(TARGET)$(SUFLIB) ;
+InstallLib $(SMSC_HOME)/lib : $(TARGET)$(SUFLIB) ;
+Copy $(TARGET)$(SUFLIB) : $(SMSC_HOME)/lib ;
+
+# .c -> .o compile option
+ObjectCcFlags $(SOURCES)$(SUFOBJ) : $(LOCAL_DEFINES) $(SYS_CCFLAGS) $(SYS_SHAREDCCFLAGS) ;
+
+# copy files to lib directory
+InstallBin $(SMSC_HOME)/lib : $(TARGET)$(SUFSHARED) ;
+CopySysFile $(TARGET)$(SUFSHARED) : $(TOP)/lib ;
+
+

@@ -1,0 +1,30 @@
+SubDir TOP msgproxy ;
+
+SubDirHdrs $(TOP)/inc ;
+SubDirHdrs $(UALIB_SRC_HOME)/include ;
+SubDirHdrs $(UALIB_DEV_HOME)/include ;
+SubDirHdrs $(UXLIB_SRC_HOME)/include ;
+SubDirHdrs $(UXCUTOR_SRC_HOME)/include ;
+
+TARGET = msgproxy ;
+LIB_NAME = lib$(TARGET) ;
+LOCAL_DEFINES = -D_MODULE_NAME='\"$(TARGET)\"' -D_GNU_SOURCE -D_PSTAT64 ;
+LOCAL_CCFLAGS = ;
+
+LIB_SRCS =
+    msgproxy_init
+	msgproxy_conf
+	msgproxy_handle
+	msgproxy_msg
+	msgproxy_stat
+    ;
+
+
+ObjectCcFlags $(LIB_SRCS)$(SUFOBJ) : $(LOCAL_DEFINES) $(SYS_CCFLAGS) $(SYS_SHAREDCCFLAGS) ;
+
+
+Library $(LIB_NAME)$(SUFLIB) : $(LIB_SRCS).c ;
+
+SharedLibraryMain $(LIB_NAME)$(SUFSHARED) : $(LIB_NAME)$(SUFLIB) ;
+
+InstallLib $(UASYS_HOME)/lib : $(LIB_NAME)$(SUFSHARED) ;

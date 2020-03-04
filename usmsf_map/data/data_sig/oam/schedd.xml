@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedd_conf>
+  <scheduler enabled="true" id="schedd" password="root.123"/>
+  <schedule_list>
+    <!-- schedule_type (0:MMC, 1:SCRIPT) -->
+  </schedule_list>
+  <repetition_list>
+<repetition id="1" script="$(UASYS_HOME)/data/oam/script/ntp_status.sh" period="10" description="Check for NTP"/>
+  </repetition_list>
+</schedd_conf>

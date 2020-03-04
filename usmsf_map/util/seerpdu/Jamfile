@@ -1,0 +1,23 @@
+SubDir TOP util seerpdu ;
+SubDirHdrs $(TOP)/inc $(UALIB_SRC_HOME)/include $(ISAM_HOME)/inc ;
+SOURCES = seerpdu printRpdu testHexaString printTpdu ;
+
+TARGET = seerpdu ;
+Main $(TARGET) : $(SOURCES).c ;
+
+LINKLIBS on $(TARGET) = -L$(OSS_HOME)/lib -L$(UASYS_HOME)/lib -lGCA -lTPDU -lRPDU -lUTIL -lsys_lib -lua_common ;
+LOCAL_DEFINES = -g -D_MODULE_NAME='\"$(TARGET)\"' -D_PSTAT64 ;
+LOCAL_DEFINES += -D_MODULE_VERSION='\"$(PACKAGE_VERSION)\"' -D_MODULE_PKG='\"$(PACKAGE_NAME)\"' ;
+
+
+
+
+
+
+
+# .c -> .o compile option
+ObjectCcFlags $(SOURCES)$(SUFOBJ) : $(LOCAL_DEFINES) $(SYS_CCFLAGS) ;
+
+InstallBin $(SMSC_HOME)/bin : $(TARGET) ;
+CopySysFile $(TARGET) : $(TOP)/bin ;
+

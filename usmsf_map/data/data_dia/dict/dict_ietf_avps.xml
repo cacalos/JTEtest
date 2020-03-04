@@ -1,0 +1,2144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE dictionary SYSTEM "dictionary.dtd"> -->
+
+<!-- ************* IETF AVPS ************* -->
+<!-- RFC 3588 : Diameter Base Protocol AVPs -->
+<!-- RFC 4004 : Diameter Mobile IPv4 Application(MIP4) -->
+<!-- RFC 4005 : Diameter Network Access Server Application(NAS) -->
+<!-- RFC 4006 : Diameter Credit Control Application(CC) -->
+<!-- RFC 4072 : Diameter Extensible Authentication Protocol(EAP) -->
+<!-- RFC 4740 : Diameter Session Initiation Protocol (SIP) Application -->
+<!-- RFC 5090(4590) : RADIUS Extension for Digest Authentication -->
+<!-- RFC 5447 : Diameter Mobile IPv6: Support for Network Access Server to Diameter Server Interaction -->
+<!-- RFC 5580 : Carrying Location Objects in RADIUS and Diameter -->
+<!-- RFC 5777 : Traffic Classification and QoS Attributes for Diameter -->
+<!-- RFC 5778 : Diameter Mobile IPv6: Support for Home Agent to Diameter Server Interaction -->
+<!-- RFC 5779 : Diameter Proxy Mobile IPv6: Mobile Access Gateway and Local Mobility Anchor Interaction with Diameter Server-->
+<!-- RFC 7683 : Diameter Overload Indication Conveyance AVPs -->
+<!-- RFC 7944 : Diameter Routing Message Priority -->
+
+<dictionary>
+
+	<!-- ================================================================= -->
+	<!-- RFC 3588 : Diameter Base Protocol AVPs -->
+	<!-- ================================================================= -->
+	<avp name="Acct-Interim-Interval" code="85" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+    <avp name="Accounting-Realtime-Required" code="483" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Acct-Multi-Session-Id" code="50" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Accounting-Record-Number" code="485" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Accounting-Record-Type" code="480" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="Event Record" code="1"/>
+			<enum name="Start Record" code="2"/>
+			<enum name="Interim Record" code="3"/>
+			<enum name="Stop Record" code="4"/>
+		</enumerated>
+	</avp>
+	<avp name="Acct-Session-Id" code="44" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Accounting-Sub-Session-Id" code="287" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="Acct-Application-Id" code="259" mandatory="must" protected="mustnot" may-encrypt="no">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Alternate-Peer" code="275" mandatory="must" protected="mustnot" may-encrypt="no">
+		<type name="DiameterIdentity"/>
+	</avp>
+	<avp name="Auth-Application-Id" code="258" mandatory="must" protected="mustnot" may-encrypt="no">
+		<type name="Unsigned32"/>
+	</avp>
+	<!--avp name="Auth-Type" code="274" mandatory="must" protected="mustnot" may-encrypt="no">
+		<enumerated>
+			<enum name="Authenticate Only" code="1"/>
+			<enum name="Authorize Only" code="2"/>
+			<enum name="Authorize Authenticate" code="3"/>
+		</enumerated>
+	</avp-->
+	<avp name="Authorization-Lifetime" code="291" mandatory="must" may-encrypt="no">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Auth-Grace-Period" code="276" mandatory="must" may-encrypt="no">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Auth-Session-State" code="277" mandatory="must" may-encrypt="no">
+		<enumerated>
+			<enum name="State Maintained" code="0"/>
+			<enum name="No State Maintained" code="1"/>
+		</enumerated>
+	</avp>
+	<avp name="Class" code="25">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Destination-Host" code="293" mandatory="must" protected="mustnot" may-encrypt="no">
+		<type name="DiameterIdentity"/>
+	</avp>
+	<avp name="Destination-Realm" code="283" mandatory="must" protected="mustnot" may-encrypt="no">
+		<type name="DiameterIdentity"/>
+	</avp>
+	<avp name="Disconnect-Cause" code="273" mandatory="must" protected="mustnot" may-encrypt="no">
+		<enumerated>
+			<enum name="REBOOTING" code="0"/>
+			<enum name="BUSY" code="1"/>
+			<enum name="DO_NOT_WANT_TO_TALK_TO_YOU" code="2"/>
+		</enumerated>
+	</avp>
+	<avp name="Error-Message" code="281" mandatory="mustnot" protected="may" may-encrypt="no">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Error-Reporting-Host" code="294" mandatory="must" protected="mustnot" may-encrypt="no">
+		<type name="DiameterIdentity"/>
+	</avp>
+	<avp name="Event-Timestamp" code="55" mandatory="must" protected="may" may-encrypt="no">
+		<type name="Time"/>
+	</avp>
+	<avp name="Firmware-Revision" code="267" mandatory="mustnot" protected="mustnot" may-encrypt="no">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Host-IP-Address" code="257" mandatory="must" protected="mustnot" may-encrypt="no">
+		<type name="Address"/>
+	</avp>
+	<avp name="Inband-Security-Id" code="299" mandatory="must" protected="mustnot" may-encrypt="no">
+		<enumerated>
+			<enum name="No Security" code="0"/>
+			<enum name="TLS Security" code="1"/>
+		</enumerated>
+	</avp>
+	<avp name="Multi-Round-Time-Out" code="272" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Origin-Host" code="264" mandatory="must" may-encrypt="no" protected="mustnot">
+		<type name="DiameterIdentity"/>
+	</avp>
+	<avp name="Origin-Realm" code="296" mandatory="must" may-encrypt="no" protected="mustnot">
+		<type name="DiameterIdentity"/>
+	</avp>
+	<avp name="Origin-State-Id" code="278" mandatory="must" protected="mustnot">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Product-Name" code="269" mandatory="mustnot" may-encrypt="no" protected="mustnot">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Proxy-Host" code="280" mandatory="must" may-encrypt="no" protected="mustnot">
+		<type name="DiameterIdentity"/>
+	</avp>
+	<avp name="Proxy-State" code="33" mandatory="must" may-encrypt="no" protected="mustnot">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Proxy-Info" code="284" mandatory="must" may-encrypt="no" protected="mustnot">
+		<grouped>
+			<required>
+				<avprule name="Proxy-Host" maximum="1" minimum="1"/>
+				<avprule name="Proxy-State" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Redirect-Host" code="292" mandatory="must" may-encrypt="no" protected="mustnot">
+		<type name="DiameterURI"/>
+	</avp>
+	<avp name="Redirect-Host-Usage" code="261" mandatory="must" may-encrypt="no" protected="mustnot">
+		<enumerated>
+			<enum name="Don't Care" code="0"/>
+			<enum name="All Session" code="1"/>
+			<enum name="All Realm" code="2"/>
+			<enum name="Realm and Application" code="3"/>
+			<enum name="All Application" code="4"/>
+			<enum name="All Host" code="5"/>
+		</enumerated>
+	</avp>
+	<avp name="Redirect-Max-Cache-Time" code="262" mandatory="must" may-encrypt="no" protected="mustnot">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Result-Code" code="268" mandatory="must" may-encrypt="no" protected="mustnot" display="RSLTCODE">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Route-Record" code="282" mandatory="must" may-encrypt="no" protected="mustnot">
+		<type name="DiameterIdentity"/>
+	</avp>
+	<avp name="Session-Id" code="263" mandatory="must" protected="mustnot">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Session-Timeout" code="27">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Session-Binding" code="270" mandatory="must" protected="mustnot">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Session-Server-Failover" code="271" mandatory="must" protected="mustnot">
+		<enumerated>
+			<enum name="Refuse Service" code="0"/>
+			<enum name="Try Again" code="1"/>
+			<enum name="Allow Service" code="2"/>
+			<enum name="Try Again / Allow Service" code="3"/>
+		</enumerated>
+	</avp>
+	<avp name="Source-Route" code="286" mandatory="must" may-encrypt="no" protected="mustnot">
+		<type name="DiameterIdentity"/>
+	</avp>
+	<avp name="Supported-Vendor-Id" code="265" mandatory="must" may-encrypt="no" protected="mustnot">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Termination-Cause" code="295" mandatory="must" may-encrypt="no" protected="mustnot">
+		<enumerated>
+			<enum name="Logout" code="1"/>
+			<enum name="Service Not Provided" code="2"/>
+			<enum name="Bad Answer" code="3"/>
+			<enum name="Administrative" code="4"/>
+			<enum name="Link Broken" code="5"/>
+			<!-- NAS (to RADIUS) -->
+			<enum name="User Request" code="11"/>
+			<enum name="Lost Carrier" code="12"/>
+			<enum name="Lost Service" code="13"/>
+			<enum name="Idle Timeout" code="14"/>
+			<enum name="Session Timeout" code="15"/>
+			<enum name="Admin Reset" code="16"/>
+			<enum name="Admin Reboot" code="17"/>
+			<enum name="Port Error" code="18"/>
+			<enum name="NAS Error" code="19"/>
+			<enum name="NAS Request" code="20"/>
+			<enum name="NAS Reboot" code="21"/>
+			<enum name="Port Unneeded" code="22"/>
+			<enum name="Port Preempted" code="23"/>
+			<enum name="Port Suspended" code="24"/>
+			<enum name="Service Unavailable" code="25"/>
+			<enum name="Callback" code="26"/>
+			<enum name="User Error" code="27"/>
+			<enum name="Host Request" code="28"/>
+			<enum name="Supplicant Restart" code="29"/>
+			<enum name="Reauthentication Failure" code="30"/>
+			<enum name="Port Reinit" code="31"/>
+			<enum name="Port Disabled" code="32"/>
+		</enumerated>
+	</avp>
+	<avp name="User-Name" code="1" mandatory="must">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Vendor-Id" code="266" mandatory="must" may-encrypt="no" protected="mustnot">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Vendor-Specific-Application-Id" code="260" mandatory="must" may-encrypt="no" protected="mustnot">
+		<grouped>
+			<required>
+				<avprule name="Vendor-Id" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="Auth-Application-Id" minimum="0" maximum="1"/>
+				<avprule name="Acct-Application-Id" minimum="0" maximum="1"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Auth-Request-Type" code="274" mandatory="must" may-encrypt="no" protected="mustnot">
+		<enumerated>
+			<enum name="AUTHENTICATE_ONLY" code="1"/>
+			<enum name="AUTHORIZE_ONLY" code="2"/>
+			<enum name="AUTHORIZE_AUTHENTICATE" code="3"/>
+		</enumerated>
+	</avp>
+	<avp name="Re-Auth-Request-Type" code="285" mandatory="must" may-encrypt="no" protected="must">
+	<enumerated>
+		<enum name="AUTHORIZE_ONLY" code="0"/>
+		<enum name="AUTHORIZE_AUTHENTICATE" code="1"/>
+	</enumerated>
+	</avp>
+	<avp name="Failed-AVP" code="279" mandatory="must">
+		<grouped>
+			<optional>
+				<avprule name="AVP" minimum="1"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Experimental-Result-Code" code="298" mandatory="must" may-encrypt="no"
+			protected="mustnot" display="RSLTCODE">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Experimental-Result" code="297" mandatory="must">
+		<grouped>
+			<required>
+				<avprule name="Vendor-Id"/>
+				<avprule name="Experimental-Result-Code"/>
+			</required>
+		</grouped>
+	</avp>
+    <!-- ************** END DIAMETER BASE PROTOCOL AVPS ************* -->
+
+	<!-- ================================================================= -->
+	<!-- RFC 4004 : Diameter Mobile IPv4 Application(MIP4) -->
+	<!-- ================================================================= -->
+	
+    <!-- ***************** DIAMETER MOBILEIPV4 APPLICATION AVPS ************** -->
+	<avp name="MIP-Auth-Input-Data-Length" code="338" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MIP-Authenticator-Length" code="339" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MIP-Authenticator-Offset" code="340" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MIP-Candidate-Home-Agent-Host" code="336" mandatory="must" may-encrypt="no">
+		<type name="DiameterIdentity"/>
+	</avp>
+	<avp name="MIP-Home-Agent-Host" code="348" mandatory="must" may-encrypt="no">
+		<type name="DiameterIdentity"/>
+	</avp>
+	<avp name="MIP-FA-Challenge" code="344" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="MIP-Feature-Vector" code="337" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+    </avp>
+	<avp name="MIP-Home-Agent-Address" code="334" mandatory="must" may-encrypt="yes">
+		<type name="Address"/>
+	</avp>
+	<avp name="MIP-MN-AAA-SPI" code="341" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MIP-Filter-Rule" code="342" mandatory="must" may-encrypt="yes">
+		<type name="IPFilterRule"/>
+	</avp>
+	<avp name="MIP-Mobile-Node-Address" code="333" mandatory="must" may-encrypt="yes">
+		<type name="Address"/>
+	</avp>
+	<avp name="MIP-Reg-Request" code="320" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="MIP-Reg-Reply" code="321" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="MIP-MN-AAA-Auth" code="322" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="MIP-MN-AAA-SPI" maximum="1" minimum="1"/>
+				<avprule name="MIP-Auth-Input-Data-Length" maximum="1" minimum="1"/>
+				<avprule name="MIP-Authenticator-Offset" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="MIP-Originating-Foreign-AAA" code="347" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Origin-Realm" maximum="1" minimum="1"/>
+				<avprule name="Origin-Host" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="MIP-Algorithm-Type" code="345" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="HMAC-SHA-1" code="2"/>
+		</enumerated>
+	</avp>
+	<avp name="MIP-MN-to-FA-SPI" code="315" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MIP-MN-to-HA-SPI" code="316" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MIP-FA-to-HA-SPI" code="318" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MIP-FA-to-MN-SPI" code="319" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MIP-HA-to-FA-SPI" code="323" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MIP-Replay-Mode" code="346" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="None" code="1"/>
+			<enum name="Timestamps" code="2"/>
+			<enum name="Nonces" code="3"/>
+		</enumerated>
+	</avp>
+	<avp name="MIP-Session-Key" code="343" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="MIP-MN-to-FA-MSA" code="325" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="MIP-MN-to-FA-SPI" maximum="1" minimum="1"/>
+				<avprule name="MIP-Algorithm-Type" maximum="1" minimum="1"/>
+				<avprule name="MIP-Session-Key" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="MIP-FA-to-MN-MSA" code="326" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="MIP-FA-to-MN-SPI" maximum="1" minimum="1"/>
+				<avprule name="MIP-Algorithm-Type" maximum="1" minimum="1"/>
+				<avprule name="MIP-Session-Key" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="MIP-FA-to-HA-MSA" code="328" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="MIP-FA-to-HA-SPI" maximum="1" minimum="1"/>
+				<avprule name="MIP-Algorithm-Type" maximum="1" minimum="1"/>
+				<avprule name="MIP-Session-Key" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="MIP-HA-to-FA-MSA" code="329" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="MIP-Algorithm-Type" maximum="1" minimum="1"/>
+				<avprule name="MIP-Session-Key" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="MIP-MN-to-HA-MSA" code="331" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="MIP-MN-to-HA-SPI" maximum="1" minimum="1"/>
+				<avprule name="MIP-Algorithm-Type" maximum="1" minimum="1"/>
+				<avprule name="MIP-Replay-Mode" maximum="1" minimum="1"/>
+				<avprule name="MIP-Session-Key" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="MIP-HA-to-MN-MSA" code="332" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="MIP-Algorithm-Type" maximum="1" minimum="1"/>
+				<avprule name="MIP-Replay-Mode" maximum="1" minimum="1"/>
+				<avprule name="MIP-Session-Key" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="MIP-MSA-Lifetime" code="367" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MIP-Key-Material" code="335" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+
+	<!-- ================================================================= -->
+	<!-- RFC 4005 : Diameter Network Access Server Application(NAS) -->
+	<!-- ================================================================= -->
+	<!-- NAS Session AVPs -->
+	<avp name="NAS-Port" code="5" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="NAS-Port-Id" code="87" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="NAS-Port-Type" code="61" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="Async" code="0"/>
+			<enum name="Sync" code="1"/>
+			<enum name="ISDN Sync" code="2"/>
+			<enum name="ISDN Async V.120" code="3"/>
+			<enum name="ISDN Async V.110" code="4"/>
+			<enum name="Virtual" code="5"/>
+			<enum name="PIAFS" code="6"/>
+			<enum name="HDLC Clear Channel" code="7"/>
+			<enum name="X.25" code="8"/>
+			<enum name="X.75" code="9"/>
+			<enum name="G.3 Fax" code="10"/>
+			<enum name="SDSL" code="11"/>
+			<enum name="ADSL-CAP" code="12"/>
+			<enum name="ADSL-DMT" code="13"/>
+			<enum name="IDSL" code="14"/>
+			<enum name="Ethernet" code="15"/>
+			<enum name="xDSL" code="16"/>
+			<enum name="Cable" code="17"/>
+			<enum name="Wireless - Other" code="18"/>
+			<enum name="Wireless - IEEE 802.11" code="19"/>
+			<enum name="Token-Ring" code="20"/>
+			<enum name="FDDI" code="21"/>
+			<enum name="Wireless - CDMA2000" code="22"/>
+			<enum name="Wireless - UMTS" code="23"/>
+			<enum name="Wireless - 1X-EV" code="24"/>
+			<enum name="IAPP" code="25"/>
+		</enumerated>
+	</avp>
+	<avp name="Called-Station-Id" code="30" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Calling-Station-Id" code="31" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Connect-Info" code="77" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Originating-Line-Info" code="94" mandatory="may" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Reply-Message" code="18" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<!-- NAS Authentication AVPs -->
+	<avp name="User-Password" code="2" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Password-Retry" code="75" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Prompt" code="76" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="No Echo" code="0"/>
+			<enum name="Echo" code="1"/>
+		</enumerated>
+	</avp>
+	<avp name="CHAP-Auth" code="402" mandatory="must" protected="may" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="CHAP-Algorithm" maximum="1" minimum="1"/>
+				<avprule name="CHAP-Ident" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="CHAP-Response" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="CHAP-Algorithm" code="403" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="CHAP with MD5" code="5"/>
+		</enumerated>
+	</avp>
+	<avp name="CHAP-Ident" code="404" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="CHAP-Response" code="405" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="CHAP-Challenge" code="60" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="ARAP-Password" code="70" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="ARAP-Challenge-Response" code="84" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="ARAP-Security" code="73" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="ARAP-Security-Data" code="74" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<!-- NAS Authorization AVPs -->
+	<!-- duplicate to 3GPP Service-Type, so change name from 'Service-Type' to 'NAS-Service-Type' -->
+	<avp name="NAS-Service-Type" code="6" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="Login" code="1"/>
+			<enum name="Framed" code="2"/>
+			<enum name="Callback Login" code="3"/>
+			<enum name="Callback Framed" code="4"/>
+			<enum name="Outbound" code="5"/>
+			<enum name="Administrative" code="6"/>
+			<enum name="NAS Prompt" code="7"/>
+			<enum name="Authenticate Only" code="8"/>
+			<enum name="Callback NAS Prompt" code="9"/>
+			<enum name="Call Check" code="10"/>
+			<enum name="Callback Administrative" code="11"/>
+			<enum name="Voice" code="12"/>
+			<enum name="Fax" code="13"/>
+			<enum name="Modem Relay" code="14"/>
+			<enum name="IAPP-Register" code="15"/>
+			<enum name="IAPP-AP-Check" code="16"/>
+			<enum name="Authorize Only" code="17"/>
+		</enumerated>
+	</avp>
+	<avp name="Callback-Number" code="19" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Callback-Id" code="20" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Idle-Timeout" code="28" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Port-Limit" code="62" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="NAS-Filter-Rule" code="400" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="IPFilterRule"/>
+	</avp>
+	<avp name="Filter-Id" code="11" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Configuration-Token" code="78" mandatory="must" protected="mustnot" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="QoS-Filter-Rule" code="407" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="QoSFilterRule"/>
+	</avp>
+	<avp name="Framed-Protocol" code="7" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="PPP" code="1"/>
+			<enum name="SLIP" code="2"/>
+			<enum name="ARAP" code="3"/>
+			<enum name="Gandalf proprietary SingleLink/MultiLink protocol" code="4"/>
+			<enum name="Xylogics proprietary IPX/SLIP" code="5"/>
+			<enum name="X.75 Synchronous" code="6"/>
+		</enumerated>
+	</avp>
+	<avp name="Framed-Routing" code="10" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="None" code="0"/>
+			<enum name="Send routing packets" code="1"/>
+			<enum name="Listen for routing packets" code="2"/>
+			<enum name="Send and Listen" code="3"/>
+		</enumerated>
+	</avp>
+	<avp name="Framed-MTU" code="12" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Framed-Compression" code="13" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="None" code="0"/>
+			<enum name="VJ TCP/IP header compression" code="1"/>
+			<enum name="IPX header compression" code="2"/>
+			<enum name="Stac-LZS compression" code="3"/>
+		</enumerated>
+	</avp>
+	<avp name="Framed-IP-Address" code="8" mandatory="must" protected="may" may-encrypt="yes" display="HEXSTR">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Framed-IP-Netmask" code="9" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Framed-Route" code="22" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Framed-Pool" code="88" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Framed-Interface-Id" code="96" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="Framed-IPv6-Prefix" code="97" mandatory="must" protected="may" may-encrypt="yes" display="HEXSTR">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Framed-IPv6-Route" code="99" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Framed-IPv6-Pool" code="100" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Framed-IPX-Network" code="23" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Framed-Appletalk-Link" code="37" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Framed-Appletalk-Network" code="38" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Framed-Appletalk-Zone" code="39" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="ARAP-Features" code="71" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="ARAP-Zone-Access" code="72" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="Only allow access to default zone" code="1"/>
+			<enum name="Use zone filter inclusively" code="2"/>
+			<enum name="Not used" code="3"/>
+			<enum name="Use zone filter exclusively" code="4"/>
+		</enumerated>
+	</avp>
+	<avp name="Login-IP-Host" code="14" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Login-IPv6-Host" code="98" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Login-Service" code="15" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="Telnet" code="0"/>
+			<enum name="Rlogin" code="1"/>
+			<enum name="TCP Clear" code="2"/>
+			<enum name="PortMaster" code="3"/>
+			<enum name="LAT" code="4"/>
+			<enum name="X25-PAD" code="5"/>
+			<enum name="X25-T3POS" code="6"/>
+			<enum name="TCP Clear Quiet" code="8"/>
+		</enumerated>
+	</avp>
+	<avp name="Login-TCP-Port" code="16" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Login-LAT-Service" code="34" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Login-LAT-Node" code="35" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Login-LAT-Group" code="36" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Login-LAT-Port" code="63" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<!-- NAS Tunneling -->
+	<avp name="Tunneling" code="401" mandatory="must" protected="may">
+		<grouped>
+			<required>
+				<avprule name="Tunnel-Type" maximum="1" minimum="1"/>
+				<avprule name="Tunnel-Medium-Type" maximum="1" minimum="1"/>
+				<avprule name="Tunnel-Client-Endpoint" maximum="1" minimum="1"/>
+				<avprule name="Tunnel-Server-Endpoint" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="Tunnel-Preference" maximum="1"/>
+				<avprule name="Tunnel-Client-Auth-Id" maximum="1"/>
+				<avprule name="Tunnel-Server-Auth-Id" maximum="1"/>
+				<avprule name="Tunnel-Assignment-Id" maximum="1"/>
+				<avprule name="Tunnel-Password" maximum="1"/>
+				<avprule name="Tunnel-Private-Group-Id" maximum="1"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Tunnel-Type" code="64" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="PPTP" code="1"/>
+			<enum name="L2F" code="2"/>
+			<enum name="L2TP" code="3"/>
+			<enum name="ATMP" code="4"/>
+			<enum name="VTP" code="5"/>
+			<enum name="AH" code="6"/>
+			<enum name="IP-IP" code="7"/>
+			<enum name="MIN-IP-IP" code="8"/>
+			<enum name="ESP" code="9"/>
+			<enum name="GRE" code="10"/>
+			<enum name="DVS" code="11"/>
+			<enum name="IP-in-IP" code="12"/>
+			<enum name="VLAN" code="13"/>
+		</enumerated>
+	</avp>
+	<avp name="Tunnel-Medium-Type" code="65" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="IPv4" code="1"/>
+			<enum name="IPv6" code="2"/>
+			<enum name="NSAP" code="3"/>
+			<enum name="HDLC" code="4"/>
+			<enum name="BBN 1822" code="5"/>
+			<enum name="802" code="6"/>
+			<enum name="E.163" code="7"/>
+			<enum name="E.164" code="8"/>
+			<enum name="F.69" code="9"/>
+			<enum name="X.121" code="10"/>
+			<enum name="IPX" code="11"/>
+			<enum name="Appletalk" code="12"/>
+			<enum name="Decnet IV" code="13"/>
+			<enum name="Banyan Vines" code="14"/>
+			<enum name="E.164 with NSAP format subaddress" code="15"/>
+		</enumerated>
+	</avp>
+	<avp name="Tunnel-Client-Endpoint" code="66" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Tunnel-Server-Endpoint" code="67" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Tunnel-Password" code="69" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Tunnel-Private-Group-Id" code="81" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Tunnel-Assignment-Id" code="82" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Tunnel-Preference" code="83" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Tunnel-Client-Auth-Id" code="90" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Tunnel-Server-Auth-Id" code="91" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<!--  NAS Accounting -->
+	<avp name="Accounting-Input-Octets" code="363" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="Accounting-Output-Octets" code="364" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="Accounting-Input-Packets" code="365" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="Accounting-Output-Packets" code="366" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="Acct-Session-Time" code="46" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Acct-Authentic" code="45" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="RADIUS" code="1"/>
+			<enum name="Local" code="2"/>
+			<enum name="Remote" code="3"/>
+			<enum name="Diameter" code="4"/>
+		</enumerated>
+	</avp>
+	<avp name="Acounting-Auth-Method" code="406" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="PAP" code="1"/>
+			<enum name="CHAP" code="2"/>
+			<enum name="MS-CHAP-1" code="3"/>
+			<enum name="MS-CHAP-2" code="4"/>
+			<enum name="EAP" code="5"/>
+			<enum name="None" code="7"/>
+		</enumerated>
+	</avp>
+	<avp name="Acct-Delay-Time" code="41" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Acct-Link-Count" code="51" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Acct-Tunnel-Connection" code="68" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Acct-Tunnel-Packets-Lost" code="86" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<!-- AVPs Used Only for Compatibility -->
+	<avp name="NAS-Identifier" code="32" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="NAS-IP-Address" code="4" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="NAS-IPv6-Address" code="95" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="State" code="24" mandatory="must" protected="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Origin-AAA-Protocol" code="408" mandatory="must" protected="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="RADIUS" code="1"/>
+		</enumerated>
+	</avp>
+
+	<!-- ================================================================= -->
+	<!-- RFC 4006 : Diameter Credit Control Application(CC) -->
+	<!-- ================================================================= -->
+
+	<avp name="CC-Correlation-Id" code="411" mandatory="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="CC-Input-Octets" code="412" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="CC-Money" code="413" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Unit-Value" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="Currency-Code" maximum="1"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="CC-Output-Octets" code="414" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="CC-Request-Number" code="415" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="CC-Request-Type" code="416" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="INITIAL_REQUEST" code="1"/>
+			<enum name="UPDATE_REQUEST" code="2"/>
+			<enum name="TERMINATION_REQUEST" code="3"/>
+			<enum name="EVENT_REQUEST" code="4"/>
+		</enumerated>
+	</avp>
+	<avp name="CC-Service-Specific-Units" code="417" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="CC-Session-Failover" code="418" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="FAILOVER_NOT_SUPPORTED" code="0"/>
+			<enum name="FAILOVER_SUPPORTED" code="1"/>
+		</enumerated>
+	</avp>
+	<avp name="CC-Sub-Session-Id" code="419" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="CC-Time" code="420" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="CC-Total-Octets" code="421" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="CC-Unit-Type" code="454" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="TIME" code="0"/>
+			<enum name="MONEY" code="1"/>
+			<enum name="TOTAL-OCTETC" code="2"/>
+			<enum name="INPUT-OCTETC" code="3"/>
+			<enum name="OUTPUT-OCTETC" code="4"/>
+			<enum name="SERVICE-SPECIFIC-UNITS" code="5"/>
+		</enumerated>
+	</avp>
+	<avp name="Check-Balance-Result" code="422" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="ENOUGH_CREDIT" code="0"/>
+			<enum name="No_CREDIT" code="1"/>
+		</enumerated>
+	</avp>
+	<avp name="Cost-Information" code="423" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Unit-Value" maximum="1" minimum="1"/>
+				<avprule name="Currency-Code" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="Cost-Unit" maximum="1"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Cost-Unit" code="424" mandatory="must" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Credit-Control" code="426" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="CREDIT_AUTHORIZATION" code="0"/>
+			<enum name="RE_AUTHORIZATION" code="1"/>
+		</enumerated>
+	</avp>
+	<avp name="Credit-Control-Failure-Handling" code="427" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="TERMINATE" code="0"/>
+			<enum name="CONTINUE" code="1"/>
+			<enum name="RETRY_AND_TERMINATE" code="2"/>
+		</enumerated>
+	</avp>
+	<avp name="Currency-Code" code="425" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Direct-Debiting-Failure-Handling" code="428" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="TERMINATE_OR_BUFFER" code="0"/>
+			<enum name="CONTINUE" code="1"/>
+		</enumerated>
+	</avp>
+	<avp name="Exponent" code="429" mandatory="must" may-encrypt="yes">
+		<type name="Integer32"/>
+	</avp>
+	<avp name="Final-Unit-Action" code="449" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="TERMINATE" code="0"/>
+			<enum name="REDIRECT" code="1"/>
+			<enum name="RESTRICT_ACCESS" code="2"/>
+		</enumerated>
+	</avp>
+	<avp name="Final-Unit-Indication" code="430" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Final-Unit-Action" maximum="1" minimum="1" />
+			</required>
+			<optional>
+				<avprule name="Restriction-Filter-Rule"/>
+				<avprule name="Filter-Id"/>
+				<avprule name="Redirect-Server" maximum="1"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Granted-Service-Unit" code="431" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="Tariff-Time-Change" maximum="1"/>
+				<avprule name="CC-Time" maximum="1"/>
+				<avprule name="CC-Money" maximum="1"/>
+				<avprule name="CC-Total-Octets" maximum="1"/>
+				<avprule name="CC-Input-Octets" maximum="1"/>
+				<avprule name="CC-Output-Octets" maximum="1"/>
+				<avprule name="CC-Service-Specific-Units" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="G-S-U-Pool-Identifier" code="453" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="G-S-U-Pool-Reference" code="457" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="G-S-U-Pool-Identifier" minimum="1" maximum="1"/>
+				<avprule name="CC-Unit-Type"  minimum="1" maximum="1"/>
+				<avprule name="Unit-Value"  minimum="1" maximum="1"/>
+			</required>
+		</grouped>
+	</avp>
+	<avp name="Multiple-Services-Credit-Control" code="456" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="Granted-Service-Unit" maximum="1"/>
+				<avprule name="Requested-Service-Unit" maximum="1"/>
+				<avprule name="Used-Service-Unit"/>
+				<avprule name="Tariff-Change-Usage" maximum="1"/>
+				<avprule name="Service-Identifier"/>
+				<avprule name="Rating-Group" maximum="1"/>
+				<avprule name="G-S-U-Pool-Reference"/>
+				<avprule name="Validity-Time" maximum="1"/>
+				<avprule name="Result-Code" maximum="1"/>
+				<avprule name="Final-Unit-Indication" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Multiple-Services-Indicator" code="455" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="MULTIPLE_SERVICES_NOT_SUPPORTED" code="0"/>
+			<enum name="MULTIPLE_SERVICES_SUPPORTED" code="1"/>
+		</enumerated>
+	</avp>
+	<avp name="Rating-Group" code="432" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Redirect-Address-Type" code="433" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="IPv4 Address" code="0"/>
+			<enum name="IPv6 Address" code="1"/>
+			<enum name="URL" code="2"/>
+			<enum name="SIP URI" code="3"/>
+		</enumerated>
+	</avp>
+	<avp name="Redirect-Server" code="434" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Redirect-Address-Type" maximum="1" minimum="1"/>
+				<avprule name="Redirect-Server-Address" maximum="1" minimum="1"/>
+			</required>
+		</grouped>
+	</avp>
+	<avp name="Redirect-Server-Address" code="435" mandatory="must" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Requested-Action" code="436" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="DIRECT_DEBITING" code="0"/>
+			<enum name="REFUND_ACCOUNT" code="1"/>
+			<enum name="CHECK_BALANCE" code="2"/>
+			<enum name="PRICE_ENQUIRY" code="3"/>
+		</enumerated>
+	</avp>
+	<avp name="Requested-Service-Unit" code="437" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="CC-Time" maximum="1"/>
+				<avprule name="CC-Money" maximum="1"/>
+				<avprule name="CC-Total-Octets" maximum="1"/>
+				<avprule name="CC-Input-Octets" maximum="1"/>
+				<avprule name="CC-Output-Octets" maximum="1"/>
+				<avprule name="CC-Service-Specific-Units" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Restriction-Filter-Rule" code="438" mandatory="must" may-encrypt="yes">
+		<type name="IPFilterRule"/>
+	</avp>
+	<avp name="Service-Context-Id" code="461" mandatory="must" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Service-Identifier" code="439" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Service-Parameter-Info" code="440" mandatory="mustnot" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Service-Parameter-Type" maximum="1"/>
+				<avprule name="Service-Parameter-Value" maximum="1"/>
+			</required>
+		</grouped>
+	</avp>
+	<avp name="Service-Parameter-Type" code="441" mandatory="mustnot" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Service-Parameter-Value" code="442" mandatory="mustnot" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Subscription-Id" code="443" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Subscription-Id-Type" maximum="1" minimum="1"/>
+				<avprule name="Subscription-Id-Data" maximum="1" minimum="1"/>
+			</required>
+		</grouped>
+	</avp>
+	<avp name="Subscription-Id-Data" code="444" mandatory="must" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Subscription-Id-Type" code="450" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="END_USER_E164" code="0"/>
+			<enum name="END_USER_IMSI" code="1"/>
+			<enum name="END_USER_SIP_URI" code="2"/>
+			<enum name="END_USER_NAI" code="3"/>
+			<enum name="END_USER_PRIVATE" code="4"/>
+		</enumerated>
+	</avp>
+	<avp name="Tariff-Change-Usage" code="452" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="UNIT_BEFORE_TARIFF_CHANGE" code="0"/>
+			<enum name="UNIT_AFTER_TARIFF_CHANGE" code="1"/>
+			<enum name="UNIT_INDETERMINATE" code="2"/>
+		</enumerated>
+	</avp>
+	<avp name="Tariff-Time-Change" code="451" mandatory="must" may-encrypt="yes">
+		<type name="Time"/>
+	</avp>
+	<avp name="Unit-Value" code="445" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Value-Digits" maximum="1" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="Exponent" maximum="1"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Used-Service-Unit" code="446" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="Tariff-Change-Usage" maximum="1"/>
+				<avprule name="CC-Time" maximum="1"/>
+				<avprule name="CC-Money" maximum="1"/>
+				<avprule name="CC-Total-Octets" maximum="1"/>
+				<avprule name="CC-Input-Octets" maximum="1"/>
+				<avprule name="CC-Output-Octets" maximum="1"/>
+				<avprule name="CC-Service-Specific-Units" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="User-Equipment-Info" code="458" mandatory="may" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="User-Equipment-Info-Type" maximum="1" minimum="1"/>
+				<avprule name="User-Equipment-Info-Value" maximum="1" minimum="1"/>
+			</required>
+		</grouped>
+	</avp>
+	<avp name="User-Equipment-Info-Type" code="459" mandatory="may" may-encrypt="yes">
+		<enumerated>
+			<enum name="IMEISV" code="0"/>
+			<enum name="MAC" code="1"/>
+			<enum name="EUI64" code="2"/>
+			<enum name="MODIFIED_EUI64" code="3"/>
+		</enumerated>
+	</avp>
+	<avp name="User-Equipment-Info-Value" code="460" mandatory="may" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Value-Digits" code="447" mandatory="must" may-encrypt="yes">
+		<type name="Integer64"/>
+	</avp>
+	<avp name="Validity-Time" code="448" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+
+	<!-- ================================================================= -->
+	<!-- RFC 4072 : Diameter Extensible Authentication Protocol(EAP) -->
+	<!-- ================================================================= -->
+	<avp name="EAP-Payload" code="462" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="EAP-Reissued-Payload" code="463" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="EAP-Master-Session-Key" code="464" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="EAP-Key-Name" code="102" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Accounting-EAP-Auth-Method" code="465" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+
+	<!-- ================================================================= -->
+	<!-- RFC 4740 : Diameter Session Initiation Protocol (SIP) Application -->
+	<!-- ================================================================= -->
+
+	<!-- ================================================================= -->
+	<!-- RFC 5090(4590) : RADIUS Extension for Digest Authentication -->
+	<!-- ================================================================= -->
+	<avp name="Digest-Realm" code="104" mandatory="must" protected="may">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Digest-QoP" code="110" mandatory="must" protected="may">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Digest-Algorithm" code="111" mandatory="must" protected="may">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Digest-HA1" code="121" mandatory="must" protected="may">
+		<type name="UTF8String"/>
+	</avp>
+
+	<!-- ================================================================= -->
+	<!-- RFC 5447 : Diameter Mobile IPv6: Support for Network Access Server to Diameter Server Interaction -->
+	<!-- ================================================================= -->
+
+	<avp name="MIP6-Feature-Vector" code="124" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned64"/>
+	</avp>
+	<avp name="MIP6-Home-Link-Prefix" code="125" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="MIP6-Agent-Info" code="486" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="MIP-Home-Agent-Address" maximum="2" />
+				<avprule name="MIP-Home-Agent-Host" maximum="1" />
+				<avprule name="MIP6-Home-Link-Prefix" maximum="1" />
+				<avprule name="PMIP6-IPv4-Home-Address" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	
+	<!-- ================================================================= -->
+	<!-- RFC 5580 : Carrying Location Objects in RADIUS and Diameter -->
+	<!-- ================================================================= -->
+
+	<avp name="Operator-Name" code="126" mandatory="mustnot" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Location-Information" code="127" mandatory="mustnot" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Location-Data" code="128" mandatory="mustnot" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Basic-Location-Policy-Rules" code="129" mandatory="mustnot" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Extended-Location-Policy-Rules" code="130" mandatory="mustnot" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Requested-Location-Info" code="131" mandatory="mustnot" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Location-Capable" code="132" mandatory="mustnot" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+
+	<!-- ================================================================= -->
+	<!-- RFC 5777 : Traffic Classification and QoS Attributes for Diameter -->
+	<!-- ================================================================= -->
+	
+	<avp name="QoS-Resources" code="508" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Filter-Rule" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Filter-Rule" code="509" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="Filter-Rule-Precedence" maximum="1"/>
+				<avprule name="Classifier" maximum="1"/>
+				<avprule name="Time-Of-Day-Condition"/>
+				<avprule name="Treatment-Action" maximum="1"/>
+				<avprule name="QoS-Semantics" maximum="1"/>
+				<avprule name="QoS-Profile-Template" maximum="1"/>
+				<avprule name="QoS-Parameters" maximum="1"/>
+				<avprule name="Excess-Treatment" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Filter-Rule-Precedence" code="510" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Classifier" code="511" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Classifier-ID" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="Protocol" maximum="1"/>
+				<avprule name="Direction" maximum="1"/>
+				<avprule name="From-Spec"/>
+				<avprule name="To-Spec"/>
+				<avprule name="Diffserv-Code-Point"/>
+				<avprule name="Fragmentation-Flag" maximum="1"/>
+				<avprule name="IP-Option"/>
+				<avprule name="TCP-Option"/>
+				<avprule name="TCP-Flags" maximum="1"/>
+				<avprule name="ICMP-Type"/>
+				<avprule name="ETH-Option"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Classifier-ID" code="512" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Protocol" code="513" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="HOPOPT" code="0"/> <!-- IPv6 Hop-by-Hop Option [RFC1883] -->
+			<enum name="ICMP" code="1"/> <!-- Internet Control Message [RFC792] -->
+			<enum name="IGMP" code="2"/> <!-- Internet Group Management [RFC1112] -->
+			<enum name="GGP" code="3"/> <!-- Gateway-to-Gateway [RFC823] -->
+			<enum name="IPv5" code="4"/> <!-- IPv4 encapsulation [RFC2003] -->
+			<enum name="ST" code="5"/> <!-- Stream [RFC1190][RFC1819] -->
+			<enum name="TCP" code="6"/> <!-- Transmission Control [RFC793] --> 
+			<enum name="CBT" code="7"/> <!-- CBT [Tony_Ballardie] -->
+			<enum name="EGP" code="8"/> <!-- Exterior Gateway Protocol [RFC888][David_Mills] -->
+			<enum name="IGP" code="9"/> <!-- any private interior gateway (used by Cisco for their IGRP) IANA -->
+			<enum name="BBN-RCC-MON" code="10"/> <!-- BBN RCC Monitoring [Steve_Chipman] -->
+			<enum name="NVP-II" code="11"/> <!-- Network Voice Protocol [RFC741][Steve_Casner] -->
+			<enum name="PUP" code="12"/> <!-- PUP [Boggs][XEROX]  -->
+			<enum name="ARGUS" code="13"/> <!-- ARGUS [Robert_W_Scheifler] -->
+			<enum name="EMCON" code="14"/> <!-- EMCON [<mystery contact>] -->
+			<enum name="XNET" code="15"/> <!-- Cross Net Debugger [Jack_Haverty] -->
+			<enum name="CHAOS" code="16"/> <!-- Chaos [J_Noel_Chiappa] -->
+			<enum name="UDP" code="17"/> <!-- User Datagram [RFC768][Jon_Postel] -->
+			<enum name="MUX" code="18"/> <!-- Multiplexing Protocol [Jon_Postel] -->
+			<enum name="DCN-MEAS" code="19"/> <!-- DCN Measurement Subsystems [David_Mills] -->
+			<enum name="HMP" code="20"/> <!-- Host Monitoring [RFC869][Robert_Hinden] -->
+			<enum name="PRM" code="21"/> <!-- Packet Radio Measurement [Zaw_Sing_Su] -->
+			<enum name="XNS-IDP" code="22"/> <!-- XEROX NS IDP -->
+			<enum name="TRUNK-1" code="23"/> <!-- Trunk-1 [Barry_Boehm] -->
+			<enum name="TRUNK-2" code="24"/> <!-- Trunk-2 [Barry_Boehm] -->
+			<enum name="LEAF-1" code="25"/> <!-- Leaf-1 [Barry_Boehm] -->
+			<enum name="LEAF-2" code="26"/> <!-- Leaf-2 [Barry_Boehm] -->
+			<enum name="RDP" code="27"/> <!-- Reliable Data Protocol [RFC908][Robert_Hinden] -->
+			<enum name="IRTP" code="28"/> <!-- Internet Reliable Transaction [RFC938][Trudy_Miller] -->
+			<enum name="ISO-TP4" code="29"/> <!-- ISO Transport Protocol Class 4 [RFC905] -->
+			<enum name="NETBLT" code="30"/> <!-- Bulk Data Transfer Protocol [RFC969][David_Clark] -->
+			<enum name="MFE-NSP" code="31"/> <!-- MFE Network Services Protocol -->
+			<enum name="MERIT-INP" code="32"/> <!-- MERIT Internodal Protocol [Hans_Werner_Braun] -->
+			<enum name="DCCP" code="33"/> <!-- Datagram Congestion Control Protocol [RFC4340] -->
+			<enum name="3PC" code="34"/> <!-- Third Party Connect Protocol [Stuart_A_Friedberg] -->
+			<enum name="IDPR" code="35"/> <!-- Inter-Domain Policy Routing Protocol [Martha_Steenstrup] -->
+			<enum name="XTP" code="36"/> <!-- XTP [Greg_Chesson] -->
+			<enum name="DDP" code="37"/> <!-- Datagram Delivery Protocol [Wesley_Craig] -->
+			<enum name="IDPR-CMTP" code="38"/> <!-- IDPR Control Message Transport Proto [Martha_Steenstrup] -->
+			<enum name="TP++" code="39"/> <!-- TP++ Transport Protocol [Dirk_Fromhein] -->
+			<enum name="IL" code="40"/> <!-- IL Transport Protocol [Dave_Presotto] -->
+			<enum name="IPV6" code="41"/> <!-- IPv6 encapsulation [RFC2473] -->
+			<enum name="SDRP" code="42"/> <!-- Source Demand Routing Protocol [Deborah_Estrin] -->
+			<enum name="IPv6-Route" code="43"/> <!-- Routing Header for IPv6 [Steve_Deering] -->
+			<enum name="IPv6-Frag" code="44"/> <!-- Fragment Header for IPv6 [Steve_Deering] -->
+			<enum name="IDRP" code="45"/> <!-- Inter-Domain Routing Protocol [Sue_Hares] -->
+			<enum name="RSVP" code="46"/> <!-- Reservation Protocol [Bob_Braden] -->
+			<enum name="GRE" code="47"/> <!-- General Routing Encapsulation [Tony_Li] -->
+			<enum name="DSR" code="48"/> <!-- Dynamic Source Routing Protocol [RFC4728] -->
+			<enum name="BNA" code="49"/> <!-- BNA [Gary Salamon] -->
+			<enum name="ESP" code="50"/> <!-- Encap Security Payload [RFC4303] -->
+			<enum name="AH" code="51"/> <!-- Authentication Header [RFC4302] -->
+			<enum name="I-NLSP" code="52"/> <!-- Integrated Net Layer Security TUBA [K_Robert_Glenn] -->
+			<enum name="SWIPE" code="53"/> <!-- IP with Encryption [John_Ioannidis] -->
+			<enum name="NARP" code="54"/> <!-- NBMA Address Resolution Protocol [RFC1735] -->
+			<enum name="MOBILE" code="55"/> <!-- IP Mobility [Charlie_Perkins] -->
+			<enum name="TLSP" code="56"/> <!-- Transport Layer Security Protocol using Kryptonet key management [Christer_Oberg] -->
+			<enum name="SKIP" code="57"/> <!-- SKIP [Tom_Markson] -->
+			<enum name="IPv6-ICMP" code="58"/> <!-- ICMP for IPv6 [RFC1883] -->
+			<enum name="IPv6-NoNxt" code="59"/> <!-- No Next Header for IPv6 [RFC1883] -->
+			<enum name="IPv6-Opts" code="60"/> <!-- Destination Options for IPv6 [RFC1883] -->
+			<enum name="AHIP" code="61"/> <!-- any host internal protocol [Internet_Assigned_Numbers_Authority] -->
+			<enum name="CFTP" code="62"/> <!-- CFTP [Harry_Forsdick] -->
+			<enum name="ALN" code="63"/> <!-- any local network [Internet_Assigned_Numbers_Authority] -->
+			<enum name="SAT-EXPAK" code="64"/> <!-- SATNET and Backroom EXPAK [Steven_Blumenthal] -->
+			<enum name="KRYPTOLAN" code="65"/> <!-- Kryptolan [Paul Liu] -->
+			<enum name="RVD" code="66"/> <!-- MIT Remote Virtual Disk Protocol [Michael_Greenwald] -->
+			<enum name="IPPC" code="67"/> <!-- Internet Pluribus Packet Core [Steven_Blumenthal] -->
+			<enum name="ADFS" code="68"/> <!-- any distributed file system [Internet_Assigned_Numbers_Authority] -->
+			<enum name="SAT-MON" code="69"/> <!-- SATNET Monitoring [Steven_Blumenthal] -->
+			<enum name="VISA" code="70"/> <!-- VISA Protocol [Gene_Tsudik] -->
+			<enum name="IPCV" code="71"/> <!-- Internet Packet Core Utility [Steven_Blumenthal] -->
+			<enum name="CPNX" code="72"/> <!-- Computer Protocol Network Executive [David Mittnacht] -->
+			<enum name="CPHB" code="73"/> <!-- Computer Protocol Heart Beat [David Mittnacht] -->
+			<enum name="WSN" code="74"/> <!-- Wang Span Network [Victor Dafoulas] -->
+			<enum name="PVP" code="75"/> <!-- Packet Video Protocol [Steve_Casner] -->
+			<enum name="BR-SAT-MON" code="76"/> <!-- Backroom SATNET Monitoring [Steven_Blumenthal] -->
+			<enum name="SUN-ND" code="77"/> <!-- SUN ND PROTOCOL-Temporary [William_Melohn] -->
+			<enum name="WB-MON" code="78"/> <!-- WIDEBAND Monitoring [Steven_Blumenthal] -->
+			<enum name="WB-EXPAK" code="79"/> <!-- WIDEBAND EXPAK [Steven_Blumenthal] -->
+			<enum name="ISO-IP" code="80"/> <!-- ISO Internet Protocol [Marshall_T_Rose] -->
+			<enum name="VMTP" code="81"/> <!-- VMTP [Dave_Cheriton] -->
+			<enum name="SECURE-VMTP" code="82"/> <!-- SECURE-VMTP [Dave_Cheriton] -->
+			<enum name="VINES" code="83"/> <!-- VINES [Brian Horn] -->
+			<enum name="TTP" code="84"/> <!-- TTP [Jim_Stevens] -->
+			<enum name="NSFNET-IGP" code="85"/> <!-- NSFNET-IGP [Hans_Werner_Braun] -->
+			<enum name="DGP" code="86"/> <!-- Dissimilar Gateway Protocol [Mike_Little] -->
+			<enum name="TCF" code="87"/> <!-- TCF [Guillermo_A_Loyola] -->
+			<enum name="EIGRP" code="88"/> <!-- EIGRP [Cisco Systems][Guenther_Schreiner] -->
+			<enum name="OSPFIGP" code="89"/> <!-- OSPFIGP [RFC1583][John_Moy] -->
+			<enum name="Sprite-RPC" code="90"/> <!-- Sprite RPC Protocol [Bruce Willins] -->
+			<enum name="LARP" code="91"/> <!-- Locus Address Resolution Protocol [Brian Horn] -->
+			<enum name="MTP" code="92"/> <!-- Multicast Transport Protocol [Susie_Armstrong] -->
+			<enum name="AX.25" code="93"/> <!-- AX.25 Frames [Brian_Kantor] -->
+			<enum name="IPIP" code="94"/> <!-- IP-within-IP Encapsulation Protocol [John_Ioannidis] -->
+			<enum name="MICP" code="95"/> <!-- Mobile Internetworking Control Pro. [John_Ioannidis] -->
+			<enum name="SCC-SP" code="96"/> <!-- Semaphore Communications Sec. Pro. [Howard_Hart] -->
+			<enum name="ETHERIP" code="97"/> <!-- Ethernet-within-IP Encapsulation [RFC3378] -->
+			<enum name="ENCAP" code="98"/> <!-- Encapsulation Header [RFC1241][Robert_Woodburn] -->
+			<enum name="APES" code="99"/> <!-- any private encryption scheme [Internet_Assigned_Numbers_Authority] -->
+			<enum name="GMTP" code="100"/> <!-- GMTP [[RXB5]] -->
+			<enum name="IFMP" code="101"/> <!-- Ipsilon Flow Management Protocol [Bob_Hinden] -->
+			<enum name="PNNI" code="102"/> <!-- PNNI over IP [Ross_Callon] -->
+			<enum name="PIM" code="103"/> <!-- Protocol Independent Multicast [Dino_Farinacci] -->
+			<enum name="ARIS" code="104"/> <!-- ARIS [Nancy_Feldman] -->
+			<enum name="SCPS" code="105"/> <!-- SCPS [Robert_Durst] -->
+			<enum name="QNX" code="106"/> <!-- QNX [Michael_Hunter] -->
+			<enum name="A/N" code="107"/> <!-- Active Networks [Bob_Braden] -->
+			<enum name="IPComp" code="108"/> <!-- IP Payload Compression Protocol [RFC2393] -->
+			<enum name="SNP" code="109"/> <!-- Sitara Networks Protocol [Manickam_R_Sridhar] -->
+			<enum name="Compaq-Peer" code="110"/> <!-- Compaq Peer Protocol [Victor_Volpe] -->
+			<enum name="IPX-in-IP" code="111"/> <!-- IPX in IP [CJ_Lee] -->
+			<enum name="VRRP" code="112"/> <!-- Virtual Router Redundancy Protocol [RFC3768][RFC5798] -->
+			<enum name="PGM" code="113"/> <!-- PGM Reliable Transport Protocol [Tony_Speakman] -->
+			<enum name="AZHP" code="114"/> <!-- any 0-hop protocol [Internet_Assigned_Numbers_Authority] -->
+			<enum name="L2TP" code="115"/> <!-- Layer Two Tunneling Protocol [Bernard_Aboba] -->
+			<enum name="DDX" code="116"/> <!-- D-II Data Exchange (DDX) [John_Worley] -->
+			<enum name="IATP" code="117"/> <!-- Interactive Agent Transfer Protocol [John_Murphy] -->
+			<enum name="STP" code="118"/> <!-- Schedule Transfer Protocol [Jean_Michel_Pittet] -->
+			<enum name="SRP" code="119"/> <!-- SpectraLink Radio Protocol [Mark_Hamilton] -->
+			<enum name="UTI" code="120"/> <!-- UTI [Peter_Lothberg] -->
+			<enum name="SMP" code="121"/> <!-- Simple Message Protocol [Leif_Ekblad] -->
+			<enum name="SM" code="122"/> <!-- SM [Jon_Crowcroft] -->
+			<enum name="PTP" code="123"/> <!-- Performance Transparency Protocol [Michael_Welzl] -->
+			<enum name="ISIS over IPv4" code="124"/> <!-- [Tony_Przygienda] -->
+			<enum name="FIRE" code="125"/> <!-- [Criag_Partridge] -->
+			<enum name="CRTP" code="126"/> <!-- Combat Radio Transport Protocol [Robert_Sautter] -->
+			<enum name="CRUDP" code="127"/> <!-- Combat Radio User Datagram [Robert_Sautter] -->
+			<enum name="SSCOPMCE" code="128"/> <!-- [Kurt_Waber] -->
+			<enum name="IPLT" code="129"/> <!-- [[Hollbach]] -->
+			<enum name="SPS" code="130"/> <!-- Secure Packet Shield [Bill_McIntosh] -->
+			<enum name="PIPE" code="131"/> <!-- Private IP Encapsulation within IP [Bernhard_Petri] -->
+			<enum name="SCTP" code="132"/> <!-- Stream Control Transmission Protocol [Randall_R_Stewart] -->
+			<enum name="FC" code="133"/> <!-- Fibre Channel [Murali_Rajagopal] -->
+			<enum name="RSVP-E2E-IGNORE" code="134"/> <!-- [RFC3175] -->
+			<enum name="Mobility Header" code="135"/> <!-- [RFC3775] -->
+			<enum name="UDPLite" code="136"/> <!-- [RFC3828] -->
+			<enum name="MPLS-in-IP" code="137"/> <!-- [RFC4023] -->
+			<enum name="manet" code="138"/> <!-- MANET Protocols [RFC-ietf-manet-iana-07] -->
+			<enum name="HIP" code="139"/> <!-- Host Identity Protocol [RFC5201] -->
+			<enum name="Shim6" code="140"/> <!-- Shim6 Protocol [RFC5533] -->
+			<enum name="WESP" code="141"/> <!-- Wrapped Encapsulating Security Payload [RFC5840] -->
+			<enum name="ROHC" code="142"/> <!-- Robust Header Compression [RFC5858] -->
+		</enumerated>
+	</avp>
+	<avp name="Direction" code="514" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="IN" code="0"/>
+			<enum name="OUT" code="1"/>
+			<enum name="BOTH" code="2"/>
+		</enumerated>
+	</avp>
+	<avp name="From-Spec" code="515" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="IP-Address"/>
+				<avprule name="IP-Address-Range"/>
+				<avprule name="IP-Address-Mask"/>
+				<avprule name="MAC-Address"/>
+				<avprule name="MAC-Address-Mask"/>
+				<avprule name="EUI64-Address"/>
+				<avprule name="EUI64-Address-Mask"/>
+				<avprule name="Port"/>
+				<avprule name="Port-Range"/>
+				<avprule name="Negated" maximum="1"/>
+				<avprule name="Use-Assigned-Address" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="To-Spec" code="516" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="IP-Address"/>
+				<avprule name="IP-Address-Range"/>
+				<avprule name="IP-Address-Mask"/>
+				<avprule name="MAC-Address"/>
+				<avprule name="MAC-Address-Mask"/>
+				<avprule name="EUI64-Address"/>
+				<avprule name="EUI64-Address-Mask"/>
+				<avprule name="Port"/>
+				<avprule name="Port-Range"/>
+				<avprule name="Negated" maximum="1"/>
+				<avprule name="Use-Assigned-Address" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Negated" code="517" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="False" code="0"/>
+			<enum name="True" code="1"/>
+		</enumerated>
+	</avp>
+	<avp name="IP-Address" code="518" mandatory="must" may-encrypt="yes">
+		<type name="Address"/>
+	</avp>
+	<avp name="IP-Address-Range" code="519" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="IP-Address-Start" maximum="1"/>
+				<avprule name="IP-Address-End" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="IP-Address-Start" code="520" mandatory="must" may-encrypt="yes">
+		<type name="Address"/>
+	</avp>
+	<avp name="IP-Address-End" code="521" mandatory="must" may-encrypt="yes">
+		<type name="Address"/>
+	</avp>
+	<avp name="IP-Address-Mask" code="522" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="IP-Address" maximum="1"/>
+				<avprule name="IP-Bit-Mask-Width" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="IP-Bit-Mask-Width" code="523" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MAC-Address" code="524" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="MAC-Address-Mask" code="525" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="MAC-Address" maximum="1"/>
+				<avprule name="MAC-Address-Mask-Pattern" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="MAC-Address-Mask-Pattern" code="526" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="EUI64-Address" code="527" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="EUI64-Address-Mask" code="528" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="EUI64-Address" maximum="1"/>
+				<avprule name="EUI64-Address-Mask-Pattern" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="EUI64-Address-Mask-Pattern" code="529" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="Port" code="530" mandatory="must" may-encrypt="yes">
+		<type name="Integer32"/>
+	</avp>
+	<avp name="Port-Range" code="531" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="Port-Start" maximum="1"/>
+				<avprule name="Port-End" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Port-Start" code="532" mandatory="must" may-encrypt="yes">
+		<type name="Integer32"/>
+	</avp>
+	<avp name="Port-End" code="533" mandatory="must" may-encrypt="yes">
+		<type name="Integer32"/>
+	</avp>
+	<avp name="Use-Assigned-Address" code="534" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="False" code="0"/>
+			<enum name="True" code="1"/>
+		</enumerated>
+	</avp>
+	<avp name="Diffserv-Code-Point" code="535" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="AF11" code="10"/>
+			<enum name="AF12" code="12"/>
+			<enum name="AF13" code="14"/>
+			<enum name="AF21" code="18"/>
+			<enum name="AF22" code="20"/>
+			<enum name="AF23" code="22"/>
+			<enum name="AF31" code="26"/>
+			<enum name="AF32" code="28"/>
+			<enum name="AF33" code="30"/>
+			<enum name="AF41" code="34"/>
+			<enum name="AF42" code="36"/>
+			<enum name="AF43" code="38"/>
+		</enumerated>
+	</avp>
+	<avp name="Fragmentation-Flag" code="536" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="Don't Fragment (DF)" code="0"/>
+			<enum name="More Fragments (MF)" code="1"/>
+		</enumerated>
+	</avp>
+	<avp name="IP-Option" code="537" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="IP-Option-Type" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="IP-Option-Value"/>
+				<avprule name="Negated" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="IP-Option-Type" code="538" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="EOOL" code="0"/> <!-- End of Options List [RFC791,JBP]-->
+			<enum name="NOP" code="1"/> <!-- No Operation [RFC791,JBP] -->
+			<enum name="SEC" code="130"/> <!-- Security [RFC1108] -->
+			<enum name="LSR" code="131"/> <!-- Loose Source Route [RFC791,JBP] -->
+			<enum name="TS" code="68"/> <!-- Time Stamp [RFC791,JBP] -->
+			<enum name="E-SEC" code="133"/> <!-- Extended Security [RFC1108] -->
+			<enum name="CIPSO" code="134"/> <!-- Commercial Security [???] -->
+			<enum name="RR" code="7"/> <!-- Record Route [RFC791,JBP] -->
+			<enum name="SID" code="136"/> <!-- Stream ID [RFC791,JBP] -->
+			<enum name="SSR" code="137"/> <!-- Strict Source Route [RFC791,JBP] -->
+			<enum name="ZSU" code="10"/> <!-- Experimental Measurement [ZSu] -->
+			<enum name="MTUP" code="11"/> <!-- MTU Probe [RFC1191] -->
+			<enum name="MTUR" code="12"/> <!-- MTU Reply [RFC1191] -->
+			<enum name="FINN" code="205"/> <!-- Experimental Flow Control [Finn] -->
+			<enum name="VISA" code="142"/> <!-- Expermental Access Control [Estrin] -->
+			<enum name="ENCODE" code="15"/> <!-- ??? [VerSteeg] -->
+			<enum name="IMITD" code="144"/> <!-- IMI Traffic Descriptor [Lee] -->
+			<enum name="EIP" code="145"/> <!-- Extended Internet Protocol [RFC1385] -->
+			<enum name="TR" code="82"/> <!-- Traceroute [RFC1393] -->
+			<enum name="ADDEXT" code="147"/> <!-- Address Extension [Ullmann IPv7] -->
+			<enum name="RTRALT" code="148"/> <!-- Router Alert [RFC2113] -->
+			<enum name="SDB" code="149"/> <!-- Selective Directed Broadcast [Graff] -->
+			<enum name="DPS" code="151"/> <!-- Dynamic Packet State [Malis] -->
+			<enum name="UMP" code="152"/> <!-- Upstream Multicast Pkt. [Farinacci] -->
+			<enum name="QS" code="25"/> <!-- Quick-Start [RFC4782] -->
+		</enumerated>
+	</avp>
+	<avp name="IP-Option-Value" code="539" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="TCP-Option" code="540" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="TCP-Option-Type" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="TCP-Option-Value"/>
+				<avprule name="Negated" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="TCP-Option-Type" code="541" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="End of Option List" code="0"/> <!-- [RFC793] -->
+			<enum name="No-Operation" code="1"/> <!-- [RFC793] -->
+			<enum name="Maximum Segment Size" code="2"/> <!-- [RFC793] -->
+			<enum name="WSOPT-Window Scale" code="3"/> <!-- [RFC1323] -->
+			<enum name="SACK Permitted" code="4"/> <!-- [RFC2018] -->
+			<enum name="SACK" code="5"/> <!-- [RFC2018] -->
+			<enum name="Echo" code="6"/> <!-- (obsoleted by option 8) [RFC1072] -->
+			<enum name="Echo Reply" code="7"/> <!-- (obsoleted by option 8) [RFC1072] -->
+			<enum name="TSOPT" code="8"/> <!-- Time Stamp Option [RFC1323] -->
+			<enum name="Partial Order Connection Permitted" code="9"/> <!-- [RFC1693] -->
+			<enum name="Partial Order Service Profile" code="10"/> <!-- [RFC1693] -->
+			<enum name="CC" code="11"/> <!-- [RFC1644] -->
+			<enum name="CC.NEW" code="12"/> <!-- [RFC1644] -->
+			<enum name="CC.ECHO" code="13"/> <!-- [RFC1644] -->
+			<enum name="TCP Alternate Checksum Request" code="14"/> <!-- [RFC1146] -->
+			<enum name="TCP Alternate Checksum Data" code="15"/> <!-- [RFC1146] -->
+			<enum name="Skeeter" code="16"/> <!-- [Stev_Knowles] -->
+			<enum name="Bubba" code="17"/> <!-- [Stev_Knowles] -->
+			<enum name="Trailer Checksum Option" code="18"/> <!-- [Subbu_Subramaniam][Monroe_Bridges] -->
+			<enum name="MD5 Signature Option" code="19"/> <!-- (obsoleted by option 29) [RFC2385] -->
+			<enum name="SCPS Capabilities" code="20"/> <!-- [Keith_Scott] -->
+			<enum name="Selective Negative Acknowledgements" code="21"/> <!-- [Keith_Scott] -->
+			<enum name="Record Boundaries" code="22"/> <!-- [Keith_Scott] -->
+			<enum name="Corruption experienced" code="23"/> <!-- [Keith_Scott] -->
+			<enum name="SNAP" code="24"/> <!-- [Vladimir_Sukonnik] -->
+			<enum name="TCP Compression Filter" code="26"/> <!-- [Steve_Bellovin] -->
+			<enum name="Quick-Start Response" code="27"/> <!-- [RFC4782] -->
+			<enum name="User Timeout Option" code="28"/> <!-- [RFC5482] -->
+			<enum name="TCP-AO" code="29"/> <!-- TCP Authentication Option [RFC5925] -->
+		</enumerated>
+	</avp>
+	<avp name="TCP-Option-Value" code="542" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="TCP-Flags" code="543" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="TCP-Flag-Type" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="Negated" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="TCP-Flag-Type" code="544" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="ICMP-Type" code="545" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="ICMP-Type-Number" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="ICMP-Code"/>
+				<avprule name="Negated" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="ICMP-Type-Number" code="546" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="Echo Reply" code="0"/> <!-- [RFC792] -->
+			<enum name="Destination Unreachable" code="3"/> <!-- [RFC792] -->
+			<enum name="Source Quench" code="4"/> <!-- [RFC792] -->
+			<enum name="Redirect" code="5"/> <!-- [RFC792] -->
+			<enum name="Alternate Host Address" code="6"/> <!-- [JBP] -->
+			<enum name="Echo" code="8"/> <!-- [RFC792] -->
+			<enum name="Router Advertisement" code="9"/> <!--[RFC1256]  -->
+			<enum name="Router Solicitation" code="10"/> <!-- [RFC1256] -->
+			<enum name="Time Exceeded" code="11"/> <!-- [RFC792] -->
+			<enum name="Parameter Problem" code="12"/> <!-- [RFC792] -->
+			<enum name="Timestamp" code="13"/> <!-- [RFC792] -->
+			<enum name="Timestamp Reply" code="14"/> <!-- [RFC792] -->
+			<enum name="Information Request" code="15"/> <!-- [RFC792] -->
+			<enum name="Information Reply" code="16"/> <!-- [RFC792] -->
+			<enum name="Address Mask Request" code="17"/> <!-- [RFC950] -->
+			<enum name="Address Mask Reply" code="18"/> <!-- [RFC950] -->
+			<enum name="Traceroute" code="30"/> <!-- [RFC1393] -->
+			<enum name="Datagram Conversion Error" code="31"/> <!-- [RFC1475] -->
+			<enum name="Mobile Host Redirect" code="32"/> <!-- [David Johnson] -->
+			<enum name="IPv6 Where-Are-You" code="33"/> <!-- [Bill Simpson] -->
+			<enum name="IPv6 I-Am-Here" code="34"/> <!-- [Bill Simpson] -->
+			<enum name="Mobile Registration Request" code="35"/> <!-- [Bill Simpson] -->
+			<enum name="Mobile Registration Reply" code="36"/> <!-- [Bill Simpson] -->
+			<enum name="Domain Name Request" code="37"/> <!-- [RFC1788] -->
+			<enum name="Domain Name Reply" code="38"/> <!-- [RFC1788] -->
+			<enum name="SKIP" code="39"/> <!-- [Markson] -->
+			<enum name="Photuris" code="40"/> <!-- [RFC2521] -->
+			<enum name="ICMP messages utilized by experimental mobility protocols" code="41"/> <!-- [RFC4065] -->
+		</enumerated>
+	</avp>
+	<avp name="ICMP-Code" code="547" mandatory="must" may-encrypt="yes">
+		<!-- ICMP-Codes have different meaning about ICMP-Type-Number.
+		How can I define ICMP-Code to Enum? - by btshim --> 
+		<enumerated>
+			<enum name="No Code" code="0"/>
+			<enum name="Code 1" code="1"/>
+			<enum name="Code 2" code="2"/>
+			<enum name="Code 3" code="3"/>
+			<enum name="Code 4" code="4"/>
+			<enum name="Code 5" code="5"/>
+			<enum name="Code 6" code="6"/>
+			<enum name="Code 7" code="7"/>
+			<enum name="Code 8" code="8"/>
+			<enum name="Code 9" code="9"/>
+			<enum name="Code 10" code="10"/>
+			<enum name="Code 11" code="11"/>
+			<enum name="Code 12" code="12"/>
+			<enum name="Code 13" code="13"/>
+			<enum name="Code 14" code="14"/>
+			<enum name="Code 15" code="15"/>
+		</enumerated>
+<!--
+3. Destination Unreachable
+	0  Net Unreachable
+	1  Host Unreachable
+	2  Protocol Unreachable
+	3  Port Unreachable
+	4  Fragmentation Needed and Don't Fragment was Set
+	5  Source Route Failed
+	6  Destination Network Unknown
+	7  Destination Host Unknown
+	8  Source Host Isolated
+	9  Communication with Destination Network is Administratively Prohibited
+	10  Communication with Destination Host is Administratively Prohibited
+	11  Destination Network Unreachable for Type of Service
+	12  Destination Host Unreachable for Type of Service
+	13  Communication Administratively Prohibited      [RFC1812]
+	14  Host Precedence Violation                      [RFC1812]
+	15  Precedence cutoff in effect                    [RFC1812]
+5. Redirect
+	0  Redirect Datagram for the Network (or subnet)
+	1  Redirect Datagram for the Host
+	2  Redirect Datagram for the Type of Service and Network
+	3  Redirect Datagram for the Type of Service and Host
+6. Alternate Host Address                      [JBP]
+	0  Alternate Address for Host
+11. Time Exceeded
+	0  Time to Live exceeded in Transit
+	1  Fragment Reassembly Time Exceeded
+-->
+	</avp>
+	<avp name="ETH-Option" code="548" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="ETH-Proto-Type" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="VLAN-ID-Range"/>
+				<avprule name="User-Priority-Range"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="ETH-Proto-Type" code="549" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="ETH-Ether-Type"/>
+				<avprule name="ETH-SAP"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="ETH-Ether-Type" code="550" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="ETH-SAP" code="551" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="VLAN-ID-Range" code="552" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="S-VID-Start" maximum="1"/>
+				<avprule name="S-VID-End" maximum="1"/>
+				<avprule name="C-VID-Start" maximum="1"/>
+				<avprule name="C-VID-End" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="S-VID-Start" code="553" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="S-VID-End" code="554" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="C-VID-Start" code="555" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="C-VID-End" code="556" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="User-Priority-Range" code="557" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="Low-User-Priority"/>
+				<avprule name="High-User-Priority"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Low-User-Priority" code="558" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="High-User-Priority" code="559" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Time-Of-Day-Condition" code="560" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="Time-Of-Day-Start" maximum="1"/>
+				<avprule name="Time-Of-Day-End" maximum="1"/>
+				<avprule name="Day-Of-Week-Mask" maximum="1"/>
+				<avprule name="Day-Of-Month-Mask" maximum="1"/>
+				<avprule name="Month-Of-Year-Mask" maximum="1"/>
+				<avprule name="Absolute-Start-Time" maximum="1"/>
+				<avprule name="Absolute-End-Time" maximum="1"/>
+				<avprule name="Timezone-Flag" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Time-Of-Day-Start" code="561" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Time-Of-Day-End" code="562" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Day-Of-Week-Mask" code="563" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Day-Of-Month-Mask" code="564" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Month-Of-Year-Mask" code="565" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Absolute-Start-Time" code="566" mandatory="must" may-encrypt="yes">
+		<type name="Time"/>
+	</avp>
+	<avp name="Absolute-Start-Fractional-Seconds" code="567" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Absolute-End-Time" code="568" mandatory="must" may-encrypt="yes">
+		<type name="Time"/>
+	</avp>
+	<avp name="Absolute-End-Fractional-Seconds" code="569" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="Timezone-Flag" code="570" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="UTC" code="0"/>
+			<enum name="LOCAL" code="1"/>
+			<enum name="OFFSET" code="2"/>
+		</enumerated>
+	</avp>
+	<avp name="Timezone-Offset" code="571" mandatory="must" may-encrypt="yes">
+		<type name="Integer32"/>
+	</avp>
+	<avp name="Treatment-Action" code="572" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="drop" code="0"/>
+			<enum name="shape" code="1"/>
+			<enum name="mark" code="2"/>
+			<enum name="permit" code="3"/>
+		</enumerated>
+	</avp>
+	<avp name="QoS-Profile-Id" code="573" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="QoS-Profile-Template" code="574" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Vendor-Id" maximum="1"/>
+				<avprule name="QoS-Profile-Id" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="QoS-Semantics" code="575" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="QoS-Desired" code="0"/>
+			<enum name="QoS-Available" code="1"/>
+			<enum name="QoS-Delivered" code="2"/>
+			<enum name="Minimum-QoS" code="3"/>
+			<enum name="QoS-Authorized" code="4"/>
+		</enumerated>
+	</avp>
+	<avp name="QoS-Parameters" code="576" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Excess-Treatment" code="577" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="Treatment-Action" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="QoS-Profile-Template" maximum="1"/>
+				<avprule name="QoS-Parameters" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="QoS-Capability" code="578" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="QoS-Profile-Template" minimum="1"/>
+			</required>
+			<optional>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+
+	<!-- ================================================================= -->
+	<!-- RFC 5778 :  Diameter Mobile IPv6: Support for Home Agent to Diameter Server Interaction -->
+	<!-- ================================================================= -->
+
+	<avp name="Chargeable-User-Identity" code="89" mandatory="must" may-encrypt="yes">
+		<!-- RFC 4372 RADIUS Attribute -->
+		<type name="OctetString"/>
+	</avp>
+	<avp name="MIP-Careof-Address" code="487" mandatory="must" may-encrypt="yes">
+		<type name="Address"/>
+	</avp>
+	<avp name="MIP-Authenticator" code="488" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="MIP-MAC-Mobility-Data" code="489" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="MIP-Timestamp" code="490" mandatory="must" may-encrypt="yes">
+		<type name="OctetString"/>
+	</avp>
+	<avp name="MIP-MN-HA-SPI" code="491" mandatory="must" may-encrypt="yes">
+		<type name="Unsigned32"/>
+	</avp>
+	<avp name="MIP-MN-HA-MSA" code="492" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<required>
+				<avprule name="MIP-Session-Key" maximum="1"/>
+				<avprule name="MIP-MSA-Lifetime" maximum="1"/>
+			</required>
+			<optional>
+				<avprule name="MIP-MN-HA-SPI" maximum="1"/>
+				<avprule name="MIP-Algorithm-Type" maximum="1"/>
+				<avprule name="MIP-Replay-Mode" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+	<avp name="Service-Selection" code="493" mandatory="must" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="MIP6-Auth-Mode" code="494" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="MIP6_AUTH_MN_AAA" code="0"/>
+		</enumerated>
+	</avp>
+
+	<!-- ================================================================= -->
+	<!-- RFC 5779 : Diameter Proxy Mobile IPv6: Mobile Access Gateway and Local Mobility Anchor Interaction with Diameter Server-->
+	<!-- ================================================================= -->
+	<avp name="PMIP6-DHCP-Server-Address AVP" code="504" mandatory="must" may-encrypt="yes">
+		<type name="Address"/>
+	</avp>
+	<avp name="PMIP6-IPv4-Home-Address" code="505" mandatory="must" may-encrypt="yes">
+		<type name="Address"/>
+	</avp>
+	<avp name="Mobile-Node-Identifier" code="506" mandatory="must" may-encrypt="yes">
+		<type name="UTF8String"/>
+	</avp>
+	<avp name="Service-Configuration" code="507" mandatory="must" may-encrypt="yes">
+		<grouped>
+			<optional>
+				<avprule name="MIP6-Agent-Info" maximum="1"/>
+				<avprule name="Service-Selection" maximum="1"/>
+				<avprule name="AVP"/>
+			</optional>
+		</grouped>
+	</avp>
+
+	<!-- ================================================================= -->
+	<!-- RFC 7683 : Diameter Overload Indication Conveyance AVPs -->
+	<!-- ================================================================= -->
+	<avp name="OC-Supported-Features" code="621" mandatory="must" may-encrypt="yes">
+    	<grouped>
+            <required>
+                <avprule name="OC-Feature-Vector" maximum="1" minimum="1"/>
+            </required>
+        </grouped>    
+    </avp>
+	<avp name="OC-Feature-Vector" code="622" mandatory="must" may-encrypt="yes">
+        <type name="Unsigned64"/>
+    </avp>
+	<avp name="OC-OLR" code="623" mandatory="must" may-encrypt="yes">
+		<grouped>
+            <required>
+                <avprule name="OC-Sequence-Number" maximum="1" minimum="1"/>
+                <avprule name="OC-Report-Type" maximum="1" minimum="1"/>
+            </required>
+            <optional>
+                <avprule name="OC-Reduction-Percentage" maximum="1" minimum="1"/>
+                <avprule name="OC-Validity-Duration" maximum="1" minimum="1"/>
+				<avprule name="AVP"/>
+            </optional>
+        </grouped>    
+	</avp>
+	<avp name="OC-Sequence-Number" code="624" mandatory="must" may-encrypt="yes">
+        <type name="Unsigned64"/>
+    </avp>
+	<avp name="OC-Validity-Duration" code="625" mandatory="must" may-encrypt="yes">
+        <type name="Unsigned32"/>
+    </avp>
+	<avp name="OC-Report-Type" code="626" mandatory="must" may-encrypt="yes">
+		<enumerated>
+			<enum name="HOST_REPORT" code="0"/>
+			<enum name="REALM_REPORT" code="1"/>
+		</enumerated>
+    </avp>
+	<avp name="OC-Reduction-Percentage" code="627" mandatory="must" may-encrypt="yes">
+        <type name="Unsigned32"/>
+    </avp>
+
+	<!-- ================================================================= -->
+	<!-- RFC 7944 : Diameter Routing Message Priority -->
+	<!-- ================================================================= -->
+	<avp name="DRMP" code="301" mandatory="may" protected="may" may-encrypt="yes">
+        <enumerated>
+            <enum name="PRIORITY_0" code="0"/>
+            <enum name="PRIORITY_1" code="1"/>
+            <enum name="PRIORITY_2" code="2"/>
+            <enum name="PRIORITY_3" code="3"/>
+            <enum name="PRIORITY_4" code="4"/>
+            <enum name="PRIORITY_5" code="5"/>
+            <enum name="PRIORITY_6" code="6"/>
+            <enum name="PRIORITY_7" code="7"/>
+            <enum name="PRIORITY_8" code="8"/>
+            <enum name="PRIORITY_9" code="9"/>
+            <enum name="PRIORITY_10" code="10"/>
+            <enum name="PRIORITY_11" code="11"/>
+            <enum name="PRIORITY_12" code="12"/>
+            <enum name="PRIORITY_13" code="13"/>
+            <enum name="PRIORITY_14" code="14"/>
+            <enum name="PRIORITY_15" code="15"/>
+        </enumerated>
+    </avp>
+
+
+</dictionary>

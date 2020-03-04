@@ -1,0 +1,27 @@
+SubDir TOP lib ss7 ;
+SubDirHdrs $(TOP)/inc $(TOP)/inc/MMDB $(TOP)/inc/ASN $(UALIB_SRC_HOME)/include 
+	$(HP_AIN_SS7_HOME)/include
+	$(ULIB_SRC_HOME)/include $(USRG_ROOT)/include $(MMDB_SRC_HOME)/include ;
+SubDirHdrs $(UANGIN_SRC_HOME)/include ;
+
+LOCAL_LOCAL_DEFINES = -DTCAP_WHITE ;
+
+
+SOURCES1 = flow_ctrl tcap_funcs tcap_prn sh_mem bin_hexa hex_log util map_funcs ss7print ;
+TARGET1 = libSS7 ;
+SHLTARGET1 = $(TARGET1)$(SUFSHARED) ;
+
+Library $(TARGET1) : $(SOURCES1).c ;
+SharedLibraryMain $(SHLTARGET1) : $(TARGET1)$(SUFLIB) ;
+
+InstallLib $(UASYS_HOME)/lib : $(TARGET1)$(SUFLIB) ;
+Copy $(TARGET1)$(SUFLIB) : $(SMSCHOME)/lib ;
+
+# .c -> .o compile option
+ObjectCcFlags $(SOURCES1)$(SUFOBJ) : $(LOCAL_LOCAL_DEFINES) $(SYS_CCFLAGS) $(SYS_SHAREDCCFLAGS) ;
+#ObjectCcFlags $(SRCS2)$(SUFOBJ) : $(LOCAL_LOCAL_DEFINES) $(SYS_CCFLAGS) ;
+
+# copy files to lib directory
+InstallBin $(SMSC_HOME)/lib : $(TARGET1)$(SUFSHARED) ;
+CopySysFile $(TARGET1)$(SUFSHARED) : $(TOP)/lib ;
+

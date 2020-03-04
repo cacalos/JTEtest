@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "dictionary.dtd">
+
+<dictionary>
+
+<!-- TS 29.061-840: Interworking between the PLMN supporting packet based services and PDN -->
+<!-- ************* DIAMETER Gmb Application ************* -->
+<application id="16777223" name="Gmb" uri="http://www.3gpp.org/DynaReport/29061.htm">
+	<command name="AA" abbreviation="AA" code="265" applicatoin-id="0">
+		<requestrules>
+			<!--TODO-->
+		</requestrules>
+		<answerrules>
+			<!--TODO-->
+		</answerrules>
+	</command>
+	<command name="ST" abbreviation="ST" code="275" applicatoin-id="0">
+		<requestrules>
+			<!--TODO-->
+		</requestrules>
+		<answerrules>
+			<!--TODO-->
+		</answerrules>
+	</command>
+	<command name="Re-Auth" abbreviation="RA" code="275" applicatoin-id="0">
+		<requestrules>
+			<!--TODO-->
+		</requestrules>
+		<answerrules>
+			<!--TODO-->
+		</answerrules>
+	</command>
+	<command name="Abort-Session" abbreviation="AS" code="275" applicatoin-id="0">
+		<requestrules>
+			<!--TODO-->
+		</requestrules>
+		<answerrules>
+			<!--TODO-->
+		</answerrules>
+	</command>
+</application>
+
+</dictionary>

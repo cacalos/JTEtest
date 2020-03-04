@@ -1,0 +1,26 @@
+SubDir TOP stat ;
+SubDirHdrs $(TOP)/inc $(UALIB_SRC_HOME)/include ;
+SubDirHdrs $(UXLIB_SRC_HOME)/include $(UXCUTOR_SRC_HOME)/include $(MMDB_SRC_HOME)/include ;
+
+SOURCES = stat func ;
+
+TARGET = uastat ;
+Main $(TARGET) : $(SOURCES).c ;
+
+#LINKLIBS on $(TARGET) = -L$(UASYS_HOME)/lib -lMMDB -lGCA -lMSG -lTPDU -lUTIL -lOSSASN -lCLIENT -lSVC -lsys_lib -lua_common -lShmQueue -lmmdb -ldbutil_lib  -lFOREIGN ;
+#LINKLIBS on $(TARGET) = -L$(UASYS_HOME)/lib -lMMDB -lGCA -lMSG -lTPDU -lUTIL -lCLIENT -lSVC -lsys_lib -lua_common -lShmQueue -lmmdb -ldbutil_lib  -lFOREIGN -lNQ ;
+
+#MOD_LIBS = -lGCA -lUTIL -lNQ -luxlib -luxcutor ;
+MOD_LIBS = -lGCA -lUTIL -lNQ -luxlib ;
+# MYSQL_LIBS = -lMYSQL -lOAMAPI -L$(MYSQL_LIB) -lmysqlclient ;
+MYSQL_LIBS = ; 
+LINKLIBS on $(TARGET) = -L/usr/local/lib -lm -L$(UASYS_HOME)/lib $(MOD_LIBS) $(MYSQL_LIBS) -lsys_lib -lua_common ;
+
+LOCAL_DEFINES = -D_MODULE_NAME='\"$(TARGET)\"' -D_PSTAT64 ;
+
+# .c -> .o compile option
+ObjectCcFlags $(SOURCES)$(SUFOBJ) : $(LOCAL_DEFINES) $(SYS_CCFLAGS) ;
+
+InstallBin $(SMSC_HOME)/bin : $(TARGET) ;
+CopySysFile $(TARGET) : $(TOP)/bin ;
+

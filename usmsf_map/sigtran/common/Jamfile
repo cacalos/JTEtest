@@ -1,0 +1,27 @@
+#
+SubDir TOP sigtran common ;
+
+SubDirHdrs $(TOP)/inc ;
+SubDirHdrs $(UALIB_SRC_HOME)/include ;
+SubDirHdrs $(UXLIB_SRC_HOME)/include ;
+SubDirHdrs $(UXCUTOR_SRC_HOME)/include ;
+
+LIB_NAME = libsigcommon ;
+LOCAL_DEFINES = -D_MODULE_NAME='\"$(TARGET)\"' -D_GNU_SOURCE -D_PSTAT64 ;
+LOCAL_CCFLAGS = ;
+
+LIB_SRCS =
+	sig_stat
+    ;
+
+LINKLIBS on $(TARGET)$(SUFSHARED) = -lGCA ;
+
+ObjectCcFlags $(LIB_SRCS)$(SUFOBJ) : $(LOCAL_DEFINES) $(SYS_CCFLAGS) $(SYS_SHAREDCCFLAGS) ;
+Library $(LIB_NAME)$(SUFLIB) : $(LIB_SRCS).c ;
+SharedLibraryMain $(LIB_NAME)$(SUFSHARED) : $(LIB_NAME)$(SUFLIB) ;
+
+#LINKLIBS on $(TARGET) = -L$(UASYS_HOME)/lib -lUTIL -lGCA -lOSSASN -ldecode_map -ldecode_string
+#   -lsigtran_util -lss7 -lsys_lib -lua_common -lTPDU $(OSS_LIBS) -L$(USRG_ROOT)/lib -lutcap -lulib
+#   -L/usr/local/lib -lm -ldl ;
+
+InstallLib $(UASYS_HOME)/lib : $(LIB_NAME)$(SUFSHARED) ;

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<stat_config>
+	<stat_group name="LOGSTAT" shm_name="LOG_STAT" sem_name="LOG_STAT" >
+		<section>
+			<small  max_record="10"  max_table="30"/>
+			<medium max_record="50" max_table="50"/>
+			<large  max_record="256" max_table="10" />
+		</section>
+
+        <stat name="NTP_STATUS" alarminfo_changed="false" accumulated_value="false" section_type="small" key_delimiter=";" thread_safety="true">
+            <field_list>
+                <field id="0" type="integer" name="STATUS" />
+            </field_list>
+            <stat_file append="false" accumulated_value="true" interval="5" path="$(UASYS_HOME)/data/oam/logstat/ntp_status.sts" delimeter=" ,&#9;&#10;" end_phrase="END_DATA" >
+                <item column="0" field_id="0" >
+                    <replace_list default_target="0">
+                        <replace source="OK" target="1" />
+                    </replace_list>
+                </item>
+            </stat_file>
+        </stat>
+
+        <stat name="MTCIWF_STAT"  alarminfo_changed="false" accumulated_value="true" section_type="large" key_delimiter=";" thread_safety="true">
+            <field_list>
+                <field id="0" type="key" name="ISDN"/>
+                <field id="1" type="integer" name="DTR_RECV_SUCC"/>
+                <field id="2" type="integer" name="DTR_RECV_FAIL"/>
+                <field id="3" type="integer" name="DRR_SEND_SUCCESS"/>
+                <field id="4" type="integer" name="DRR_SEND_FAIL"/>
+                <field id="5" type="integer" name="DRR_SEND_ACK"/>
+                <field id="6" type="integer" name="DRR_SEND_NACK"/>
+                <field id="7" type="integer" name="DRR_SEND_TIMEOUT"/>
+                <field id="8" type="integer" name="OFR_SEND_SUCCESS"/>
+                <field id="9" type="integer" name="OFR_SEND_FAIL"/>
+                <field id="10" type="integer" name="OFR_SEND_ACK"/>
+                <field id="11" type="integer" name="OFR_SEND_NACK"/>
+                <field id="12" type="integer" name="OFR_SEND_TIMEOUT"/>
+            </field_list>
+
+            <stat_file append="true" accumulated_value="true" interval="5" path="$(UASYS_HOME)/stat/mtciwf_stat.#(YYYYMMDD)" delimeter=" ,&#9;&#10;" end_phrase="END_DATA" >
+                <item column="1" field_id="0"/>
+                <item column="2" field_id="1"/>
+                <item column="3" field_id="2"/>
+                <item column="4" field_id="3"/>
+                <item column="5" field_id="4"/>
+                <item column="6" field_id="5"/>
+                <item column="7" field_id="6"/>
+                <item column="8" field_id="7"/>
+                <item column="9" field_id="8"/>
+                <item column="10" field_id="9"/>
+                <item column="11" field_id="10"/>
+                <item column="12" field_id="11"/>
+                <item column="13" field_id="12"/>
+            </stat_file>
+        </stat>
+
+        <stat name="OFCS_STAT"  alarminfo_changed="false" accumulated_value="true" section_type="large" key_delimiter=";" thread_safety="true">
+            <field_list>
+                <field id="0" type="key" name="OFCS_NAME"/>
+                <field id="1" type="integer" name="ACR_SEND_SUCCESS"/>
+                <field id="2" type="integer" name="ACR_SEND_FAIL"/>
+                <field id="3" type="integer" name="ACR_SEND_ACK"/>
+                <field id="4" type="integer" name="ACR_SEND_NACK"/>
+                <field id="5" type="integer" name="ACR_SEND_TIMEOUT"/>
+            </field_list>
+            <stat_file append="true" accumulated_value="true" interval="5" path="$(UASYS_HOME)/stat/ofcs_stat.#(YYYYMMDD)" delimeter=" ,&#9;&#10;" end_phrase="END_DATA" >
+                <item column="1" field_id="0"/>
+                <item column="2" field_id="1"/>
+                <item column="3" field_id="2"/>
+                <item column="4" field_id="3"/>
+                <item column="5" field_id="4"/>
+                <item column="6" field_id="5"/>
+            </stat_file>
+        </stat>
+
+        <stat name="ESME_STAT"  alarminfo_changed="false" accumulated_value="true" section_type="large" key_delimiter=";" thread_safety="true">
+            <field_list>
+                <field id="0" type="key" name="ESME_ID"/>
+                <field id="1" type="integer" name="SUBMIT_RECV_SUCCESS"/>
+                <field id="2" type="integer" name="SUBMIT_RECV_FAIL"/>
+                <field id="3" type="integer" name="SUBMIT_RECV_ACK"/>
+                <field id="4" type="integer" name="SUBMIT_RECV_NACK"/>
+                <field id="5" type="integer" name="SUBMIT_RECV_TIMEOUT"/>
+                <field id="6" type="integer" name="DELIVER_SEND_SUCCESS"/>
+                <field id="7" type="integer" name="DELIVER_SEND_FAIL"/>
+                <field id="8" type="integer" name="DELIVER_SEND_ACK"/>
+                <field id="9" type="integer" name="DELIVER_SEND_NACK"/>
+                <field id="10" type="integer" name="DELIVER_SEND_TIMEOUT"/>
+            </field_list>
+            <stat_file append="true" accumulated_value="true" interval="5" path="$(UASYS_HOME)/stat/esme_stat.#(YYYYMMDD)" delimeter=" ,&#9;&#10;" end_phrase="END_DATA" >
+                <item column="1" field_id="0"/>
+                <item column="2" field_id="1"/>
+                <item column="3" field_id="2"/>
+                <item column="4" field_id="3"/>
+                <item column="5" field_id="4"/>
+                <item column="6" field_id="5"/>
+                <item column="7" field_id="6"/>
+                <item column="8" field_id="7"/>
+                <item column="9" field_id="8"/>
+                <item column="10" field_id="9"/>
+                <item column="11" field_id="10"/>
+            </stat_file>
+        </stat>
+
+        <stat name="MME_STAT"  alarminfo_changed="false" accumulated_value="true" section_type="large" key_delimiter=";" thread_safety="true">
+            <field_list>
+                <field id="0" type="key" name="ISDN"/>
+                <field id="1" type="integer" name="OFR_RECV_SUCC"/>
+                <field id="2" type="integer" name="OFR_RECV_FAIL"/>
+                <field id="3" type="integer" name="TFR_SEND_SUCCESS"/>
+                <field id="4" type="integer" name="TFR_SEND_FAIL"/>
+                <field id="5" type="integer" name="TFR_SEND_ACK"/>
+                <field id="6" type="integer" name="TFR_SEND_NACK"/>
+                <field id="7" type="integer" name="TFR_SEND_TIMEOUT"/>
+                <field id="8" type="integer" name="ALERT_SC_RECV_SUCCESS"/>
+                <field id="9" type="integer" name="ALERT_SC_RECV_FAIL"/>
+            </field_list>
+
+            <stat_file append="true" accumulated_value="true" interval="5" path="$(UASYS_HOME)/stat/mme_stat.#(YYYYMMDD)" delimeter=" ,&#9;&#10;" end_phrase="END_DATA" >
+                <item column="1" field_id="0"/>
+                <item column="2" field_id="1"/>
+                <item column="3" field_id="2"/>
+                <item column="4" field_id="3"/>
+                <item column="5" field_id="4"/>
+                <item column="6" field_id="5"/>
+                <item column="7" field_id="6"/>
+                <item column="8" field_id="7"/>
+                <item column="9" field_id="8"/>
+				<item column="10" field_id="9"/>
+            </stat_file>
+        </stat>
+
+        <stat name="HSS_STAT"  alarminfo_changed="false" accumulated_value="true" section_type="large" key_delimiter=";" thread_safety="true">
+            <field_list>
+                <field id="0" type="key" name="ISDN"/>
+                <field id="1" type="integer" name="SRR_SEND_SUCCESS"/>
+                <field id="2" type="integer" name="SRR_SEND_FAIL"/>
+                <field id="3" type="integer" name="SRR_SEND_ACK"/>
+                <field id="4" type="integer" name="SRR_SEND_NACK"/>
+                <field id="5" type="integer" name="SRR_SEND_TIMEOUT"/>
+                <field id="6" type="integer" name="REPORT_SM_SEND_SUCCESS"/>
+                <field id="7" type="integer" name="REPORT_SM_SEND_FAIL"/>
+                <field id="8" type="integer" name="REPORT_SM_SEND_ACK"/>
+                <field id="9" type="integer" name="REPORT_SM_SEND_NACK"/>
+                <field id="10" type="integer" name="REPORT_SM_SEND_TIMEOUT"/>
+                <field id="11" type="integer" name="ALERT_SC_RECV_SUCCESS"/>
+                <field id="12" type="integer" name="ALERT_SC_RECV_FAIL"/>
+            </field_list>
+            <stat_file append="true" accumulated_value="true" interval="5" path="$(UASYS_HOME)/stat/hss_stat.#(YYYYMMDD)" delimeter=" ,&#9;&#10;" end_phrase="END_DATA" >
+                <item column="1" field_id="0"/>
+                <item column="2" field_id="1"/>
+                <item column="3" field_id="2"/>
+                <item column="4" field_id="3"/>
+                <item column="5" field_id="4"/>
+                <item column="6" field_id="5"/>
+                <item column="7" field_id="6"/>
+                <item column="8" field_id="7"/>
+                <item column="9" field_id="8"/>
+                <item column="10" field_id="9"/>
+                <item column="11" field_id="10"/>
+                <item column="12" field_id="11"/>
+            </stat_file>
+        </stat>
+
+        <stat name="BEP_STAT"  alarminfo_changed="false" accumulated_value="true" section_type="large" key_delimiter=";" thread_safety="true">
+            <field_list>
+                <field id="0" type="key" name="BEP_IP"/>
+                <field id="1" type="integer" name="RECV_INV"/>
+                <field id="2" type="integer" name="SEND_RESP"/>
+                <field id="3" type="integer" name="SEND_INV"/>
+                <field id="4" type="integer" name="RECV_RESP"/>
+            </field_list>
+
+            <stat_file append="true" accumulated_value="true" interval="5" path="$(UASYS_HOME)/stat/bep_stat.#(YYYYMMDD)" delimeter=" ,&#9;&#10;" end_phrase="END_DATA" >
+                <item column="1" field_id="0"/>
+                <item column="2" field_id="1"/>
+                <item column="3" field_id="2"/>
+                <item column="4" field_id="3"/>
+                <item column="5" field_id="4"/>
+            </stat_file>
+        </stat>
+	</stat_group>
+</stat_config>

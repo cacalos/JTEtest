@@ -1,0 +1,22 @@
+SubDir TOP sim sigtran recv_mof ;
+SubDirHdrs $(TOP)/inc $(HP_AIN_SS7_HOME)/include
+	$(UALIB_SRC_HOME)/include /data1/oss_5.3.0/include $(USRG_ROOT)/include ; 
+SubDirHdrs $(UXLIB_SRC_HOME)/include ;
+SubDirHdrs $(MMDB_SRC_HOME)/include ;
+
+SOURCES = smsc3 ;
+TARGET =  smscsim ;
+LOCAL_DEFINES = -D_MODULE_NAME='\"$(TARGET)\"' -D_PSTAT64 -DTCAP_WHITE -DUSIGTRAN ;
+Main $(TARGET) : $(SOURCES).c ;
+
+OSS_LIB_DIR = /data1/oss_5.3.0/lib ;
+OSS_LIBS = -lasn1code ;
+
+#LINKLIBS on $(TARGET) = -L$(UASYS_HOME)/lib $(SMSC_LIBS) -lUTIL -lGCA -lsys_lib -lOSSASN -lsigtran_util -lTPDU -L$(USRG_ROOT)/lib -lutcap -L$(OSS_LIB_DIR) $(OSS_LIBS) -lulib -ldl ; 
+LINKLIBS on $(TARGET) = -L$(UASYS_HOME)/lib -lUTIL -lGCA -lOSSASN -lsigtran_util -lSS7 -lsys_lib -lua_common -lTPDU -L$(USRG_ROOT)/lib -lutcap -lulib -L$(OSS_LIB_DIR) $(OSS_LIBS) -ldl -lm ;
+
+
+# .c -> .o compile option
+ObjectCcFlags $(SOURCES)$(SUFOBJ) : $(LOCAL_DEFINES) $(SYS_CCFLAGS) ;
+#InstallBin $(SMSC_HOME)/sim_bin : $(TARGET) ;
+CopySysFile $(TARGET) : $(TOP)/bin ;

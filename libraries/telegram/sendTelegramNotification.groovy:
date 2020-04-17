@@ -1,0 +1,6 @@
+@CleanUp({
+	context.status.equals("FAILURE")
+})
+void call(context){
+	echo "Telegram step    $context.step   status $context.status   $context.library"
+}

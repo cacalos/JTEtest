@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="{{params.results.version}}">
+    <cppcheck version="{{params.results.cppcheck.version}}"/>
+    <errors>
+        {% for err in  params.results.errors.error %}
+        {% set items = [] %}
+        {% if err.location|islist  %}
+            {% do items.append("<error id=\"" + err.id + "\" severity=\"" + err.severity + "\" msg=\"" + err.location[-1].file + ":" + err.location[-1].line + " " + err.msg + "\" verbose=\"" +  err.verbose + "\"") %}
+        {% elif err.location.file0  %}
+            {% do items.append("<error id=\"" + err.id + "\" severity=\"" + err.severity + "\" msg=\"" + err.location.file0 + " " + err.msg + "\" verbose=\"" +  err.verbose + "\"") %}
+        {% else %}
+            {% do items.append("<error id=\"" + err.id + "\" severity=\"" + err.severity + "\" msg=\"" + err.msg + "\" verbose=\"" + err.verbose + "\"") %}
+        {% endif %}
+        {% if err.cwe %}
+            {% do items.append("cwe=\"" + err.cwe + "\""  ) %}
+        {% endif %}
+        {% do items.append(">") %}
+        {{items|join(' ')|replace(' >','>')}}
+            {% if not err.location %}
+        </error>
+                {% continue %}
+            {% elif err.location|islist  %}
+                {% for loc in  err.location|reverse %}
+                    {% set items = [] %}
+                    {% do items.append("<location") %}
+                    {% if loc.file0 %}
+                        {% do items.append("file0=\"" + loc.file0 + "\"") %}
+                    {% endif %}
+                    {% do items.append("file=\"" + loc.file + "\" line=\"" + loc.line + "\" column=\"" + loc.column + "\"") %}
+                    {% if loc.info %}
+                        {% do items.append("info=\"" + loc.info + "\"") %}
+                    {% endif %}
+                    {% do items.append("/>") %}
+            {{items|join(' ')|replace(' />','/>')}}
+                {% endfor %}
+            {% else %}
+                {% set loc = err.location %}
+                {% set items = [] %}
+                {% do items.append("<location") %}
+                {% if loc.file0 %}
+                    {% do items.append("file0=\"" + loc.file0 + "\"") %}
+                {% endif %}
+                {% do items.append("file=\"" + loc.file + "\" line=\"" + loc.line + "\" column=\"" + loc.column + "\"") %}
+                {% if loc.info %}
+                    {% do items.append("info=\"" + loc.info + "\"") %}
+                {% endif %}
+                {% do items.append("/>") %}
+            {{items|join(' ')|replace(' />','/>')}}
+            {% endif %}
+            {% if err.symbol %}
+            <symbol>{{err.symbol}}</symbol>
+            {% endif %}
+        </error>
+        {% endfor %}
+    </errors>
+</results>
